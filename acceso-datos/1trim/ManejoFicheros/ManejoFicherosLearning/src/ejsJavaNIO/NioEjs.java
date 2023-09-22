@@ -4,17 +4,25 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.nio.file.attribute.FileAttribute;
+import java.nio.file.attribute.PosixFilePermission;
+import java.nio.file.attribute.PosixFilePermissions;
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 public class NioEjs {
     public static void main(String[] args) {
-        Path path1 = Paths.get("ficherosEjemplos");
-        Path path2 = Paths.get("ficherosEjemplos/BrunoMercado.txt");
+        Path path1 = Paths.get("EjemplosNio");
+        Path path2 = Paths.get("EjemplosNio/BrunoMercado.txt");
+        Path path3 = Paths.get("EjemplosNio/BrunoMercado2DAM.txt");
 
-        //listarDirectorio("src/BrunoFile.java").forEach(a -> System.out.println(a));
-        //generarArchivo(path1.toString(), "bruno", "mercado");
-        //renameTo2Dam(path2);
+        listarDirectorio("src").forEach(System.out::println);
+        //System.out.println(generarArchivo(path1.toString(), "bruno", "mercado"));;
+        //System.out.println(renameTo2Dam(path2));;
+        //System.out.println(borrarArchivo(path3.toString()));;
+
 
     }
 
@@ -55,17 +63,47 @@ public class NioEjs {
         }
         String fileName = originPath.toString();
         String newFileName = fileName.substring(0, fileName.length()-4).concat("2DAM.txt");
-        Path destinoFile = Path.of(newFileName);
+        Path destinoPath = Path.of(newFileName);
         try {
-            Files.move(originPath, destinoFile);
+            Files.move(originPath, destinoPath);
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
         return true;
     }
 
+    public static boolean borrarArchivo(String ruta) {
+        Path p = Paths.get(ruta);
+        if (Files.isDirectory(p)) {
+            return false;
+        }
+        try {
+            //setWriteOnlyPermission(p);
+            Files.delete(p);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+        return true;
+    }
 
+        public static void setWriteOnlyPermission(Path filePath) {
+            try {
+                // Define los permisos de escritura exclusiva
+                Set<PosixFilePermission> permissions = new HashSet<>();
+                permissions.add(PosixFilePermission.OWNER_WRITE);
 
+                // Configura los atributos del archivo
+                FileAttribute<Set<PosixFilePermission>> fileAttributes =
+                        PosixFilePermissions.asFileAttribute(permissions);
+
+                // Aplica los atributos al archivo
+                Files.createFile(filePath, fileAttributes);
+
+                System.out.println("El archivo se ha configurado como de escritura exclusiva.");
+            } catch (IOException e) {
+                System.err.println("Error al configurar el archivo como de escritura exclusiva: " + e.getMessage());
+            }
+        }
     public static String firstLetterToUpperCase(String nombre) {
         return String.valueOf(nombre.charAt(0)).toUpperCase()+nombre.substring(1, nombre.length());
     }
