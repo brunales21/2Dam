@@ -17,5 +17,4 @@ public class BrunoFile extends java.io.File {
                 "Archivos en el directorio: " + Arrays.stream(Objects.requireNonNull(this.listFiles())).toList() + "\n" +
                 "¿Es un archivo?: " + this.isFile();
     }
-
 }
