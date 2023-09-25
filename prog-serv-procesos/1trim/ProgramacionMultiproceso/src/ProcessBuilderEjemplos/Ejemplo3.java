@@ -9,11 +9,19 @@ public class Ejemplo3 {
         Process p;
         try {
             p = pb.start();
-            InputStream in = p.getInputStream();
-            BufferedReader bf = new BufferedReader(new InputStreamReader(in));
 
-            System.out.println(bf.readLine());
-            System.out.println("exit code: "+p.waitFor());
+            InputStream in = p.getInputStream();
+            InputStream errorInput = p.getErrorStream();
+
+            BufferedReader reader = new BufferedReader(new InputStreamReader(in));
+            BufferedReader errorReader = new BufferedReader(new InputStreamReader(errorInput));
+
+            System.out.println(reader.readLine());
+            int exitCode;
+            System.out.println("exit code: "+(exitCode = p.waitFor()));
+            if (exitCode == -1) {
+                System.err.println(errorReader.readLine());
+            }
         } catch (IOException | InterruptedException e) {
             throw new RuntimeException(e);
         }
