@@ -4,8 +4,9 @@ import java.io.*;
 
 public class Ejemplo3 {
     public static void main(String[] args) {
-        String ruta = "C:\\Users\\2DAM\\workspace\\2Dam\\prog-serv-procesos\\1trim\\ProgramacionMultiproceso\\out\\production\\ProgramacionMultiproceso";
-        ProcessBuilder pb = new ProcessBuilder("java", "-cp", ruta, "ProcessBuilderEjemplos.LeerNombre", "Bruno");
+        String rutaClase = "C:\\Users\\2DAM\\workspace\\2Dam\\prog-serv-procesos\\1trim\\ProgramacionMultiproceso\\out\\production\\ProgramacionMultiproceso";
+        String rutaCasa = "C:\\Users\\bemim\\Workspace\\DAM\\2Dam\\prog-serv-procesos\\1trim\\ProgramacionMultiproceso\\out\\production\\ProgramacionMultiproceso";
+        ProcessBuilder pb = new ProcessBuilder("java", "-cp", rutaCasa, "ProcessBuilderEjemplos.LeerNombre", "Bruno");
         Process p;
         try {
             p = pb.start();
