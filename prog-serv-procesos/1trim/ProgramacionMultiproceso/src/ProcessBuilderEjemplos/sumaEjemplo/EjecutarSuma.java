@@ -1,4 +1,4 @@
-package ProcessBuilderEjemplos;
+package ProcessBuilderEjemplos.sumaEjemplo;
 
 import java.io.*;
 import java.util.InputMismatchException;
@@ -9,7 +9,7 @@ public class EjecutarSuma {
         String rutaCasa = "C:\\Users\\bemim\\Workspace\\DAM\\2Dam\\prog-serv-procesos\\1trim\\ProgramacionMultiproceso\\out\\production\\ProgramacionMultiproceso";
         Scanner sc = new Scanner(System.in);
 
-        ProcessBuilder pb = new ProcessBuilder("java", "-cp", rutaCasa, "ProcessBuilderEjemplos.Suma");
+        ProcessBuilder pb = new ProcessBuilder("java", "-cp", rutaCasa, "ProcessBuilderEjemplos.sumaEjemplo.Suma");
         Process p = pb.start();
 
         BufferedWriter out = new BufferedWriter(new OutputStreamWriter(p.getOutputStream()));

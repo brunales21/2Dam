@@ -1,4 +1,4 @@
-package ProcessBuilderEjemplos;
+package ProcessBuilderEjemplos.sumaEjemplo;
 
 import java.awt.desktop.SystemSleepEvent;
 import java.util.InputMismatchException;

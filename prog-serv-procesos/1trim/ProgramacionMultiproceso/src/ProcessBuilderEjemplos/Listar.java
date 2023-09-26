@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 
-public class Main {
+public class Listar {
     public static void main(String[] args) {
         ls();
 
@@ -14,8 +14,9 @@ public class Main {
     public static void ls() {
         String s = "";
         try {
-            ProcessBuilder pb = new ProcessBuilder("CMD","/C","deir");
+            ProcessBuilder pb = new ProcessBuilder("CMD","/C","dir");
             Process p = pb.start();
+
             InputStream in2 = p.getErrorStream();
             InputStream in = p.getInputStream();
             BufferedReader reader = new BufferedReader(new InputStreamReader(in));
