@@ -36,6 +36,9 @@ public class NioEjs {
         return contenido;
     }
     public static List<Path> listarDirectorio(String path) {
+        if (path == null) {
+            return null;
+        }
         List<Path> contenido = new ArrayList<>();
         try {
             Files.newDirectoryStream(Paths.get(path)).forEach(p -> contenido.add(p));
@@ -79,7 +82,7 @@ public class NioEjs {
         }
         try {
             //setWriteOnlyPermission(p);
-            Files.delete(p);
+            Files.deleteIfExists(p);
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
