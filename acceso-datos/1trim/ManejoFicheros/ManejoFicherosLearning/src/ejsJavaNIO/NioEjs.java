@@ -1,9 +1,8 @@
 package ejsJavaNIO;
 
 import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
+import java.nio.file.*;
+import java.nio.file.attribute.BasicFileAttributes;
 import java.nio.file.attribute.FileAttribute;
 import java.nio.file.attribute.PosixFilePermission;
 import java.nio.file.attribute.PosixFilePermissions;
@@ -17,12 +16,17 @@ public class NioEjs {
         Path path1 = Paths.get("EjemplosNio");
         Path path2 = Paths.get("EjemplosNio/BrunoMercado.txt");
         Path path3 = Paths.get("EjemplosNio/BrunoMercado2DAM.txt");
+        Path path4 = Paths.get("DirectorioABorrar");
 
-        listarDirectorio("src").forEach(System.out::println);
-        //System.out.println(generarArchivo(path1.toString(), "bruno", "mercado"));;
+
+        //listarDirectorio("src").forEach(System.out::println);
+        System.out.println(generarArchivo(path1.toString(), "bruno", "mercado"));;
         //System.out.println(renameTo2Dam(path2));;
         //System.out.println(borrarArchivo(path3.toString()));;
+        //eliminarDirectorio(path4.toString());
 
+
+        //System.out.println(ej8());
 
     }
 
@@ -51,7 +55,7 @@ public class NioEjs {
     public static boolean generarArchivo(String pathName, String nombre, String apellido) {
         String name = firstLetterToUpperCase(nombre);
         String surname = firstLetterToUpperCase(apellido);
-        Path p = Paths.get(pathName, name+surname+".txt");
+        Path p = Paths.get(pathName).resolve(name+surname+".txt");
         try {
             Files.createFile(p);
             return true;
@@ -109,6 +113,56 @@ public class NioEjs {
         }
     public static String firstLetterToUpperCase(String nombre) {
         return String.valueOf(nombre.charAt(0)).toUpperCase()+nombre.substring(1, nombre.length());
+    }
+
+    public static void eliminarDirectorio(String directoryName) {
+        FileVisitor<Path> fileVisitor = new FileVisitor<Path>() {
+            @Override
+            public FileVisitResult preVisitDirectory(Path dir, BasicFileAttributes attrs) throws IOException {
+                return FileVisitResult.CONTINUE;
+            }
+
+            @Override
+            public FileVisitResult visitFile(Path file, BasicFileAttributes attrs) throws IOException {
+                Files.delete(file);
+                return FileVisitResult.CONTINUE;
+            }
+
+            @Override
+            public FileVisitResult visitFileFailed(Path file, IOException exc) throws IOException {
+                return FileVisitResult.CONTINUE;
+            }
+
+            @Override
+            public FileVisitResult postVisitDirectory(Path dir, IOException exc) throws IOException {
+                Files.delete(dir);
+                return FileVisitResult.CONTINUE;
+            }
+        };
+        Path path = Paths.get(directoryName);
+        try {
+            Files.walkFileTree(path, fileVisitor);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    public static Path ej8() {
+        Path directoryPath = Paths.get("alumno/DAM/ejercicios/");
+        Path filePath = directoryPath.resolve("hola.txt");
+        if (!Files.exists(directoryPath)) {
+            try {
+                Files.createDirectories(directoryPath);
+                Files.createFile(filePath);
+
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }
+        }
+
+        Path path2 = Paths.get("alumno/DAM/apuntes/adios.txt");
+        return directoryPath.relativize(path2);
+
     }
 
 }

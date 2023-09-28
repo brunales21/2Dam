@@ -1,0 +1,19 @@
+Prueba a dividir dos variables. El divisor debe ser cero. ¿Qué sucede? Soluciónalo.
+Saltará ArithmeticException. Para solucionarlo hay que capturar la excepción.
+¿Qué salida producirá el siguiente código?
+se espera un Throwable pero le estamos pasando un int, dará un error de compilación
+¿Qué salida producirá el siguiente código?
+Se produjo una excepción Prueba.
+Estoy dentro del bloque finally.
+
+Ya que la clase hereda de Exception, es un Throwable
+¿Qué salida producirá el siguiente código?
+Va a entrar en el primer bloque del catch, por lo tanto el segundo bloque catch es inutil
+¿Qué salida producirá el siguiente código?
+a = 0
+Error al dividir entre cero.
+Estoy dentro del bloque finally.
+
+¿Qué salida producirá el siguiente código?
+
+5
