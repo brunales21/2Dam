@@ -25,8 +25,8 @@ public class NioEjs {
         //System.out.println(borrarArchivo(path3.toString()));;
         //eliminarDirectorio(path4.toString());
 
-
         //System.out.println(ej8());
+
 
     }
 
@@ -55,9 +55,9 @@ public class NioEjs {
     public static boolean generarArchivo(String pathName, String nombre, String apellido) {
         String name = firstLetterToUpperCase(nombre);
         String surname = firstLetterToUpperCase(apellido);
-        Path p = Paths.get(pathName).resolve(name+surname+".txt");
+        Path path = Paths.get(pathName, name+surname+".txt");
         try {
-            Files.createFile(p);
+            Files.createFile(path);
             return true;
         } catch (IOException e) {
             throw new RuntimeException(e);
