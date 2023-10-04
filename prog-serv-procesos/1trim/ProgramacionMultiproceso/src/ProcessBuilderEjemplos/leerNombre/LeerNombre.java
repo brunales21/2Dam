@@ -13,8 +13,4 @@ public class LeerNombre {
         }
     }
 
-    public void saludar(String nombre) {
-        System.out.println("Hola, "+nombre);
-
-    }
 }

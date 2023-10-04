@@ -1,0 +1,38 @@
+Explicación de las clases y métodos
+
+1. Clase EjecutarSuma:
+   - Esta clase se utiliza para ejecutar el programa "Suma" desde otro programa Java utilizando ProcessBuilder.
+   - Define una cadena `ruta` que representa la ubicación del archivo compilado de la clase "Suma".
+
+   - Método main:
+     - Configura un objeto ProcessBuilder para ejecutar el programa Java "Suma".
+     - Establece el classpath ("-cp") para incluir la ruta del archivo compilado de "Suma".
+     - Pasa los argumentos "4" y "5" al programa "Suma".
+     - Inicia el proceso y captura sus flujos de entrada, salida y error.
+     - Espera a que el proceso termine y muestra la salida estándar o la salida de error en la consola, dependiendo del resultado.
+
+2. Clase Suma:
+   - Esta clase representa el programa que realiza la suma de dos números enteros.
+
+   - Método main:
+     - El método principal de la clase "Suma".
+     - Toma dos argumentos de línea de comandos (números enteros) y los convierte en enteros.
+     - Realiza la suma de los dos números y muestra el resultado en la salida estándar.
+     - Si se producen excepciones (NumberFormatException o ArrayIndexOutOfBoundsException), muestra un mensaje de error en la salida de error y sale con código de error 1.
+
+
+Forma de ejecución del ejercicio
+
+1. Asegúrate de que ambos archivos Java (EjecutarSuma.java y Suma.java) estén compilados en tu entorno.
+
+2. En la clase "EjecutarSuma", se configura la variable `ruta` con la ubicación del archivo compilado de la clase "Suma". Asegúrate de que esta ruta sea correcta en tu sistema.
+
+3. Ejecuta la clase "EjecutarSuma" desde tu entorno de desarrollo Java.
+
+4. La clase "EjecutarSuma" utilizará ProcessBuilder para ejecutar la clase "Suma" con los argumentos "4" y "5".
+
+5. Si la ejecución de "Suma" tiene éxito, verás el resultado de la suma en la consola.
+
+6. Si se produce algún error en la ejecución de "Suma" (por ejemplo, si proporcionas argumentos no válidos), verás un mensaje de error en la consola.
+
+Este ejercicio demuestra cómo ejecutar un programa Java desde otro programa Java utilizando ProcessBuilder y cómo manejar la entrada y salida del proceso resultante.

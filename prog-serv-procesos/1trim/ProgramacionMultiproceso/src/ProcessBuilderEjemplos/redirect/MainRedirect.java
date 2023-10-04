@@ -6,7 +6,7 @@ import java.nio.file.Paths;
 
 public class MainRedirect {
     public static void main(String[] args) {
-        ProcessBuilder pb = new ProcessBuilder("CMD","/C","dir");
+        ProcessBuilder pb = new ProcessBuilder("CMD","/C","dirr");
         Process p = null;
         File file = new File("salida.txt");
         File fileErr = new File("error.txt");
