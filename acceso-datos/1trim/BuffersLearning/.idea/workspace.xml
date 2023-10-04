@@ -5,31 +5,51 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dca9e80f-2443-42e8-943d-75d707d363cb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../../../prog-serv-procesos/1trim/ProgramacionMultiproceso/src/ProcessBuilderEjemplos/sumaEjemplo/explicacion.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../prog-serv-procesos/1trim/ProgramacionMultiproceso/error.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../prog-serv-procesos/1trim/ProgramacionMultiproceso/error.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../prog-serv-procesos/1trim/ProgramacionMultiproceso/out/production/ProgramacionMultiproceso/ProcessBuilderEjemplos/leerNombre/Ejemplo3.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../prog-serv-procesos/1trim/ProgramacionMultiproceso/out/production/ProgramacionMultiproceso/ProcessBuilderEjemplos/leerNombre/Ejemplo3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../prog-serv-procesos/1trim/ProgramacionMultiproceso/out/production/ProgramacionMultiproceso/ProcessBuilderEjemplos/leerNombre/LeerNombre.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../prog-serv-procesos/1trim/ProgramacionMultiproceso/out/production/ProgramacionMultiproceso/ProcessBuilderEjemplos/leerNombre/LeerNombre.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../prog-serv-procesos/1trim/ProgramacionMultiproceso/out/production/ProgramacionMultiproceso/ProcessBuilderEjemplos/redirect/MainRedirect.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../prog-serv-procesos/1trim/ProgramacionMultiproceso/out/production/ProgramacionMultiproceso/ProcessBuilderEjemplos/redirect/MainRedirect.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../prog-serv-procesos/1trim/ProgramacionMultiproceso/out/production/ProgramacionMultiproceso/ProcessBuilderEjemplos/sumaEjemplo/EjecutarSuma.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../prog-serv-procesos/1trim/ProgramacionMultiproceso/out/production/ProgramacionMultiproceso/ProcessBuilderEjemplos/sumaEjemplo/EjecutarSuma.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../prog-serv-procesos/1trim/ProgramacionMultiproceso/out/production/ProgramacionMultiproceso/ProcessBuilderEjemplos/sumaEjemplo/Suma.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../prog-serv-procesos/1trim/ProgramacionMultiproceso/out/production/ProgramacionMultiproceso/ProcessBuilderEjemplos/sumaEjemplo/Suma.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../prog-serv-procesos/1trim/ProgramacionMultiproceso/src/ProcessBuilderEjemplos/leerNombre/Ejemplo3.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../prog-serv-procesos/1trim/ProgramacionMultiproceso/src/ProcessBuilderEjemplos/leerNombre/Ejemplo3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../prog-serv-procesos/1trim/ProgramacionMultiproceso/src/ProcessBuilderEjemplos/leerNombre/LeerNombre.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../prog-serv-procesos/1trim/ProgramacionMultiproceso/src/ProcessBuilderEjemplos/leerNombre/LeerNombre.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../prog-serv-procesos/1trim/ProgramacionMultiproceso/src/ProcessBuilderEjemplos/redirect/MainRedirect.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../prog-serv-procesos/1trim/ProgramacionMultiproceso/src/ProcessBuilderEjemplos/redirect/MainRedirect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../prog-serv-procesos/1trim/ProgramacionMultiproceso/src/ProcessBuilderEjemplos/sumaEjemplo/EjecutarSuma.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../prog-serv-procesos/1trim/ProgramacionMultiproceso/src/ProcessBuilderEjemplos/sumaEjemplo/EjecutarSuma.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../prog-serv-procesos/1trim/ProgramacionMultiproceso/src/ProcessBuilderEjemplos/sumaEjemplo/Suma.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../prog-serv-procesos/1trim/ProgramacionMultiproceso/src/ProcessBuilderEjemplos/sumaEjemplo/Suma.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BuffersLearning.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lorem Ipsum.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pruebas/Lorem Ipsum.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pruebas/LoremSinVocales.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pruebas/ejemplo.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pruebas/numVocales.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ArchivoTXT.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/JugadorFutbol.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuffersLearning/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuffersLearning/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuffersLearning/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuffersLearning/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuffersLearning/BuffersLearning.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuffersLearning/Carpeta/Lorem Ipsum.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuffersLearning/Carpeta/LoremSinVocales.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuffersLearning/Lorem Ipsum.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuffersLearning/Nueva carpeta/enuns.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuffersLearning/Nueva carpeta/enuns2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuffersLearning/out/production/BuffersLearning/ArchivoTXT.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuffersLearning/src/ArchivoTXT.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 2
-}]]></component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="2WHzcXzsXKnJV9cj9ZUjrR9ud1A" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -39,7 +59,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/2DAM/workspace/2Dam/acceso-datos/1trim/BuffersLearning/BuffersLearning"
+    "last_opened_file_path": "C:/Users/bemim/Workspace/DAM/2Dam/acceso-datos/1trim/BuffersLearning"
   }
 }]]></component>
   <component name="RunManager">
@@ -66,5 +86,16 @@
       <updated>1696404372913</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
