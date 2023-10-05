@@ -5,7 +5,6 @@ import java.util.*;
 
 public class ArchivoTXT {
     public static final String SIGNOS_PUNTUACION = ".,;:!?¿¡()[]{}\"'`-_/\\@#$%^&*+=<>";
-    public static final String LETRAS = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZáéíóúÁÉÍÓÚ";
     public static final String VOCALES = "aeiouüAEIOUáéíóúÁÉÍÓÚÜ";
     public static final String VOCALES2 = "aeiouAEIOU";
 
@@ -60,7 +59,6 @@ public class ArchivoTXT {
     }
 
     public void codifica(String pathname) {
-        String vocales = "aeiouAEIOUáéíóúÁÉÍÓÚ";
         try (FileReader in = new FileReader(path.toString());
              FileWriter out = new FileWriter(pathname)) {
 
@@ -68,7 +66,7 @@ public class ArchivoTXT {
             int charCode;
             while ((charCode = in.read()) != -1) {
                 letra = (char) charCode;
-                if (vocales.indexOf(letra) == -1) {
+                if (VOCALES.indexOf(letra) == -1) {
                     out.write(letra);
                 }
             }
@@ -80,16 +78,15 @@ public class ArchivoTXT {
     }
 
     public void codificarFiles(String pathname) {
-        String vocales = "aeiouAEIOUáéíóúÁÉÍÓÚ";
         Path p = Paths.get(pathname);
         try (BufferedWriter out = Files.newBufferedWriter(p);
-        BufferedReader in = Files.newBufferedReader(ArchivoTXT.path)) {
+            BufferedReader in = Files.newBufferedReader(ArchivoTXT.path)) {
 
             char letra;
             int charCode;
             while ((charCode = in.read()) != -1) {
                 letra = (char) charCode;
-                if (vocales.indexOf(letra) == -1) {
+                if (VOCALES.indexOf(letra) == -1) {
                     out.write(letra);
                 }
             }
@@ -133,7 +130,7 @@ public class ArchivoTXT {
         }
     }
 
-    public int contar() {
+    public int contarCaracteres() {
         int contador = 0;
         try (BufferedReader in = new BufferedReader(new FileReader(path.toString()))) {
             while (in.read() != -1) {
@@ -222,13 +219,15 @@ public class ArchivoTXT {
 
     public Map<Character, Integer> frecuenciaLetras() {
         Map<Character, Integer> map = new HashMap<>();
+        Set<Character> letrasContadas = new HashSet<>();
         try (FileReader in = new FileReader(path.toString())) {
             int charCode;
             char c;
             while ((charCode = in.read()) != -1) {
                 c = (char) charCode;
-                if (Character.isLetter(c)) {
+                if (Character.isLetter(c) && !letrasContadas.contains(c)) {
                     map.put(c, contar(Character.toString(c)));
+                    letrasContadas.add(c);
                 }
             }
         } catch (IOException e) {
@@ -236,7 +235,6 @@ public class ArchivoTXT {
         }
         return map;
     }
-
 
 }
 

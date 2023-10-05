@@ -5,27 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dca9e80f-2443-42e8-943d-75d707d363cb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/BuffersLearning.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lorem Ipsum.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Pruebas/Lorem Ipsum.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Pruebas/LoremSinVocales.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Pruebas/ejemplo.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Pruebas/numVocales.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ArchivoTXT.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/JugadorFutbol.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pruebas/JugadoresFutbol.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/EquipoFutbol.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BuffersLearning/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BuffersLearning/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BuffersLearning/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BuffersLearning/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BuffersLearning/BuffersLearning.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BuffersLearning/Carpeta/Lorem Ipsum.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BuffersLearning/Carpeta/LoremSinVocales.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BuffersLearning/Lorem Ipsum.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BuffersLearning/Nueva carpeta/enuns.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BuffersLearning/Nueva carpeta/enuns2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BuffersLearning/out/production/BuffersLearning/ArchivoTXT.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BuffersLearning/src/ArchivoTXT.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BuffersLearning/ArchivoTXT.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BuffersLearning/ArchivoTXT.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ArchivoTXT.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ArchivoTXT.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JugadorFutbol.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JugadorFutbol.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,10 +46,13 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/bemim/Workspace/DAM/2Dam/acceso-datos/1trim/BuffersLearning"
+    "last_opened_file_path": "C:/Users/2DAM/workspace/2Dam/acceso-datos/1trim/BuffersLearning",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="ArchivoTXT" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ArchivoTXT" />
       <module name="BuffersLearning" />
@@ -70,8 +60,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="JugadorFutbol" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="JugadorFutbol" />
+      <module name="BuffersLearning" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="BuffersLearning" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.JugadorFutbol" />
         <item itemvalue="Application.ArchivoTXT" />
       </list>
     </recent_temporary>
@@ -86,6 +92,9 @@
       <updated>1696404372913</updated>
     </task>
     <servers />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.csv" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
