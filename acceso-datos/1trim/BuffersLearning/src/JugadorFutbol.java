@@ -26,29 +26,14 @@ public class JugadorFutbol {
     public void sendToCsv() {
         Path path = Paths.get("Pruebas/JugadoresFutbol.csv");
         try (BufferedWriter out = new BufferedWriter(new FileWriter(path.toString(), true))) {
-            out.write(this+"\n");
+            out.write(toStringCsv()+"\n");
         } catch (IOException e) {
             System.err.println(e.getMessage());
         }
     }
 
-    public void mostrar() {
-        try {
-            Class miClase = Class.forName("JugadorFutbol");
-            Field[] campos = miClase.getDeclaredFields();
-            for (Field campo: campos) {
-                System.out.println(campo.getName()+" = "+campo.get(this));
-            }
-        } catch (ClassNotFoundException | IllegalAccessException e) {
-            throw new RuntimeException(e);
-        }
-    }
 
-
-
-
-    @Override
-    public String toString() {
+    public String toStringCsv() {
         StringBuilder sb = new StringBuilder();
         try {
             Class miClase = Class.forName("JugadorFutbol");
@@ -61,6 +46,24 @@ public class JugadorFutbol {
         }
         return sb.deleteCharAt(sb.length()-1).toString();
     }
+
+
+
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        try {
+            Class miClase = Class.forName("JugadorFutbol");
+            Field[] campos = miClase.getDeclaredFields();
+            for (Field campo: campos) {
+                sb.append(campo.getName()+" = "+campo.get(this)).append("\n");
+            }
+        } catch (ClassNotFoundException | IllegalAccessException e) {
+            throw new RuntimeException(e);
+        }
+        return sb.toString();
+    }
+
 
     public String getNombre() {
         return nombre;

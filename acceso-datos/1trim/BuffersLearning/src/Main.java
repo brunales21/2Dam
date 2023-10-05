@@ -5,9 +5,9 @@ public class Main {
     public static void main(String[] args) {
 
         List<JugadorFutbol> jugadores = new ArrayList<>();
-
         EquipoFutbol equipo = new EquipoFutbol(jugadores);
-/*
+        /*
+
         JugadorFutbol bruno = new JugadorFutbol("Bruno Mercado", "Argentina", 1, 1.0f, true);
         JugadorFutbol messi = new JugadorFutbol("Lionel Messi", "Argentina", 1, 0.75f, true);
         JugadorFutbol maradona = new JugadorFutbol("Diego Maradona", "Argentina", 1, 0.5f, false);
@@ -28,10 +28,10 @@ public class Main {
         equipo.sendJugadoresToCsv();
         //bruno.sendToCsv();
 
- */
+        */
 
         equipo.readCsv();
-        equipo.getJugadores().forEach(JugadorFutbol::mostrar);
+        equipo.getJugadores().forEach(System.out::println);
 
 
 
