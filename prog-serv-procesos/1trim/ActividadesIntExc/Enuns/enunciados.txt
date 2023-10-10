@@ -1,0 +1,16 @@
+Ejercicio 1
+Crea una clase que extienda de Thread cuya única funcionalidad sea visualizar el mensaje “Hola
+mundo”. Crea un programa Java que visualice el mensaje anterior 5 veces creando para ello 5
+hilos diferentes usando la clase creada anteriormente. Modifica el mensaje “Hola mundo” en el
+hilo para incluir el identificador del hilo. Prueba de nuevo el programa Java creado
+anteriormente.
+
+Ejercicio 2
+Crea una clase que implemente la interfaz Runnable cuya única funcionalidad sea visualizar el
+mensaje “Hola mundo” seguido de una cadena que se recibirá en el constructor (es decir, al
+crear un objeto de este tipo se enviará una cadena) y seguido del identificador del hilo. Crea un
+programa Java que visualice el mensaje anterior 5 veces creando para ello 5 hilos diferentes
+usando la clase creada anteriormente. Luego haz que antes de visualizar el mensaje el hilo
+espere un tiempo proporcional a su identificador.
+¿qué diferencias observas al ejecutar el programa haciendo o no que el hilo espere antes de
+visualizar el mensaje?

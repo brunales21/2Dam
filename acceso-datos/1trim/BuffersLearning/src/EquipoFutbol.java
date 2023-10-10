@@ -1,7 +1,6 @@
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
-import java.lang.reflect.Field;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
@@ -14,8 +13,8 @@ public class EquipoFutbol {
         this.jugadores = jugadores;
     }
 
-    public void sendJugadoresToCsv() {
-        jugadores.forEach(JugadorFutbol::sendToCsv);
+    public void writeJugadoresToCsv() {
+        jugadores.forEach(JugadorFutbol::writeToCsv);
     }
 
     public void readCsv() {

@@ -1,12 +1,7 @@
 import java.io.*;
-import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;
-import java.lang.reflect.InvocationTargetException;
-import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.util.ArrayList;
-import java.util.List;
 
 public class JugadorFutbol {
     private String nombre;
@@ -23,7 +18,7 @@ public class JugadorFutbol {
         this.tieneBDO = tieneBDO;
     }
 
-    public void sendToCsv() {
+    public void writeToCsv() {
         Path path = Paths.get("Pruebas/JugadoresFutbol.csv");
         try (BufferedWriter out = new BufferedWriter(new FileWriter(path.toString(), true))) {
             out.write(toStringCsv()+"\n");
