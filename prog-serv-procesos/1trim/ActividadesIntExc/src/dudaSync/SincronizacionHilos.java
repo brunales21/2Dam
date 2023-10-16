@@ -7,7 +7,7 @@ public class SincronizacionHilos {
 
         Runnable retirada1 = () -> {
             for (int i = 0; i < 5; i++) {
-                cuenta.retirarDinero(200);
+                cuenta.retirarDinero(900);
                 try {
                     Thread.sleep(100);
                 } catch (InterruptedException e) {
