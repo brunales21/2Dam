@@ -2,7 +2,7 @@ package ejSync;
 
 public class Main {
     public static void main(String[] args) {
-        Clazz c = new Clazz(100000);
+        Clazz c = new Clazz(10000000);
 
         Thread t1 = new Thread(c);
         Thread t2 = new Thread(c);
@@ -10,13 +10,12 @@ public class Main {
         t1.start();
         t2.start();
 
-        try {
-            Thread.sleep(20000);
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
+        while (true) {
+            if (!t1.isAlive() && !t2.isAlive()) {
+                System.out.println(c.contador);
+                break;
+            }
         }
-
-        System.out.println(c.contador);
     }
 
 
