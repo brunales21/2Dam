@@ -5,45 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dca9e80f-2443-42e8-943d-75d707d363cb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../../../prog-serv-procesos/1trim/ActividadesIntExc/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../prog-serv-procesos/1trim/ActividadesIntExc/ActividadesIntExc.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../prog-serv-procesos/1trim/ActividadesIntExc/Enuns/Actividad21.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../prog-serv-procesos/1trim/ActividadesIntExc/Enuns/Actividad22.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../prog-serv-procesos/1trim/ActividadesIntExc/Enuns/enunciados.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../prog-serv-procesos/1trim/ActividadesIntExc/src/duda/Clazz.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../prog-serv-procesos/1trim/ActividadesIntExc/src/duda/Clazz2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../prog-serv-procesos/1trim/ActividadesIntExc/src/duda/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../prog-serv-procesos/1trim/ActividadesIntExc/src/extendsThread/Clazz1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../prog-serv-procesos/1trim/ActividadesIntExc/src/extendsThread/Clazz2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../prog-serv-procesos/1trim/ActividadesIntExc/src/extendsThread/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../prog-serv-procesos/1trim/ActividadesIntExc/src/holamundoRunnable/Clazz1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../prog-serv-procesos/1trim/ActividadesIntExc/src/holamundoRunnable/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../prog-serv-procesos/1trim/ActividadesIntExc/src/holamundoThread/Clazz1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../prog-serv-procesos/1trim/ActividadesIntExc/src/holamundoThread/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../prog-serv-procesos/1trim/ActividadesIntExc/src/impRunnable/Clazz3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../prog-serv-procesos/1trim/ActividadesIntExc/src/impRunnable/Clazz4.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../prog-serv-procesos/1trim/ActividadesIntExc/src/impRunnable/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../prog-serv-procesos/1trim/ActividadesIntExc/src/sync/Clazz.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../prog-serv-procesos/1trim/ActividadesIntExc/src/sync/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../prog-serv-procesos/1trim/ProgramacionMultiproceso/src/Vacile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../prog-serv-procesos/1trim/ProgramacionMultiproceso/src/procesoPython/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../prog-serv-procesos/1trim/Thread/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../prog-serv-procesos/1trim/Thread/Thread.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../prog-serv-procesos/1trim/Thread/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../prog-serv-procesos/1trim/Thread/src/Raton.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../prog-serv-procesos/1trim/Thread/src/RatonMultihilo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../prog-serv-procesos/1trim/Thread/src/RatonMultihiloRunnable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../prog-serv-procesos/1trim/Thread/src/RatonSimple.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EquipoFutbol.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/EquipoFutbol.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JugadorFutbol.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JugadorFutbol.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../prog-serv-procesos/1trim/ProgramacionMultiproceso/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../prog-serv-procesos/1trim/ProgramacionMultiproceso/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../prog-serv-procesos/1trim/ProgramacionMultiproceso/error.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../prog-serv-procesos/1trim/ProgramacionMultiproceso/error.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../prog-serv-procesos/1trim/ProgramacionMultiproceso/out/production/ProgramacionMultiproceso/ProcessBuilderEjemplos/redirect/MainRedirect.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../prog-serv-procesos/1trim/ProgramacionMultiproceso/out/production/ProgramacionMultiproceso/ProcessBuilderEjemplos/redirect/MainRedirect.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../prog-serv-procesos/1trim/ProgramacionMultiproceso/out/production/ProgramacionMultiproceso/ProcessBuilderEjemplos/sumaEjemplo/EjecutarSuma.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../prog-serv-procesos/1trim/ProgramacionMultiproceso/out/production/ProgramacionMultiproceso/ProcessBuilderEjemplos/sumaEjemplo/EjecutarSuma.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../prog-serv-procesos/1trim/ProgramacionMultiproceso/out/production/ProgramacionMultiproceso/ProcessBuilderEjemplos/sumaEjemplo/Suma.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../prog-serv-procesos/1trim/ProgramacionMultiproceso/out/production/ProgramacionMultiproceso/ProcessBuilderEjemplos/sumaEjemplo/Suma.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../prog-serv-procesos/1trim/ProgramacionMultiproceso/src/ProcessBuilderEjemplos/redirect/MainRedirect.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../prog-serv-procesos/1trim/ProgramacionMultiproceso/src/ProcessBuilderEjemplos/redirect/MainRedirect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../prog-serv-procesos/1trim/ProgramacionMultiproceso/src/ProcessBuilderEjemplos/sumaEjemplo/Suma.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../prog-serv-procesos/1trim/ProgramacionMultiproceso/src/ProcessBuilderEjemplos/sumaEjemplo/Suma.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../prog-serv-procesos/1trim/ProgramacionMultiproceso/out/production/ProgramacionMultiproceso/procesoPython/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../prog-serv-procesos/1trim/ProgramacionMultiproceso/out/production/ProgramacionMultiproceso/procesoPython/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../prog-serv-procesos/1trim/ProgramacionMultiproceso/src/procesoPython/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../prog-serv-procesos/1trim/ProgramacionMultiproceso/src/procesoPython/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
