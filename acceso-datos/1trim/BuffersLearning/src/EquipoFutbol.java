@@ -1,6 +1,4 @@
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
@@ -29,6 +27,27 @@ public class EquipoFutbol {
         } catch (IOException e) {
             System.err.println(e.getMessage());
         }
+    }
+
+    public static List<JugadorFutbol> readObjectsFromBinary(String ruta) {
+        List<JugadorFutbol> jugadores = new ArrayList<>();
+        Path path = Paths.get(ruta);
+        try (ObjectInputStream in = new ObjectInputStream(new FileInputStream(path.toString()))) {
+            JugadorFutbol obj;
+            while ((obj = (JugadorFutbol) in.readObject()) != null) {
+                jugadores.add(obj);
+            }
+        } catch (IOException e) {
+            System.err.println(e.getCause());
+        } catch (ClassNotFoundException e) {
+            throw new RuntimeException(e);
+        }
+        return jugadores;
+    }
+
+    public static void writeObjects(String ruta, List<JugadorFutbol> jugadores) {
+        Path path = Paths.get(ruta);
+        jugadores.forEach(a -> a.writeToBinaryFile(path.toString()));
     }
 
     public void addJugador(JugadorFutbol j) {

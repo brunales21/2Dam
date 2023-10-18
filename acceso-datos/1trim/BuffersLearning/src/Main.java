@@ -6,9 +6,10 @@ public class Main {
 
         List<JugadorFutbol> jugadores = new ArrayList<>();
         EquipoFutbol equipo = new EquipoFutbol(jugadores);
-        /*
-
         JugadorFutbol bruno = new JugadorFutbol("Bruno Mercado", "Argentina", 1, 1.0f, true);
+        //bruno.writeToBinaryFile("Pruebas/ejercicio1.dat");
+
+
         JugadorFutbol messi = new JugadorFutbol("Lionel Messi", "Argentina", 1, 0.75f, true);
         JugadorFutbol maradona = new JugadorFutbol("Diego Maradona", "Argentina", 1, 0.5f, false);
         JugadorFutbol cristiano = new JugadorFutbol("Cristiano Ronaldo", "Portugal", 0, 0.85f, true);
@@ -24,14 +25,15 @@ public class Main {
         jugadores.add(neymar);
         jugadores.add(mbappe);
 
+        EquipoFutbol.writeObjects("Pruebas/ejercicio1.dat", equipo.getJugadores());
 
-        equipo.sendJugadoresToCsv();
+        //equipo.sendJugadoresToCsv();
         //bruno.sendToCsv();
 
-        */
 
-        equipo.readCsv();
-        equipo.getJugadores().forEach(System.out::println);
+
+        //equipo.readCsv();
+        //equipo.getJugadores().forEach(System.out::println);
 
 
 

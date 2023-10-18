@@ -3,7 +3,7 @@ import java.lang.reflect.Field;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
-public class JugadorFutbol {
+public class JugadorFutbol implements Serializable {
     private String nombre;
     private String pais;
     private int copasDelMundo;
@@ -22,6 +22,15 @@ public class JugadorFutbol {
         Path path = Paths.get("Pruebas/JugadoresFutbol.csv");
         try (BufferedWriter out = new BufferedWriter(new FileWriter(path.toString(), true))) {
             out.write(toStringCsv()+"\n");
+        } catch (IOException e) {
+            System.err.println(e.getMessage());
+        }
+    }
+
+    public void writeToBinaryFile(String ruta) {
+        Path path = Paths.get(ruta);
+        try (ObjectOutputStream os = new ObjectOutputStream(new FileOutputStream(path.toString(), true))) {
+            os.writeObject(this);
         } catch (IOException e) {
             System.err.println(e.getMessage());
         }
