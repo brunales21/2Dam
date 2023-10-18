@@ -2,6 +2,7 @@ import java.io.*;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 public class EquipoFutbol {
@@ -22,14 +23,14 @@ public class EquipoFutbol {
             String line;
             while ((line = in.readLine()) != null) {
                 String [] fields = line.split(";");
-                jugadores.add(new JugadorFutbol(fields[0], fields[1], Integer.parseInt(fields[2]), Float.parseFloat(fields[3]), Boolean.parseBoolean(fields[4])));
+                jugadores.add(new JugadorFutbol(fields[0], fields[1], Integer.parseInt(fields[2]), Float.parseFloat(fields[3]), Boolean.parseBoolean(fields[4]), new Date(fields[5])));
             }
         } catch (IOException e) {
             System.err.println(e.getMessage());
         }
     }
 
-    public static List<JugadorFutbol> readObjectsFromBinary(String ruta) {
+    public static List<JugadorFutbol> readObjectsFromBinaryFile(String ruta) {
         List<JugadorFutbol> jugadores = new ArrayList<>();
         Path path = Paths.get(ruta);
         try (ObjectInputStream in = new ObjectInputStream(new FileInputStream(path.toString()))) {
@@ -38,16 +39,22 @@ public class EquipoFutbol {
                 jugadores.add(obj);
             }
         } catch (IOException e) {
-            System.err.println(e.getCause());
+            System.err.println(e.getMessage());
         } catch (ClassNotFoundException e) {
             throw new RuntimeException(e);
         }
         return jugadores;
     }
 
-    public static void writeObjects(String ruta, List<JugadorFutbol> jugadores) {
+    public static void writeObjectsToBinaryFile(String ruta, List<JugadorFutbol> jugadores) {
         Path path = Paths.get(ruta);
-        jugadores.forEach(a -> a.writeToBinaryFile(path.toString()));
+        try (ObjectOutputStream out = new ObjectOutputStream(new FileOutputStream(path.toString(), true))) {
+            for (JugadorFutbol jf: jugadores) {
+                out.writeObject(jf);
+            }
+        } catch (IOException e) {
+            System.err.println(e.getMessage());
+        }
     }
 
     public void addJugador(JugadorFutbol j) {

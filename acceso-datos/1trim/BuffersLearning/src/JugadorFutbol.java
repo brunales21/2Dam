@@ -2,21 +2,34 @@ import java.io.*;
 import java.lang.reflect.Field;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.Date;
 
-public class JugadorFutbol implements Serializable {
+public class JugadorFutbol implements Externalizable {
     private String nombre;
     private String pais;
     private int copasDelMundo;
     private float promedioGoles;
     private boolean tieneBDO;
+    private Date debutPais;
 
-    public JugadorFutbol(String nombre, String pais, int copasDelMundo, float promedioGoles, boolean tieneBDO) {
+    public JugadorFutbol(String nombre, String pais, int copasDelMundo, float promedioGoles, boolean tieneBDO, Date debutPais) {
         this.nombre = nombre;
         this.pais = pais;
         this.copasDelMundo = copasDelMundo;
         this.promedioGoles = promedioGoles;
         this.tieneBDO = tieneBDO;
+        this.debutPais = debutPais;
     }
+
+    public JugadorFutbol(String nombre, String pais, int copasDelMundo, float promedioGoles, boolean tieneBDO) {
+        this(nombre, pais, copasDelMundo, promedioGoles, tieneBDO, new Date());
+    }
+
+    public JugadorFutbol() {
+        this("", "", 0, 0.0F, false, new Date());
+    }
+
+
 
     public void writeToCsv() {
         Path path = Paths.get("Pruebas/JugadoresFutbol.csv");
@@ -34,6 +47,25 @@ public class JugadorFutbol implements Serializable {
         } catch (IOException e) {
             System.err.println(e.getMessage());
         }
+    }
+
+    @Override
+    public void writeExternal(ObjectOutput out) {
+        try {
+            out.writeObject(this);
+        } catch (IOException e) {
+            System.err.println(e.getMessage());
+        }
+    }
+
+    @Override
+    public void readExternal(ObjectInput in) throws IOException, ClassNotFoundException {
+        this.nombre = in.readUTF();
+        this.pais = in.readUTF();
+        this.copasDelMundo = in.readInt();
+        this.promedioGoles = in.readFloat();
+        this.tieneBDO = in.readBoolean();
+        this.debutPais = (Date)in.readObject();
     }
 
 
@@ -67,7 +99,6 @@ public class JugadorFutbol implements Serializable {
         }
         return sb.toString();
     }
-
 
     public String getNombre() {
         return nombre;

@@ -5,8 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dca9e80f-2443-42e8-943d-75d707d363cb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Pruebas/ejercicio1.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pruebas/ejercicio1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/Pruebas/ejercicio1.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BuffersLearning/ArchivoTXT.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BuffersLearning/ArchivoTXT.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/BuffersLearning/EquipoFutbol.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BuffersLearning/EquipoFutbol.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/BuffersLearning/JugadorFutbol.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BuffersLearning/JugadorFutbol.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/BuffersLearning/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BuffersLearning/Main.class" afterDir="false" />
@@ -32,6 +34,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="QODANA_PROBLEMS_VIEW_TAB" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
 }</component>
@@ -41,17 +46,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/bemim/Workspace/DAM/2Dam/acceso-datos/1trim/BuffersLearning",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/bemim/Workspace/DAM/2Dam/acceso-datos/1trim/BuffersLearning&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Application.Main">
     <configuration name="ArchivoTXT" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ArchivoTXT" />
