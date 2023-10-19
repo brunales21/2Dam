@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e5313a1b-5465-45a0-b263-97e8ff67c799" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../dis-interfaces-web/PruebaCalculadora/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../dis-interfaces-web/PruebaCalculadora/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../dis-interfaces-web/PruebaCalculadora/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../dis-interfaces-web/PruebaCalculadora/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../dis-interfaces-web/PruebaCalculadora/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../dis-interfaces-web/PruebaCalculadora/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../dis-interfaces-web/PruebaCalculadora/src/main/java/org/example/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../dis-interfaces-web/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../dis-interfaces-web/Threads/untitled/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../dis-interfaces-web/calculadora/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../dis-interfaces-web/calculadora/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../dis-interfaces-web/calculadora/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../dis-interfaces-web/calculadora/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../dis-interfaces-web/calculadora/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../dis-interfaces-web/calculadora/calculadora.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../dis-interfaces-web/calculadora/out/production/calculadora/Calculadora.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../dis-interfaces-web/calculadora/src/Calculadora.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../dis-interfaces-web/demo/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../dis-interfaces-web/demo/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../dis-interfaces-web/demo/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../dis-interfaces-web/demo/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../dis-interfaces-web/demo/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../dis-interfaces-web/demo/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../dis-interfaces-web/demo/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../dis-interfaces-web/demo/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../dis-interfaces-web/demo/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../dis-interfaces-web/demo/src/main/java/com/example/demo/HelloApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../dis-interfaces-web/demo/src/main/java/com/example/demo/HelloController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../dis-interfaces-web/demo/src/main/java/module-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../dis-interfaces-web/demo/src/main/resources/com/example/demo/hello-view.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../prog-serv-procesos/1trim/ActividadesIntExc/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../prog-serv-procesos/1trim/ActividadesIntExc/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../prog-serv-procesos/1trim/Thread/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../prog-serv-procesos/1trim/Thread/.idea/misc.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 6
+}]]></component>
+  <component name="ProjectId" id="2WysbIxy4yHwXgWLgakSWILoeWB" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/2DAM/workspace/2Dam/dis-interfaces/Threads"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e5313a1b-5465-45a0-b263-97e8ff67c799" name="Changes" comment="" />
+      <created>1697716223900</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1697716223900</updated>
+    </task>
+    <servers />
+  </component>
+</project>
