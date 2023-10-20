@@ -5,38 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dca9e80f-2443-42e8-943d-75d707d363cb" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../../../dis-interfaces-web/PruebaCalculadora/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../dis-interfaces-web/PruebaCalculadora/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../dis-interfaces-web/PruebaCalculadora/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../dis-interfaces-web/PruebaCalculadora/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../dis-interfaces-web/PruebaCalculadora/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../dis-interfaces-web/PruebaCalculadora/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../dis-interfaces-web/PruebaCalculadora/src/main/java/org/example/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../dis-interfaces-web/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../dis-interfaces-web/Threads/untitled/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../dis-interfaces-web/calculadora/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../dis-interfaces-web/calculadora/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../dis-interfaces-web/calculadora/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../dis-interfaces-web/calculadora/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../dis-interfaces-web/calculadora/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../dis-interfaces-web/calculadora/calculadora.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../dis-interfaces-web/calculadora/out/production/calculadora/Calculadora.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../dis-interfaces-web/calculadora/src/Calculadora.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../dis-interfaces-web/demo/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../dis-interfaces-web/demo/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../dis-interfaces-web/demo/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../dis-interfaces-web/demo/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../dis-interfaces-web/demo/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../dis-interfaces-web/demo/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../dis-interfaces-web/demo/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../dis-interfaces-web/demo/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../dis-interfaces-web/demo/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../dis-interfaces-web/demo/src/main/java/com/example/demo/HelloApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../dis-interfaces-web/demo/src/main/java/com/example/demo/HelloController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../dis-interfaces-web/demo/src/main/java/module-info.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../dis-interfaces-web/demo/src/main/resources/com/example/demo/hello-view.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../prog-serv-procesos/1trim/ActividadesIntExc/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../prog-serv-procesos/1trim/ActividadesIntExc/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../prog-serv-procesos/1trim/Thread/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../prog-serv-procesos/1trim/Thread/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pruebas/JugadoresFutbol.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Pruebas/JugadoresFutbol.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EquipoFutbol.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/EquipoFutbol.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../prog-serv-procesos/1trim/ProcesoPython/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../prog-serv-procesos/1trim/ProcesoPython/.idea/misc.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,17 +41,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/2DAM/workspace/2Dam/dis-interfaces-web/calculadora&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/2DAM/workspace/2Dam/acceso-datos/1trim/BuffersLearning",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Application.Main">
     <configuration name="ArchivoTXT" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ArchivoTXT" />
