@@ -4,16 +4,22 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.shape.*?>
 
+<!-- Importa la clase Image -->
+
 <VBox prefHeight="504.0" prefWidth="344.0" spacing="10.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.threadracing.Race">
   <children>
-    <HBox spacing="10.0">
+    <HBox fx:id="iniciar" spacing="10.0">
       <children>
-        <Button fx:id="startButton" onMouseClicked="#onAction" text="Iniciar" />
-        <Button fx:id="stopButton" text="Detener" />
+        <Button fx:id="empezar" onMouseClicked="#onAction" text="Iniciar" translateX="70.0" translateY="10.0" />
+        <Button fx:id="detener" onMouseClicked="#onAction" text="Detener" translateX="130.0" translateY="10.0" />
       </children>
     </HBox>
-    <Circle fx:id="circle1" fill="#ee1212" radius="7.0" translateX="8.0" translateY="10.0" />
-    <Circle fx:id="circle2" fill="#1c98eb" radius="7.0" translateX="8.0" translateY="40.0" />
-    <Circle fx:id="circle3" fill="#f5e429" radius="7.0" translateX="8.0" translateY="70.0" />
+    <Circle fx:id="circle1" fill="#ee1212" radius="7.0" translateX="8.0" translateY="30.0" />
+    <Circle fx:id="circle2" fill="#1c98eb" radius="7.0" translateX="8.0" translateY="60.0" />
+    <Circle fx:id="circle3" fill="#f5e429" radius="7.0" translateX="8.0" translateY="90.0" />
+
+    <!-- ImageView para la imagen -->
+
+
   </children>
 </VBox>

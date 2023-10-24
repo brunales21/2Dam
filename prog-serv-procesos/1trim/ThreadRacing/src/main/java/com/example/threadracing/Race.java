@@ -5,6 +5,7 @@ import javafx.application.Platform;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.shape.Circle;
 import javafx.stage.Stage;
@@ -13,33 +14,76 @@ import java.io.IOException;
 
 public class Race extends Application {
     private final int circleRadius = 20;
-    private final int circleMoveDistance = 10;
+    private int circleMoveDistance = 10;
     private int speed;
-
+    private int initPos = 10;
     @FXML
     Circle circle1;
     @FXML
     Circle circle2;
     @FXML
     Circle circle3;
+    Thread t1;
+    Thread t2;
+    Thread t3;
+
 
     public static void main(String[] args) {
         launch(args);
     }
     @FXML
     public void onAction(MouseEvent mouseEvent) {
-        Thread t1 = new Thread(() -> mover(circle1));
-        Thread t2 = new Thread(() -> mover(circle2));
-        Thread t3 = new Thread(() -> mover(circle3));
+        t1 = new Thread(() -> {
+            while (!t1.isInterrupted()) {
+                mover(circle1);
 
+            }
+        });
+        t2 = new Thread(() -> {
+            while (!t2.isInterrupted()) {
+                mover(circle2);
+
+            }
+        });
+        t3 = new Thread(() -> {
+            while (!t3.isInterrupted()) {
+                mover(circle3);
+
+            }
+        });
+
+        String idButton = ((Button)mouseEvent.getSource()).getId();
+        if (idButton.equals("empezar")) {
+            empezar();
+
+        } else if (idButton.equals("detener")) {
+            interruptThreads(t1, t2, t3);
+            System.out.println(t1.isInterrupted());
+            System.out.println(t1.getState());
+
+        }
+
+    }
+    private void empezar() {
+        circleMoveDistance = 10;
+        circle1.setTranslateX(initPos);
+        circle2.setTranslateX(initPos);
+        circle3.setTranslateX(initPos);
         t1.start();
         t2.start();
         t3.start();
-
     }
+    private void interruptThreads(Thread ... threads) {
+        for (Thread thread : threads) {
+            thread.interrupt();
+        }
+        circleMoveDistance = 0;
+    }
+
 
     private void mover(Circle circle) {
         while (true) {
+
             switch (circle.getId()) {
                 case "circle1":
                     speed = 100;
@@ -57,6 +101,7 @@ public class Race extends Application {
                 final double newX = currentX + circleMoveDistance;
                 Platform.runLater(() -> circle.setTranslateX(newX));
             } else {
+                //circle.setTranslateX(initPos);
                 return;
             }
 
