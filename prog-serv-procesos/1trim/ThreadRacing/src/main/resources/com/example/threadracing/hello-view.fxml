@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+
+<VBox spacing="10.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+  <children>
+    <HBox spacing="10.0">
+      <children>
+        <Button fx:id="startButton" onMouseClicked="#onAction" text="Iniciar" />
+        <Button fx:id="stopButton" text="Detener" />
+      </children>
+    </HBox>
+    <Circle fx:id="circle1" fill="#ee1212" radius="5.0" />
+    <Circle fx:id="circle2" fill="#1c98eb" radius="5.0" />
+    <Circle fx:id="circle3" fill="#f5e429" radius="5.0" />
+  </children>
+</VBox>

@@ -2,17 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="be95d20d-77e2-4cfc-a4d5-03299b1b22eb" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../ProgramacionMultiproceso/error.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../ProgramacionMultiproceso/error.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProgramacionMultiproceso/out/production/ProgramacionMultiproceso/ProcessBuilderEjemplos/leerNombre/Ejemplo3.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ProgramacionMultiproceso/out/production/ProgramacionMultiproceso/ProcessBuilderEjemplos/leerNombre/Ejemplo3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProgramacionMultiproceso/out/production/ProgramacionMultiproceso/ProcessBuilderEjemplos/leerNombre/LeerNombre.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ProgramacionMultiproceso/out/production/ProgramacionMultiproceso/ProcessBuilderEjemplos/leerNombre/LeerNombre.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProgramacionMultiproceso/out/production/ProgramacionMultiproceso/ProcessBuilderEjemplos/redirect/MainRedirect.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ProgramacionMultiproceso/out/production/ProgramacionMultiproceso/ProcessBuilderEjemplos/redirect/MainRedirect.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProgramacionMultiproceso/out/production/ProgramacionMultiproceso/ProcessBuilderEjemplos/sumaEjemplo/EjecutarSuma.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ProgramacionMultiproceso/out/production/ProgramacionMultiproceso/ProcessBuilderEjemplos/sumaEjemplo/EjecutarSuma.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProgramacionMultiproceso/out/production/ProgramacionMultiproceso/ProcessBuilderEjemplos/sumaEjemplo/Suma.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ProgramacionMultiproceso/out/production/ProgramacionMultiproceso/ProcessBuilderEjemplos/sumaEjemplo/Suma.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProgramacionMultiproceso/src/ProcessBuilderEjemplos/leerNombre/Ejemplo3.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ProgramacionMultiproceso/src/ProcessBuilderEjemplos/leerNombre/Ejemplo3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProgramacionMultiproceso/src/ProcessBuilderEjemplos/leerNombre/LeerNombre.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ProgramacionMultiproceso/src/ProcessBuilderEjemplos/leerNombre/LeerNombre.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProgramacionMultiproceso/src/ProcessBuilderEjemplos/redirect/MainRedirect.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ProgramacionMultiproceso/src/ProcessBuilderEjemplos/redirect/MainRedirect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProgramacionMultiproceso/src/ProcessBuilderEjemplos/sumaEjemplo/EjecutarSuma.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ProgramacionMultiproceso/src/ProcessBuilderEjemplos/sumaEjemplo/EjecutarSuma.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProgramacionMultiproceso/src/ProcessBuilderEjemplos/sumaEjemplo/Suma.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ProgramacionMultiproceso/src/ProcessBuilderEjemplos/sumaEjemplo/Suma.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../acceso-datos/1trim/BuffersLearning/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../acceso-datos/1trim/BuffersLearning/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,22 +12,22 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 7
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="2WHtwXVdIx0OjpgGp0qrspMDIbO" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/2DAM/workspace/2Dam/prog-serv-procesos/1trim/ProgramacionMultiproceso"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/2DAM/workspace/2Dam/prog-serv-procesos/1trim/ProgramacionMultiproceso&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">

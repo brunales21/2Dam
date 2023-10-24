@@ -8,14 +8,17 @@ public class CuentaBancaria {
     }
 
     public void consultarSaldo() {
-        System.out.println("Saldo disponible: "+saldo);
+        System.out.println("Saldo disponible: " + saldo);
     }
 
     public void retirarDinero(int cant) {
-        if (saldo-cant<0) {
-            System.err.println("saldo negativo");
-            return;
+        synchronized (this) {
+            if (saldo - cant < 0) {
+                System.err.println("saldo negativo");
+                return;
+            }
+            saldo -= cant;
         }
-        saldo-=cant;
+
     }
 }
