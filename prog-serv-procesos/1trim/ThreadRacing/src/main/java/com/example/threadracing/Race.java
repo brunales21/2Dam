@@ -35,6 +35,7 @@ public class Race extends Application {
         t1.start();
         t2.start();
         t3.start();
+
     }
 
     private void mover(Circle circle) {
@@ -44,21 +45,19 @@ public class Race extends Application {
                     speed = 100;
                     break;
                 case "circle2":
-                    speed = 200;
+                    speed = 150;
                     break;
                 case "circle3":
-                    speed = 300;
+                    speed = 200;
                     break;
             }
-            System.out.println(circle.getTranslateX());
 
             double currentX = circle.getTranslateX();
             if (currentX + circleMoveDistance + circleRadius <= 400) {
                 final double newX = currentX + circleMoveDistance;
                 Platform.runLater(() -> circle.setTranslateX(newX));
             } else {
-                final double newX = circleRadius;
-                Platform.runLater(() -> circle.setTranslateX(newX));  // Reiniciar el círculo
+                return;
             }
 
             try {
