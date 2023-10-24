@@ -25,7 +25,7 @@ public class Main {
         jugadores.add(neymar);
         jugadores.add(mbappe);
 
-        equipo.writeJugadoresToCsv(rutaFichero);
+        equipo.writeJugadoresToCsv();
         equipo.readCsv();
 
         jugadores.forEach(a -> System.out.println(a));
