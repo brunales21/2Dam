@@ -43,7 +43,7 @@ public class Race extends Application {
             while (!t2.isInterrupted()) {
                 mover(circle2);
 
-            }
+                                                            }
         });
         t3 = new Thread(() -> {
             while (!t3.isInterrupted()) {
