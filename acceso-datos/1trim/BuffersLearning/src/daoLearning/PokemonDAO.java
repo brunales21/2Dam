@@ -63,9 +63,12 @@ public interface PokemonDAO {
      * @param specialdefense
      * @param speed
      */
-    public void pokemonCSV(String ruta, String name, int life, int atack,
-                           int defense, int specialAttack, int specialdefense, int speed);
+    /*public void pokemonCSV(String ruta, String name, int life, int atack,
+          int defense, int specialAttack, int specialdefense, int speed);
+     */
 
+
+    void pokemonCSV(String ruta, Pokemon pokemon);
 
     /**
      * Imprime por pantalla el contenido del fichero csv con los pokemon de la forma:
@@ -108,7 +111,7 @@ public interface PokemonDAO {
      * @return lista con todos los pokemons que haya almacenados.
      * Lista vacía si no hay ninguno.
      */
-    public List<PokemonMain> leerPokemons();
+    public List<Pokemon> leerPokemons();
 
     /**
      *  Devuelve una lista de objetos pokemon que contengan esa cadena en el
@@ -122,6 +125,6 @@ public interface PokemonDAO {
      *  el criterio.
      *  Lista vacía si no hay ninguno.
      */
-    public List<PokemonMain> leerPokemons(String nombre);
+    public List<Pokemon> leerPokemons(String nombre);
 }
 

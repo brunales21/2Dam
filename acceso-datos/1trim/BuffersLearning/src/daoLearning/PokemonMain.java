@@ -11,11 +11,7 @@ import java.util.List;
 /**
  * @author Sergio Cuesta
  */
-public class PokemonMain extends Pokemon {
-
-    public PokemonMain(String name, int level, int life, int attack, int defense, int specialAttack, int specialDefense, int speed) {
-        super(name, level, life, attack, defense, specialAttack, specialDefense, speed);
-    }
+public class PokemonMain {
 
     public static void main(String[] args) {
         Pokemon pokemon1 = new Pokemon("Bulbasaur", 10, 45, 49, 49, 65, 65, 45);
@@ -44,16 +40,16 @@ public class PokemonMain extends Pokemon {
 
         PokemonDAOFile dao = new PokemonDAOFile("PruebasPokemonsDao/pokemonsFile.csv");
         System.out.println(dao.estaVacio());
-        dao.pokemonCSV(dao.getPokemonsFile().toString(), pokemon1.getName(), pokemon1.getLife(), pokemon1.getAttack(), pokemon1.getDefense(), pokemon1.getSpecialAttack(), pokemon1.getSpecialDefense(), pokemon1.getSpeed());
-        dao.pokemonCSV(dao.getPokemonsFile().toString(), pokemon2.getName(), pokemon2.getLife(), pokemon2.getAttack(), pokemon2.getDefense(), pokemon2.getSpecialAttack(), pokemon2.getSpecialDefense(), pokemon2.getSpeed());
-        dao.pokemonCSV(dao.getPokemonsFile().toString(), pokemon3.getName(), pokemon3.getLife(), pokemon3.getAttack(), pokemon3.getDefense(), pokemon3.getSpecialAttack(), pokemon3.getSpecialDefense(), pokemon3.getSpeed());
-        dao.pokemonCSV(dao.getPokemonsFile().toString(), pokemon4.getName(), pokemon4.getLife(), pokemon4.getAttack(), pokemon4.getDefense(), pokemon4.getSpecialAttack(), pokemon4.getSpecialDefense(), pokemon4.getSpeed());
-        dao.pokemonCSV(dao.getPokemonsFile().toString(), pokemon5.getName(), pokemon5.getLife(), pokemon5.getAttack(), pokemon5.getDefense(), pokemon5.getSpecialAttack(), pokemon5.getSpecialDefense(), pokemon5.getSpeed());
-        dao.pokemonCSV(dao.getPokemonsFile().toString(), pokemon6.getName(), pokemon6.getLife(), pokemon6.getAttack(), pokemon6.getDefense(), pokemon6.getSpecialAttack(), pokemon6.getSpecialDefense(), pokemon6.getSpeed());
-        dao.pokemonCSV(dao.getPokemonsFile().toString(), pokemon7.getName(), pokemon7.getLife(), pokemon7.getAttack(), pokemon7.getDefense(), pokemon7.getSpecialAttack(), pokemon7.getSpecialDefense(), pokemon7.getSpeed());
-        dao.pokemonCSV(dao.getPokemonsFile().toString(), pokemon8.getName(), pokemon8.getLife(), pokemon8.getAttack(), pokemon8.getDefense(), pokemon8.getSpecialAttack(), pokemon8.getSpecialDefense(), pokemon8.getSpeed());
-        dao.pokemonCSV(dao.getPokemonsFile().toString(), pokemon9.getName(), pokemon9.getLife(), pokemon9.getAttack(), pokemon9.getDefense(), pokemon9.getSpecialAttack(), pokemon9.getSpecialDefense(), pokemon9.getSpeed());
-        dao.pokemonCSV(dao.getPokemonsFile().toString(), pokemon10.getName(), pokemon10.getLife(), pokemon10.getAttack(), pokemon10.getDefense(), pokemon10.getSpecialAttack(), pokemon10.getSpecialDefense(), pokemon10.getSpeed());
+        dao.pokemonCSV(dao.getPokemonsFile().toString(), pokemon1);
+        dao.pokemonCSV(dao.getPokemonsFile().toString(), pokemon2);
+        dao.pokemonCSV(dao.getPokemonsFile().toString(), pokemon3);
+        dao.pokemonCSV(dao.getPokemonsFile().toString(), pokemon4);
+        dao.pokemonCSV(dao.getPokemonsFile().toString(), pokemon5);
+        dao.pokemonCSV(dao.getPokemonsFile().toString(), pokemon6);
+        dao.pokemonCSV(dao.getPokemonsFile().toString(), pokemon7);
+        dao.pokemonCSV(dao.getPokemonsFile().toString(), pokemon8);
+        dao.pokemonCSV(dao.getPokemonsFile().toString(), pokemon9);
+        dao.pokemonCSV(dao.getPokemonsFile().toString(), pokemon10);
         /*
         try {
             dao.imprimirPokemonCSV(dao.getPokemonsFile().toString());

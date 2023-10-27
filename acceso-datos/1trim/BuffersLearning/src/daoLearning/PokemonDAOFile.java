@@ -37,7 +37,7 @@ public class PokemonDAOFile implements PokemonDAO {
 
     @Override
     public boolean estaLLeno() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        return false;
     }
 
     @Override
@@ -57,7 +57,7 @@ public class PokemonDAOFile implements PokemonDAO {
 
     @Override
     public boolean eliminar(Pokemon pokemon) {
-        List<PokemonMain> pokemons = leerPokemons();
+        List<Pokemon> pokemons = leerPokemons();
         if (!pokemons.contains(pokemon)) {
             return false;
         } else {
@@ -69,9 +69,9 @@ public class PokemonDAOFile implements PokemonDAO {
     }
 
     @Override
-    public void pokemonCSV(String ruta, String name, int life, int atack, int defense, int specialAttack, int specialdefense, int speed) {
-        try (PrintStream out = new PrintStream(new FileOutputStream(pokemonsFile.toString(), true))) {
-            out.println(ObjectToCSVConverter.toStringCsv(new Pokemon(name, 0, life, atack, defense, specialAttack, specialdefense, speed)));
+    public void pokemonCSV(String ruta, Pokemon pokemon) {
+        try (PrintStream out = new PrintStream(new FileOutputStream(ruta, true))) {
+            out.println(ObjectToCSVConverter.toStringCsv(pokemon));
         } catch (FileNotFoundException e) {
             throw new RuntimeException(e);
         }
@@ -85,13 +85,13 @@ public class PokemonDAOFile implements PokemonDAO {
 
     @Override
     public void imprimirPokemon(String nombre) {
-        leerPokemons().stream().filter(p -> p.getName().contains(nombre)).forEach(System.out::println);
+        leerPokemons(nombre).forEach(System.out::println);
     }
 
     @Override
-    public List<PokemonMain> leerPokemons() {
-        List<PokemonMain> pokemons = new ArrayList<>();
-
+    public List<Pokemon> leerPokemons() {
+        //to csv file
+        List<Pokemon> pokemons = new ArrayList<>();
         try (BufferedReader reader = new BufferedReader(new FileReader(pokemonsFile.toString()))) {
             String line;
             while ((line = reader.readLine()) != null) {
@@ -106,8 +106,8 @@ public class PokemonDAOFile implements PokemonDAO {
                     int specialDefense = Integer.parseInt(campos[6]);
                     int speed = Integer.parseInt(campos[7]);
 
-                    Pokemon pokemon = new PokemonMain(name, level, life, attack, defense, specialAttack, specialDefense, speed);
-                    pokemons.add((PokemonMain) pokemon);
+                    Pokemon pokemon = new Pokemon(name, level, life, attack, defense, specialAttack, specialDefense, speed);
+                    pokemons.add(pokemon);
                 }
             }
         } catch (IOException e) {
@@ -118,6 +118,7 @@ public class PokemonDAOFile implements PokemonDAO {
 
         return pokemons;
         /*
+        // to binary file
         List<PokemonMain> pokemons = new ArrayList<>();
         try (ObjectInputStream in = new ObjectInputStream(new FileInputStream(pokemonsFile.toString()))) {
             Pokemon pokemon;
@@ -133,7 +134,7 @@ public class PokemonDAOFile implements PokemonDAO {
     }
 
     @Override
-    public List<PokemonMain> leerPokemons(String nombre) {
+    public List<Pokemon> leerPokemons(String nombre) {
         return leerPokemons().stream().filter(p -> p.getName().contains(nombre)).toList();
     }
 
