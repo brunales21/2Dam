@@ -31,6 +31,7 @@ public class Race extends Application {
     public static void main(String[] args) {
         launch(args);
     }
+
     @FXML
     public void onAction(MouseEvent mouseEvent) {
         t1 = new Thread(() -> {
@@ -42,8 +43,7 @@ public class Race extends Application {
         t2 = new Thread(() -> {
             while (!t2.isInterrupted()) {
                 mover(circle2);
-
-                                                            }
+            }
         });
         t3 = new Thread(() -> {
             while (!t3.isInterrupted()) {
@@ -52,7 +52,7 @@ public class Race extends Application {
             }
         });
 
-        String idButton = ((Button)mouseEvent.getSource()).getId();
+        String idButton = ((Button) mouseEvent.getSource()).getId();
         if (idButton.equals("empezar")) {
             empezar();
 
@@ -64,6 +64,7 @@ public class Race extends Application {
         }
 
     }
+
     private void empezar() {
         circleMoveDistance = 10;
         circle1.setTranslateX(initPos);
@@ -73,7 +74,8 @@ public class Race extends Application {
         t2.start();
         t3.start();
     }
-    private void interruptThreads(Thread ... threads) {
+
+    private void interruptThreads(Thread... threads) {
         for (Thread thread : threads) {
             thread.interrupt();
         }
