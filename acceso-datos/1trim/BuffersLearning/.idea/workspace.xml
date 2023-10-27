@@ -5,21 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dca9e80f-2443-42e8-943d-75d707d363cb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PruebasPokemonsDao/dudas.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PruebasPokemonsDao/pokemonsFile.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/csvUtils/ObjectToCSVConverter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/daoLearning/NoMasPokemonsException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/daoLearning/Pokemon.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/daoLearning/PokemonDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/daoLearning/PokemonDAOFile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/daoLearning/PokemonDuplicadoException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/daoLearning/PokemonMain.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BuffersLearning/EquipoFutbol.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BuffersLearning/EquipoFutbol.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BuffersLearning/JugadorFutbol.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BuffersLearning/JugadorFutbol.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BuffersLearning/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BuffersLearning/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EquipoFutbol.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/EquipoFutbol.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +44,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/bemim/Workspace/DAM/2Dam/acceso-datos/1trim/BuffersLearning",
+    "last_opened_file_path": "C:/Users/bemim/IdeaProjects/TresEnRayaOnline1",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0"
