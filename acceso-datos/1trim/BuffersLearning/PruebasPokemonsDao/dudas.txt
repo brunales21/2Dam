@@ -1,0 +1,4 @@
+1-Por qué en Dao metodos como leerPokemons devuelven una lista de elementos PokemonMain y no de tipo Pokemon.
+2-En el metodo pokemonCsv (por cierto, fatal el nombre. Seria algo como pushPokemons o enviarPokemonsAFichero) por qué por parametro
+pasa cada campo de pokemon y no un objeto pokemon (para algo tenemos esa estructura de datos). Se reduceria el codigo. Ademas no hace falta el parametro
+ruta ya que es un atributo de daoImp y se puede llamar internamente en la clase.

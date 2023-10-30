@@ -1,8 +1,9 @@
+import csvUtils.ObjectToCSVConverter;
+
 import java.io.*;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 
 public class EquipoFutbol {
@@ -17,7 +18,7 @@ public class EquipoFutbol {
         Path path = Paths.get("Pruebas/JugadoresFutbol.csv");
         try (BufferedWriter out = new BufferedWriter(new FileWriter(path.toString(), true))) {
             for (JugadorFutbol jugadorFutbol: jugadores) {
-                out.write(jugadorFutbol.toStringCsv()+"\n");
+                out.write(ObjectToCSVConverter.toStringCsv(jugadorFutbol));
             }
         } catch (IOException e) {
             System.err.println(e.getMessage());
