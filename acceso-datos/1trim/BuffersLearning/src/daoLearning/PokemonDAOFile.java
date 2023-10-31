@@ -27,12 +27,7 @@ public class PokemonDAOFile implements PokemonDAO {
 
     @Override
     public boolean estaVacio() {
-        try {
-            return Files.size(pokemonsFile) == 0;
-        } catch (IOException e) {
-            System.err.println(e.getMessage());
-            return true;
-        }
+        return leerPokemons().isEmpty();
     }
 
     @Override
@@ -53,6 +48,7 @@ public class PokemonDAOFile implements PokemonDAO {
         } catch (IOException e) {
             System.err.println(e.getMessage());
         }
+
     }
 
     @Override
@@ -63,7 +59,7 @@ public class PokemonDAOFile implements PokemonDAO {
         } else {
             pokemons.remove(pokemon);
         }
-        pokemons.forEach(p -> pokemonCSV(pokemonsFile.toString(), p.getName(), p.getLife(), p.getAttack(), p.getDefense(), p.getSpecialAttack(), p.getSpecialDefense(), p.getSpeed()));
+        pokemons.forEach(p -> pokemonCSV(pokemonsFile.toString(), pokemon));
         return true;
 
     }
@@ -119,11 +115,11 @@ public class PokemonDAOFile implements PokemonDAO {
         return pokemons;
         /*
         // to binary file
-        List<PokemonMain> pokemons = new ArrayList<>();
+        List<Pokemon> pokemons = new ArrayList<>();
         try (ObjectInputStream in = new ObjectInputStream(new FileInputStream(pokemonsFile.toString()))) {
             Pokemon pokemon;
             while ((pokemon = (Pokemon) in.readObject()) != null) {
-                pokemons.add((PokemonMain) pokemon);
+                pokemons.add(pokemon);
             }
         } catch (IOException | ClassNotFoundException e) {
             System.err.println(e.getMessage());

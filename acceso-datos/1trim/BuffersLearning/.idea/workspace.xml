@@ -5,7 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dca9e80f-2443-42e8-943d-75d707d363cb" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/PruebasStarWars/People.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/StarWars/Character.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/StarWars/CharacterDAOFile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/StarWars/CharactersDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nueva carpeta/Captura de pantalla 2023-10-19 131723.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PruebasPokemonsDao/dudas.txt" beforeDir="false" afterPath="$PROJECT_DIR$/PruebasPokemonsDao/dudas.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/csvUtils/ObjectToCSVConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/csvUtils/ObjectToCSVConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/daoLearning/Pokemon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/daoLearning/Pokemon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/daoLearning/PokemonDAOFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/daoLearning/PokemonDAOFile.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
