@@ -127,27 +127,37 @@ public class Pokemon implements Externalizable {
     }
 
     @Override
-    public void writeExternal(ObjectOutput out) throws IOException {
-        out.writeUTF(name);
-        out.writeInt(level);
-        out.writeInt(life);
-        out.writeInt(attack);
-        out.writeInt(defense);
-        out.writeInt(specialAttack);
-        out.writeInt(specialDefense);
-        out.writeInt(speed);
+    public void writeExternal(ObjectOutput out) {
+        try {
+            out.writeUTF(name);
+            out.writeInt(level);
+            out.writeInt(life);
+            out.writeInt(attack);
+            out.writeInt(defense);
+            out.writeInt(specialAttack);
+            out.writeInt(specialDefense);
+            out.writeInt(speed);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+
     }
 
     @Override
-    public void readExternal(ObjectInput in) throws IOException, ClassNotFoundException {
-        name = in.readUTF();
-        level = in.readInt();
-        life = in.readInt();
-        attack = in.readInt();
-        defense = in.readInt();
-        specialAttack = in.readInt();
-        specialDefense = in.readInt();
-        speed = in.readInt();
+    public void readExternal(ObjectInput in) {
+        try {
+            name = in.readUTF();
+            level = in.readInt();
+            life = in.readInt();
+            attack = in.readInt();
+            defense = in.readInt();
+            specialAttack = in.readInt();
+            specialDefense = in.readInt();
+            speed = in.readInt();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+
     }
 
     @Override
