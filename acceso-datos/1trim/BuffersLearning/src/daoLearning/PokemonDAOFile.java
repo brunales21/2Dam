@@ -20,9 +20,11 @@ import java.util.List;
  */
 public class PokemonDAOFile implements PokemonDAO {
     private Path pokemonsFile;
+    private String delimiter;
 
     public PokemonDAOFile(String pathName) {
         this.pokemonsFile = Paths.get(pathName);
+        this.delimiter = ";";
     }
 
     @Override
@@ -67,7 +69,7 @@ public class PokemonDAOFile implements PokemonDAO {
     @Override
     public void pokemonCSV(String ruta, Pokemon pokemon) {
         try (PrintStream out = new PrintStream(new FileOutputStream(ruta, true))) {
-            out.println(ObjectToCSVConverter.toStringCsv(pokemon));
+            out.println(ObjectToCSVConverter.toStringCsv(pokemon, delimiter));
         } catch (FileNotFoundException e) {
             throw new RuntimeException(e);
         }

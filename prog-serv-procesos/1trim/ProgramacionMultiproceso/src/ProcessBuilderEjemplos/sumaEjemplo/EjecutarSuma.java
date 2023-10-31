@@ -8,7 +8,7 @@ public class EjecutarSuma {
     public static void main(String[] args) throws IOException, InterruptedException {
         String ruta = "C:\\Users\\2DAM\\workspace\\2Dam\\prog-serv-procesos\\1trim\\ProgramacionMultiproceso\\out\\production\\ProgramacionMultiproceso";
 
-        ProcessBuilder pb = new ProcessBuilder("java", "-cp", ruta, "ProcessBuilderEjemplos.sumaEjemplo.Suma", "4", "5");
+        ProcessBuilder pb = new ProcessBuilder("java", "-cp", ruta, "ProcessBuilderEjemplos.sumaEjemplo.Suma", "4", "b");
         Process p = pb.start();
 
         //BufferedWriter out = new BufferedWriter(new OutputStreamWriter(p.getOutputStream()));

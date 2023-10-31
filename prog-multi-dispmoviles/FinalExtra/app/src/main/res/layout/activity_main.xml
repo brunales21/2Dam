@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <EditText
+        android:id="@+id/campo_Nick"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Nick*"
+        android:textSize="24dp"
+        android:layout_marginTop="50dp"
+        android:textStyle="italic"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/campo_contraseña"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Contraseña*"
+        android:textSize="24dp"
+        android:layout_marginTop="20dp"
+        android:textStyle="italic"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/campo_telefono"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Nuevo Telefono"
+        android:textSize="24dp"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:inputType="textPersonName" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        app:srcCompat="@drawable/img1" />
+
+    <Button
+        android:id="@+id/Boton_enviar"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp"
+        android:text="ENVIAR" />
+
+</LinearLayout>

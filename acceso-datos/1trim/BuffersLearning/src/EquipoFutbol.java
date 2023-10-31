@@ -8,9 +8,11 @@ import java.util.List;
 
 public class EquipoFutbol {
     private List<JugadorFutbol> jugadores;
+    private String delimiter;
 
     public EquipoFutbol(List<JugadorFutbol> jugadores) {
         this.jugadores = jugadores;
+        this.delimiter = ";";
     }
 
     public void writeJugadoresToCsv() {
@@ -18,7 +20,7 @@ public class EquipoFutbol {
         Path path = Paths.get("Pruebas/JugadoresFutbol.csv");
         try (BufferedWriter out = new BufferedWriter(new FileWriter(path.toString(), true))) {
             for (JugadorFutbol jugadorFutbol: jugadores) {
-                out.write(ObjectToCSVConverter.toStringCsv(jugadorFutbol));
+                out.write(ObjectToCSVConverter.toStringCsv(jugadorFutbol, delimiter));
             }
         } catch (IOException e) {
             System.err.println(e.getMessage());
