@@ -1,4 +1,4 @@
-package sync;
+package EjemploBrunoCuentaBanco;
 
 import TICTACmbappealmadrid.TicTacMain;
 
