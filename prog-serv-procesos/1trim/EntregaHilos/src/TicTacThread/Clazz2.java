@@ -1,16 +1,15 @@
-package impRunnable;
+package TicTacThread;
 
-public class Clazz3 implements Runnable {
-
+public class Clazz2 extends Thread {
     @Override
     public void run() {
         do {
+            System.out.println("Tac..");
             try {
-                Thread.sleep(1300);
+                Thread.sleep(1000);
             } catch (InterruptedException e) {
                 throw new RuntimeException(e);
             }
-            System.out.println("TIC");
         } while (true);
     }
 }

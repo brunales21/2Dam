@@ -1,10 +1,10 @@
-package extendsThread;
+package TicTacThread;
 
-public class Clazz2 extends Thread {
+public class Clazz1 extends Thread {
     @Override
     public void run() {
         do {
-            System.out.println("tac");
+            System.out.println("Tic..");
             try {
                 Thread.sleep(1500);
             } catch (InterruptedException e) {

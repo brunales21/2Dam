@@ -4,28 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dca9e80f-2443-42e8-943d-75d707d363cb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/StarWars/CharacterMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/StarWars/CharacterNoExisteException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/StarWars/RepeatedCharacterException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/csv-editor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/csv-editor.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PruebasStarWars/People.csv" beforeDir="false" afterPath="$PROJECT_DIR$/PruebasStarWars/People.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BuffersLearning/EquipoFutbol.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BuffersLearning/EquipoFutbol.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BuffersLearning/csvUtils/ObjectToCSVConverter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BuffersLearning/csvUtils/ObjectToCSVConverter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BuffersLearning/daoLearning/Pokemon.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BuffersLearning/daoLearning/Pokemon.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BuffersLearning/daoLearning/PokemonDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BuffersLearning/daoLearning/PokemonDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BuffersLearning/daoLearning/PokemonDAOFile.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BuffersLearning/daoLearning/PokemonDAOFile.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BuffersLearning/daoLearning/PokemonMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BuffersLearning/daoLearning/PokemonMain.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EquipoFutbol.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/EquipoFutbol.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/StarWars/Character.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StarWars/Character.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/StarWars/CharacterDAOFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StarWars/CharacterDAOFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/StarWars/CharactersDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StarWars/CharactersDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/csvUtils/ObjectToCSVConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/csvUtils/ObjectToCSVConverter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/daoLearning/PokemonDAOFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/daoLearning/PokemonDAOFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../prog-serv-procesos/1trim/ProgramacionMultiproceso/out/production/ProgramacionMultiproceso/ProcessBuilderEjemplos/sumaEjemplo/EjecutarSuma.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../prog-serv-procesos/1trim/ProgramacionMultiproceso/out/production/ProgramacionMultiproceso/ProcessBuilderEjemplos/sumaEjemplo/EjecutarSuma.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../prog-serv-procesos/1trim/ProgramacionMultiproceso/src/ProcessBuilderEjemplos/sumaEjemplo/EjecutarSuma.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../prog-serv-procesos/1trim/ProgramacionMultiproceso/src/ProcessBuilderEjemplos/sumaEjemplo/EjecutarSuma.java" afterDir="false" />
-    </list>
+    <list default="true" id="dca9e80f-2443-42e8-943d-75d707d363cb" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -57,18 +36,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/2DAM/workspace/2Dam/prog-serv-procesos/1trim/ProgramacionMultiproceso&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/bemim/Workspace/DAM/2Dam/prog-serv-procesos/1trim/ActividadesIntExc",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Application.CharacterMain">
     <configuration name="ArchivoTXT" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ArchivoTXT" />
