@@ -4,7 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dca9e80f-2443-42e8-943d-75d707d363cb" name="Changes" comment="" />
+    <list default="true" id="dca9e80f-2443-42e8-943d-75d707d363cb" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../prog-serv-procesos/1trim/TresEnRayaOnline/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../prog-serv-procesos/1trim/TresEnRayaOnline/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../prog-serv-procesos/1trim/TresEnRayaOnline/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../prog-serv-procesos/1trim/TresEnRayaOnline/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../prog-serv-procesos/1trim/TresEnRayaOnline/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../prog-serv-procesos/1trim/TresEnRayaOnline/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../prog-serv-procesos/1trim/TresEnRayaOnline/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../prog-serv-procesos/1trim/TresEnRayaOnline/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../prog-serv-procesos/1trim/TresEnRayaOnline/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../prog-serv-procesos/1trim/TresEnRayaOnline/src/main/java/com/example/tresenrayaonline/HelloApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../prog-serv-procesos/1trim/TresEnRayaOnline/src/main/java/com/example/tresenrayaonline/HelloController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../prog-serv-procesos/1trim/TresEnRayaOnline/src/main/java/module-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../prog-serv-procesos/1trim/TresEnRayaOnline/src/main/resources/com/example/tresenrayaonline/hello-view.fxml" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -36,18 +51,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/bemim/Workspace/DAM/2Dam/prog-serv-procesos/1trim/ActividadesIntExc",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/2DAM/IdeaProjects/JuegoOnline&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Application.CharacterMain">
     <configuration name="ArchivoTXT" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ArchivoTXT" />
