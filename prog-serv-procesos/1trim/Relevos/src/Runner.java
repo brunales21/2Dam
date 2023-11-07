@@ -1,68 +1,36 @@
 public class Runner extends Thread {
     private Runner prevRunner;
     private Runner nxtRunner;
-    private boolean active;
-    private boolean finished;
 
-    public Runner() {
-        this(false, false);
-    }
-
-    public Runner(Runner prevRunner) {
-        this.prevRunner = prevRunner;
-    }
-
-    public Runner(boolean active, boolean corrio) {
-        this.active = active;
-        this.finished = corrio;
-    }
 
     public void correr() {
-        if () {
-            System.out.println("Corriendo..");
-            ThreadUtils.esperarSegundos(1);
-            this.finished = true;
-
+        System.out.println("Hilo " + threadId() + " Corriendo..");
+        ThreadUtils.esperarSegundos(1);
+        if (!isLast()) {
+            System.out.println("Hilo " + threadId() + " entrega testigo a hilo " + nxtRunner.threadId() + ".");
         } else {
-            System.out.println("Esperando..");
+            System.out.println("Hilo " + threadId() + " termino el relevo.");
         }
 
     }
 
     @Override
     public void run() {
-        do {
-            correr();
-        } while (true);
+        correr();
+        if (!isLast()) {
+            nxtRunner.start();
+        }
     }
 
-    public boolean isActive() {
-        return active;
-    }
-
-    public void setActive(boolean active) {
-        this.active = active;
-    }
-
-    public boolean corrio() {
-        return finished;
-    }
-
-    public void setFinished(boolean finished) {
-        this.finished = finished;
-    }
-
-    public Runner getPrevRunner() {
-        return prevRunner;
-    }
 
     public void setPrevRunner(Runner prevRunner) {
         this.prevRunner = prevRunner;
     }
 
-    public boolean isFinished() {
-        return finished;
+    public void setNxtRunner(Runner nxtRunner) {
+        this.nxtRunner = nxtRunner;
     }
+
 
     public boolean isFirst() {
         return prevRunner == null && nxtRunner != null;
