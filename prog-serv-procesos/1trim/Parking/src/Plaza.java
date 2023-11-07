@@ -6,10 +6,6 @@ public class Plaza {
         this.n = n;
     }
 
-    public Plaza(int n, Car c) {
-        this.n = n;
-        this.car = c;
-    }
 
     public Car getCar() {
         return car;

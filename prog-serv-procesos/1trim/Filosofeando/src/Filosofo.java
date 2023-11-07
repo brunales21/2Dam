@@ -12,8 +12,8 @@ public class Filosofo extends Thread {
     private Random rand;
     private static final int MIN_TIME_COMIDA = 3;
     private static final int MAX_TIME_COMIDA = 5;
-    private static final int MAX_TIME_PENSANDO = 10;
-    private int offset = 20;
+    private static final int MAX_TIME_PENSANDO = 7;
+    private int offset = 31;
 
 
     public Filosofo(List<Palillo> palillos) {
@@ -21,11 +21,15 @@ public class Filosofo extends Thread {
         this.id = (int) (threadId()-offset);
         this.palillos = palillos;
         this.palilloIzq = palillos.get(id);
-        this.palilloDer = palillos.get(id+1);
-
         this.palilloIzq.setId(id);
-        this.palilloDer.setId(id+1);
+        if (this.id == palillos.size()-1) {
+            this.palilloDer = palillos.get(0);
+            this.palilloDer.setId(0);
+        } else {
+            this.palilloDer = palillos.get(id+1);
+            this.palilloDer.setId(id+1);
 
+        }
         this.quiereComer = false;
     }
 
@@ -34,7 +38,6 @@ public class Filosofo extends Thread {
     }
 
     public void pensar() {
-        int tiempoPensando = this.rand.nextInt(MAX_TIME_PENSANDO);
         if (!quiereComer) {
             System.out.println("Filosofo "+id+" pensando..");
         }
@@ -78,8 +81,9 @@ public class Filosofo extends Thread {
     public void run() {
         while (true) {
             pensar();
-            esperarSegundos(2);
+            esperarSegundos(this.rand.nextInt(MAX_TIME_PENSANDO));
             comer();
+            esperarSegundos(this.rand.nextInt(MAX_TIME_COMIDA));
         }
     }
 }

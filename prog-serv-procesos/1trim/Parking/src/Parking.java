@@ -5,7 +5,7 @@ public class Parking {
     private List<Plaza> plazas;
     private List<Car> colaCoches;
     private int currentCars;
-    private static final int MAX_CAPACITY = 30;
+    private static final int MAX_CAPACITY = 3;
 
     public Parking() {
         this.plazas = new ArrayList<>();
@@ -19,23 +19,32 @@ public class Parking {
         }
     }
 
-    public boolean addCar(Car c) {
-        if (!estaLleno()) {
+    public synchronized boolean addCar(Car c) {
+
+        if (hayHueco()) {
             getNextPlazaLibre().setCar(c);
             return true;
         } else {
-            colaCoches.add(c);
+            try {
+                colaCoches.add(c);
+                wait(); // Call wait() on the Parking object
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            }
             return false;
         }
     }
+
 
     public synchronized void removeCar(Car c) {
         Plaza plaza = plazas.stream().filter(p -> p.getCar() == c).toList().get(0);
         plaza.setCar(null);
         if (!colaCoches.isEmpty()) {
-            addCar(colaCoches.remove(0));
+            colaCoches.remove(0);
+            notify(); // Call notify() on the Parking object
         }
     }
+
 
     public Car getCarByPlazaNum(int n) {
         return plazas.stream().filter(p->p.getN() == n).toList().get(0).getCar();
@@ -57,16 +66,20 @@ public class Parking {
         this.currentCars = currentCars;
     }
 
-    public boolean estaLleno() {
+    public boolean hayHueco() {
         for (Plaza plaza : plazas) {
             if (plaza.getCar() == null) {
-                return false;
+                return true;
             }
         }
-        return true;
+        return false;
     }
 
     public List<Plaza> getPlazasLibres() {
         return plazas.stream().filter(p -> p.isLibre()).toList();
+    }
+
+    public boolean existsCar(Car c) {
+        return plazas.stream().anyMatch(p -> p.getCar() == c);
     }
 }

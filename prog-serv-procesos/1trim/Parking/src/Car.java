@@ -4,12 +4,16 @@ import java.util.Random;
 public class Car extends Thread {
     private Parking parking;
     private Random rand;
-    private static final int MAX_TIME_PARKED = 10;
-    private static final int MIN_TIME_PARKED = 3;
-
+    private final int offset = 30;
+    private int id;
+    private static final int MAX_TIME_PARKED = 8;
+    private static final int MIN_TIME_PARKED = 6;
+    private static final int MAX_TIME_OUT = 5;
+    private static final int MIN_TIME_OUT = 3;
     public Car(Parking parking) {
         this.parking = parking;
         this.rand = new Random();
+        this.id = (int) (threadId()-offset);
 
     }
 
@@ -24,15 +28,19 @@ public class Car extends Thread {
     @Override
     public void run() {
         while (true) {
-            int r = rand.nextInt(MIN_TIME_PARKED, MAX_TIME_PARKED);
-            if (!entrar()) {
-                System.out.println("Coche "+threadId()+" esperando en la cola.");
-            } else {
-                System.out.println("Coche "+threadId()+" aparco en "+getPlaza().getN());
-                ThreadUtils.esperarSegundos(r);
-                salir();
-                int r2 = rand.nextInt(2, 7);
-                ThreadUtils.esperarSegundos(r2);
+            if (!parking.existsCar(this)) {
+                if (entrar()) {
+                    System.out.println("coche "+id+" aparco en la plaza "+getPlaza().getN());
+                    ThreadUtils.esperarSegundos(rand.nextInt(MIN_TIME_PARKED, MAX_TIME_PARKED));
+                    salir();
+
+                    System.out.println("coche "+id+" salio del parking.");
+                    ThreadUtils.esperarSegundos(rand.nextInt(MIN_TIME_OUT, MAX_TIME_OUT));
+                } else {
+                    System.out.println("coche "+id+" quiere aparcar, parking lleno.");
+                }
+                System.out.println();
+
             }
 
         }
