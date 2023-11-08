@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Task3</string>
+    <string name="ocultar_teclado">Hide Keyboard</string>
+    <string name="alta_usuarios">User Registration</string>
+    <string name="nombre_hint">Name</string>
+    <string name="edad_hint">Age</string>
+    <string name="bebida_hint">Drink</string>
+    <string name="animal_preferido_hint">Favorite Animal</string>
+    <string name="anadir_button">Add</string>
+
+    <string name="cancelar_button">Cancel</string>
+
+</resources>

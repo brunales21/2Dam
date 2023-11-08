@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Tarea3</string>
+    <string name="ocultar_teclado">Ocultar teclado</string>
+    <string name="alta_usuarios">Alta de usuarios</string>
+    <string name="nombre_hint">Nombre</string>
+    <string name="edad_hint">Edad</string>
+    <string name="bebida_hint">Bebida</string>
+    <string name="animal_preferido_hint">Animal Preferido</string>
+    <string name="anadir_button">Añadir</string>
+
+    <string name="cancelar_button">Cancelar</string>
+
+
+</resources>
