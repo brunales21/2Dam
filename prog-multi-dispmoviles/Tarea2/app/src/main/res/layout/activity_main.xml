@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:orientation="vertical"
+    android:gravity="center_vertical">
+    <Button
+        android:id="@+id/btnOcultarTec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="end"
+        android:padding="25dp"
+        android:text="@string/ocultar_teclado"
+        android:layout_marginBottom="100dp"
+        android:onClick="ocultaTeclado"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/alta_usuarios"
+        android:gravity="center"
+        android:textSize="25dp"/>
+    <EditText
+        android:id="@+id/etNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/nombre_hint" />
+    <EditText
+        android:id="@+id/etEdad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/edad_hint" />
+
+    <EditText
+        android:id="@+id/etHoroscopo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/bebida_hint" />
+    <EditText
+        android:id="@+id/etAnimalPref"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/animal_preferido_hint" />
+
+    <Button
+        android:id="@+id/btnAniadir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="25dp"
+        android:text="@string/anadir_button"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:ems="15"/>
+
+    <Button
+        android:id="@+id/btnCancelar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="25dp"
+        android:text="@string/cancelar_button"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:ems="15"/>
+</LinearLayout>
