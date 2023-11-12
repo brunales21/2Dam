@@ -1,5 +1,6 @@
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
+import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
 
@@ -31,20 +32,19 @@ public class Main {
 
     public static void getConductorNombre() {
         Document document = getNormalizedDoc("C:\\Users\\bemim\\Workspace\\DAM\\2Dam\\acceso-datos\\recursos\\carrera.xml");
-        Element elRaiz = document.getDocumentElement();
-        NodeList participantes = document.getElementsByTagName("participante");
-        for (int i = 0; i < participantes.getLength(); i++) {
-            Element participante = (Element) participantes.item(i);
-            System.out.println(getNodo("nombre", participante));
-
-
+        Element raiz = document.getDocumentElement();
+        NodeList nd = raiz.getChildNodes();
+        for (int i = 0; i < nd.getLength(); i++) {
+            Node node = nd.item(i);
+            if (node.getNodeType() == Node.ELEMENT_NODE) {
+                Element element = (Element) node;
+                System.out.println("Elemento hijo "+i+" "+element.getTextContent());
+            }
         }
-
-
     }
 
-    public static String getNodo(String etiqueta, Element elem) {
+    public static Node getNodo(String etiqueta, Element elem) {
         NodeList nodeList = elem.getElementsByTagName(etiqueta).item(0).getChildNodes();
-        return nodeList.item(0)
+        return nodeList.item(0);
     }
 }
