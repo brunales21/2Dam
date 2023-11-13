@@ -4,7 +4,6 @@ import java.util.Random;
 
 public class Relevos {
     private List<Runner> runners;
-    private Random rand;
 
 
     public Relevos() {

@@ -12,9 +12,9 @@ public class Cena {
 
     }
 
-    public void init(int cant) {
+    public void init(int cant, int offset) {
         for (int i = 0; i < cant; i++) {
-            new Filosofo(this.palillos).start();
+            new Filosofo(this.palillos, offset).start();
         }
     }
 }

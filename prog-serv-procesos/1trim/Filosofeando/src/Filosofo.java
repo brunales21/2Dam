@@ -13,10 +13,10 @@ public class Filosofo extends Thread {
     private static final int MIN_TIME_COMIDA = 3;
     private static final int MAX_TIME_COMIDA = 5;
     private static final int MAX_TIME_PENSANDO = 7;
-    private int offset = 31;
+    private int offset;
 
 
-    public Filosofo(List<Palillo> palillos) {
+    public Filosofo(List<Palillo> palillos, int offset) {
         this.rand = new Random();
         this.id = (int) (threadId()-offset);
         this.palillos = palillos;
@@ -73,7 +73,7 @@ public class Filosofo extends Thread {
         return palilloDer.isDisponible() && palilloIzq.isDisponible();
     }
 
-    public void usarPalillos(boolean b) {
+    public synchronized void usarPalillos(boolean b) {
         palilloDer.setDisponible(!b);
         palilloIzq.setDisponible(!b);
     }
