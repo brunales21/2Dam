@@ -2,31 +2,35 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingLeft="16dp"
-    android:paddingRight="16dp"
+    android:background="@color/pinkywinky"
+    android:gravity="center_vertical"
     android:orientation="vertical"
-    android:gravity="center_vertical">
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp">
+
     <Button
         android:id="@+id/btnOcultarTec"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:gravity="end"
-        android:padding="25dp"
+        android:onClick="ocultaTeclado"
         android:text="@string/ocultar_teclado"
-        android:layout_marginBottom="100dp"
-        android:onClick="ocultaTeclado"/>
+        android:textColor="@color/azulon" />
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/alta_usuarios"
         android:gravity="center"
-        android:textSize="25dp"/>
+        android:hint="@string/alta_usuarios"
+        android:textSize="25dp" />
+
     <EditText
         android:id="@+id/etNombre"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/nombre_hint" />
+
     <EditText
         android:id="@+id/etEdad"
         android:layout_width="match_parent"
@@ -38,29 +42,53 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/bebida_hint" />
+
     <EditText
         android:id="@+id/etAnimalPref"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/animal_preferido_hint" />
 
-    <Button
-        android:id="@+id/btnAniadir"
-        android:layout_width="wrap_content"
+    <!-- Nuevos elementos del formulario -->
+    <EditText
+        android:id="@+id/etCorreo"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="25dp"
-        android:text="@string/anadir_button"
-        android:gravity="center"
-        android:layout_gravity="center"
-        android:ems="15"/>
+        android:hint="@string/correo_hint" />
 
-    <Button
-        android:id="@+id/btnCancelar"
-        android:layout_width="wrap_content"
+    <EditText
+        android:id="@+id/etTelefono"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="25dp"
-        android:text="@string/cancelar_button"
-        android:gravity="center"
-        android:layout_gravity="center"
-        android:ems="15"/>
+        android:hint="@string/telefono_hint" />
+
+    <!-- Contenedor horizontal para los botones de aceptar y cancelar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnAniadir"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:ems="15"
+            android:gravity="center"
+            android:padding="25dp"
+            android:text="@string/anadir_button" />
+
+        <Button
+            android:id="@+id/btnCancelar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:ems="15"
+            android:gravity="center"
+            android:padding="25dp"
+            android:text="@string/cancelar_button" />
+
+    </LinearLayout>
 </LinearLayout>

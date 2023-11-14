@@ -10,6 +10,7 @@
     <string name="anadir_button">Añadir</string>
 
     <string name="cancelar_button">Cancelar</string>
-
+    <string name="correo_hint">Correo</string>
+    <string name="telefono_hint">Telefono</string>
 
 </resources>

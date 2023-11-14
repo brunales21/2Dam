@@ -3,10 +3,15 @@ package com.example.tarea2;
 public class PreferenciasPersona extends Persona {
     private String bebida;
     private String animalPreferido;
-    public PreferenciasPersona(String nombre, int edad, String bebida, String animalPreferido) {
+    private String emailAdress;
+    private String phoneNumber;
+
+    public PreferenciasPersona(String nombre, int edad, String bebida, String animalPreferido, String emailAdress, String phoneNumber) {
         super(nombre, edad);
         this.bebida = bebida;
         this.animalPreferido = animalPreferido;
+        this.emailAdress = emailAdress;
+        this.phoneNumber = phoneNumber;
     }
 
     public String getBebida() {
@@ -27,9 +32,11 @@ public class PreferenciasPersona extends Persona {
 
     @Override
     public String toString() {
-        return
+        return "PreferenciasPersona{" +
                 "bebida='" + bebida + '\'' +
                 ", animalPreferido='" + animalPreferido + '\'' +
+                ", emailAdress='" + emailAdress + '\'' +
+                ", phoneNumber='" + phoneNumber + '\'' +
                 ", nombre='" + nombre + '\'' +
                 ", edad=" + edad +
                 '}';

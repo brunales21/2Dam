@@ -8,7 +8,8 @@
     <string name="bebida_hint">Drink</string>
     <string name="animal_preferido_hint">Favorite Animal</string>
     <string name="anadir_button">Add</string>
-
     <string name="cancelar_button">Cancel</string>
+    <string name="correo_hint">Email adress</string>
+    <string name="telefono_hint">Phone number</string>
 
 </resources>

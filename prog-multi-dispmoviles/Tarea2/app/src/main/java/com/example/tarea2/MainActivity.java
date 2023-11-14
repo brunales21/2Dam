@@ -4,7 +4,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
 import android.os.Bundle;
-import android.view.DragEvent;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.inputmethod.InputMethodManager;
@@ -13,7 +12,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-    EditText etNombre, etEdad, etHoroscopo, etAnimalPref;
+    EditText etNombre, etEdad, etHoroscopo, etAnimalPref, etCorreo, etTelefono;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +22,9 @@ public class MainActivity extends AppCompatActivity {
         etEdad=findViewById(R.id.etEdad);
         etHoroscopo=findViewById(R.id.etHoroscopo);
         etAnimalPref=findViewById(R.id.etAnimalPref);
+        etCorreo = findViewById(R.id.etCorreo);
+        etTelefono = findViewById(R.id.etTelefono);
+
 
 
         Button ocultarTec=(Button)findViewById (R.id.btnOcultarTec);
@@ -36,8 +38,8 @@ public class MainActivity extends AppCompatActivity {
         aniadir.setOnClickListener (new OnClickListener () {
             @Override
             public void onClick(View v) {
-                Toast.makeText (MainActivity.this,"usuario dado de alta".toString (),Toast.LENGTH_LONG).show ();
-                PreferenciasPersona p=new PreferenciasPersona (etNombre.getText().toString(), Integer.parseInt(etEdad.getText().toString()), etHoroscopo.getText().toString(), etAnimalPref.getText().toString());
+                Toast.makeText (MainActivity.this,"usuario dado de alta".toString(),Toast.LENGTH_LONG).show ();
+                PreferenciasPersona p=new PreferenciasPersona (etNombre.getText().toString(), Integer.parseInt(etEdad.getText().toString()), etHoroscopo.getText().toString(), etAnimalPref.getText().toString(), etCorreo.getText().toString(), etTelefono.getText().toString());
                 String mensaje=p+ " fue dada de alta";
                 Toast t= Toast.makeText (MainActivity.this,mensaje,Toast.LENGTH_LONG);
                 t.show ();
