@@ -1,6 +1,8 @@
 package com.example.tarea2;
 
+
 import androidx.appcompat.app.AppCompatActivity;
+
 
 import android.content.Context;
 import android.os.Bundle;
@@ -11,8 +13,10 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+
 public class MainActivity extends AppCompatActivity {
-    EditText etNombre, etEdad, etHoroscopo, etAnimalPref, etCorreo, etTelefono;
+    EditText etNombre, etEdad, etHoroscopo, etAnimalPref, etCorreo, etTelefono, etdni;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +28,10 @@ public class MainActivity extends AppCompatActivity {
         etAnimalPref=findViewById(R.id.etAnimalPref);
         etCorreo = findViewById(R.id.etCorreo);
         etTelefono = findViewById(R.id.etTelefono);
+        etdni = findViewById(R.id.etdni);
+
+
+
 
 
 
@@ -38,31 +46,46 @@ public class MainActivity extends AppCompatActivity {
         aniadir.setOnClickListener (new OnClickListener () {
             @Override
             public void onClick(View v) {
-                Toast.makeText (MainActivity.this,"usuario dado de alta".toString(),Toast.LENGTH_LONG).show ();
-                PreferenciasPersona p=new PreferenciasPersona (etNombre.getText().toString(), Integer.parseInt(etEdad.getText().toString()), etHoroscopo.getText().toString(), etAnimalPref.getText().toString(), etCorreo.getText().toString(), etTelefono.getText().toString());
-                String mensaje=p+ " fue dada de alta";
+                Toast.makeText (MainActivity.this,"usuario dado de alta".toString (),Toast.LENGTH_LONG).show ();
+                PreferenciasPersona p=new PreferenciasPersona (etNombre.getText().toString(), Integer.parseInt(etEdad.getText().toString()), etHoroscopo.getText().toString(), etAnimalPref.getText().toString(), etCorreo.getText().toString(), etTelefono.getText().toString(), etdni.getText().toString());
+                String mensaje;
+
+                if (p.comprobarDni(p.getDni())) {
+                    mensaje=p+ " fue dada de alta";
+                } else {
+                    mensaje="dni invalido";
+
+                }
                 Toast t= Toast.makeText (MainActivity.this,mensaje,Toast.LENGTH_LONG);
                 t.show ();
                 //Cambio el texto que aparece en el botón
-                String textoBtnAniadir=aniadir.getText ().toString ();
-                if (textoBtnAniadir.equals (getResources ().getString (R.string.alta_usuarios))){
-                    aniadir.setText (getResources ().getString (R.string.anadir_button));
+                String textoBtnAniadir=aniadir.getText().toString ();
+                if (textoBtnAniadir.equals (getResources().getString (R.string.alta_usuarios))){
+                    aniadir.setText (getResources().getString (R.string.anadir_button));
                 }else{
-                    aniadir.setText (getResources ().getString (R.string.alta_usuarios));
+                    aniadir.setText (getResources().getString (R.string.alta_usuarios));
+
 
                 }
+
 
             }
         });
 
 
+
+
     }
+
 
     public void ocultaTeclado(){
         InputMethodManager imm=(InputMethodManager)this.getSystemService (Context.INPUT_METHOD_SERVICE);
         imm.hideSoftInputFromWindow (this.getWindow ().peekDecorView ().getWindowToken (), 0);
 
+
     }
+
+
 
 
 }

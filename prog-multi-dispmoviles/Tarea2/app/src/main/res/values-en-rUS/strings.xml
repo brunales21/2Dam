@@ -10,6 +10,7 @@
     <string name="anadir_button">Add</string>
     <string name="cancelar_button">Cancel</string>
     <string name="correo_hint">Email adress</string>
-    <string name="telefono_hint">Phone number</string>
+    <string name="telefono_hint">Telefono</string>
+    <string name="dni">dni</string>
 
 </resources>

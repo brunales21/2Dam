@@ -8,9 +8,10 @@
     <string name="bebida_hint">Bebida</string>
     <string name="animal_preferido_hint">Animal Preferido</string>
     <string name="anadir_button">Añadir</string>
-
     <string name="cancelar_button">Cancelar</string>
     <string name="correo_hint">Correo</string>
     <string name="telefono_hint">Telefono</string>
+    <string name="dni">dni</string>
+
 
 </resources>
