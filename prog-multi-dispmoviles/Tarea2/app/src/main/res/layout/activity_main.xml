@@ -77,24 +77,12 @@
 
         <Button
             android:id="@+id/btnAniadir"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:layout_gravity="center"
-            android:ems="15"
-            android:gravity="center"
-            android:padding="25dp"
+            style="@style/estilo1"
             android:text="@string/anadir_button" />
 
         <Button
             android:id="@+id/btnCancelar"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:layout_gravity="center"
-            android:ems="15"
-            android:gravity="center"
-            android:padding="25dp"
+            style="@style/estilo2"
             android:text="@string/cancelar_button" />
 
     </LinearLayout>
