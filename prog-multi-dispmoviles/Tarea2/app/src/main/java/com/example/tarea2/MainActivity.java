@@ -30,51 +30,41 @@ public class MainActivity extends AppCompatActivity {
         etTelefono = findViewById(R.id.etTelefono);
         etdni = findViewById(R.id.etdni);
 
-
-
-
-
-
         Button ocultarTec=(Button)findViewById (R.id.btnOcultarTec);
-        ocultarTec.setOnClickListener(new OnClickListener () {
+        ocultarTec.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
-                ocultaTeclado ();
+                ocultaTeclado();
             }
         });
         Button aniadir=(Button)findViewById (R.id.btnAniadir);
         aniadir.setOnClickListener (new OnClickListener () {
             @Override
             public void onClick(View v) {
-                Toast.makeText (MainActivity.this,"usuario dado de alta".toString (),Toast.LENGTH_LONG).show ();
-                PreferenciasPersona p=new PreferenciasPersona (etNombre.getText().toString(), Integer.parseInt(etEdad.getText().toString()), etHoroscopo.getText().toString(), etAnimalPref.getText().toString(), etCorreo.getText().toString(), etTelefono.getText().toString(), etdni.getText().toString());
-                String mensaje;
+                String mensaje = "";
+
+                PreferenciasPersona p = new PreferenciasPersona(etNombre.getText().toString(), etEdad.getText().toString(), etHoroscopo.getText().toString(), etAnimalPref.getText().toString(), etCorreo.getText().toString(), etTelefono.getText().toString(), etdni.getText().toString());
 
                 if (p.comprobarDni(p.getDni())) {
                     mensaje=p+ " fue dada de alta";
                 } else {
                     mensaje="dni invalido";
-
                 }
+                Toast.makeText (MainActivity.this, mensaje,Toast.LENGTH_LONG).show();
+
                 Toast t= Toast.makeText (MainActivity.this,mensaje,Toast.LENGTH_LONG);
-                t.show ();
+                t.show();
                 //Cambio el texto que aparece en el botón
                 String textoBtnAniadir=aniadir.getText().toString ();
                 if (textoBtnAniadir.equals (getResources().getString (R.string.alta_usuarios))){
                     aniadir.setText (getResources().getString (R.string.anadir_button));
-                }else{
+                } else {
                     aniadir.setText (getResources().getString (R.string.alta_usuarios));
-
-
                 }
 
 
             }
         });
-
-
-
-
     }
 
 

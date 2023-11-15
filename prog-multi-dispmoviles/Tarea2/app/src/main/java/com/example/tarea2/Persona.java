@@ -1,12 +1,14 @@
 package com.example.tarea2;
 
+import java.util.InputMismatchException;
+
 public class Persona {
     protected String nombre;
-    protected int edad;
+    protected String edad;
 
-    public Persona(String nombre,int edad) {
+    public Persona(String nombre, String edad) {
         this.nombre = nombre;
-        this.edad = edad;
+        setEdad(edad);
     }
 
     public String getNombre() {
@@ -17,12 +19,18 @@ public class Persona {
         this.nombre = nombre;
     }
 
-    public int getEdad() {
+    public String getEdad() {
         return edad;
     }
 
-    public void setEdad(int edad) {
-        this.edad = edad;
+    public void setEdad(String edad) {
+        StringBuilder edadLimpia = new StringBuilder();
+        for (int i = 0; i < edad.length(); i++) {
+            if (!Character.isLetter(edad.charAt(i))) {
+                edadLimpia.append(edad.charAt(i));
+            }
+        }
+        this.edad = edadLimpia.toString();
     }
 
     @Override

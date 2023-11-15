@@ -1,6 +1,7 @@
 package com.example.tarea2;
 
 import java.util.HashMap;
+import java.util.InputMismatchException;
 import java.util.Map;
 import java.util.Objects;
 
@@ -11,7 +12,7 @@ public class PreferenciasPersona extends Persona {
     private String phoneNumber;
     private String dni;
 
-    public PreferenciasPersona(String nombre, int edad, String bebida, String animalPreferido, String emailAdress, String phoneNumber, String dni) {
+    public PreferenciasPersona(String nombre, String edad, String bebida, String animalPreferido, String emailAdress, String phoneNumber, String dni) throws NumberFormatException {
         super(nombre, edad);
         this.bebida = bebida;
         this.animalPreferido = animalPreferido;
@@ -24,48 +25,44 @@ public class PreferenciasPersona extends Persona {
         if (dni.length() != 9) {
             return false;
         }
-        Map<Integer, Character> map = crearMapaDNI();
-        char letra = dni.charAt(dni.length()-1);
-        System.out.println(letra);
+        Map<Integer, String > map = crearMapaDNI();
+        String letra = String.valueOf(dni.charAt(dni.length()-1));
         try {
             int n = Integer.parseInt(dni.substring(0, dni.length()-1));
             int num = n%23;
-            return map.get(num) == letra;
-
-
+            return map.get(num).equalsIgnoreCase(letra);
         } catch (Exception e) {
-            System.out.println(e.getCause());
             return false;
         }
     }
 
-    private Map<Integer, Character> crearMapaDNI() {
-        Map<Integer, Character> dniMap = new HashMap<>();
+    private Map<Integer, String> crearMapaDNI() {
+        Map<Integer, String> dniMap = new HashMap<>();
 
         // Asignar números del 0 al 22 con los caracteres correspondientes
-        dniMap.put(0, 'T');
-        dniMap.put(1, 'R');
-        dniMap.put(2, 'W');
-        dniMap.put(3, 'A');
-        dniMap.put(4, 'G');
-        dniMap.put(5, 'M');
-        dniMap.put(6, 'Y');
-        dniMap.put(7, 'F');
-        dniMap.put(8, 'P');
-        dniMap.put(9, 'D');
-        dniMap.put(10, 'X');
-        dniMap.put(11, 'B');
-        dniMap.put(12, 'N');
-        dniMap.put(13, 'J');
-        dniMap.put(14, 'Z');
-        dniMap.put(15, 'S');
-        dniMap.put(16, 'Q');
-        dniMap.put(17, 'V');
-        dniMap.put(18, 'H');
-        dniMap.put(19, 'L');
-        dniMap.put(20, 'C');
-        dniMap.put(21, 'K');
-        dniMap.put(22, 'E');
+        dniMap.put(0, "T");
+        dniMap.put(1, "R");
+        dniMap.put(2, "W");
+        dniMap.put(3, "A");
+        dniMap.put(4, "G");
+        dniMap.put(5, "M");
+        dniMap.put(6, "Y");
+        dniMap.put(7, "F");
+        dniMap.put(8, "P");
+        dniMap.put(9, "D");
+        dniMap.put(10, "X");
+        dniMap.put(11, "B");
+        dniMap.put(12, "N");
+        dniMap.put(13, "J");
+        dniMap.put(14, "Z");
+        dniMap.put(15, "S");
+        dniMap.put(16, "Q");
+        dniMap.put(17, "V");
+        dniMap.put(18, "H");
+        dniMap.put(19, "L");
+        dniMap.put(20, "C");
+        dniMap.put(21, "K");
+        dniMap.put(22, "E");
 
         return dniMap;
     }
