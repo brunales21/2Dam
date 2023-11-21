@@ -1,4 +1,5 @@
-import java.util.EnumMap;
+package ejsParte1;
+
 import java.util.List;
 
 public class Main {
@@ -11,23 +12,27 @@ public class Main {
         /*
         // ej1
 
-        List<Empleado> empleadosVentas = daoSql.getEmpleadosFromDepartamento("Ventas");
+        List<ejsParte1.Empleado> empleadosVentas = daoSql.getEmpleadosFromDepartamento("Ventas");
         daoSql.showEmpleados(empleadosVentas);
 
          */
 /*
         //ej2
-        List<Empleado> empleadosEjecutivosMarketing = daoSql.getEmpleadosFromDepartamentos("Ejecutivo", "Marketing");
+        List<ejsParte1.Empleado> empleadosEjecutivosMarketing = daoSql.getEmpleadosFromDepartamentos("Ejecutivo", "Marketing");
         daoSql.showEmpleados(empleadosEjecutivosMarketing);
 
  */
 
         //ej3
+        /*
         List<Empleado> empEjecutivos = daoSql.getEmpleadosFromDepartamento("Ejecutivo");
         List<Empleado> empAdministracion = daoSql.getEmpleadosFromDepartamento("Administracion");
 
         daoSql.showEmpleados(empEjecutivos);
         daoSql.showEmpleados(empAdministracion);
+
+         */
+
 
 
 

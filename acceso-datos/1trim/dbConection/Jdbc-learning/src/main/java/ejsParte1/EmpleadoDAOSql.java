@@ -1,4 +1,5 @@
-import java.io.Externalizable;
+package ejsParte1;
+
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -85,6 +86,7 @@ public class EmpleadoDAOSql {
         }
         return empleado;
     }
+
 
 
     public Empleado getEmpleadoById(int id) {

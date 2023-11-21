@@ -1,6 +1,12 @@
-import java.text.SimpleDateFormat;
+package ejsParte1;
+
+import lombok.Getter;
+import lombok.Setter;
+
 import java.util.Date;
 
+@Getter
+@Setter
 public class Empleado {
     private int idEmpleado;
     private String nombre;
@@ -57,7 +63,7 @@ public class Empleado {
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
-        sb.append("Empleado{idEmpleado=").append(idEmpleado);
+        sb.append("ejsParte1.Empleado{idEmpleado=").append(idEmpleado);
         sb.append(", nombre='").append(nombre).append('\'');
         sb.append(", apellido='").append(apellido).append('\'');
         sb.append(", email='").append(email).append('\'');
