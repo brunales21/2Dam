@@ -75,6 +75,9 @@ public class MainActivity extends AppCompatActivity {
 
         // Agrega el bloque correspondiente para el botón Rojo
 
+        Button botonRojo = findViewById(R.id.botonRojo);
+        botonRojo.setEnabled(true);
+
         mostrarMensaje("Contadores reiniciados");
     }
 
@@ -83,7 +86,7 @@ public class MainActivity extends AppCompatActivity {
             contadorNegro++;
             evaluarContadores();
             Button botonNegro = (Button) view;
-            botonNegro.setEnabled(false); // Deshabilita el botón después de hacer clic
+            //botonNegro.setEnabled(false); // Deshabilita el botón después de hacer clic
         } else {
             mostrarMensaje("Ya has alcanzado el límite de clics");
         }
@@ -94,7 +97,7 @@ public class MainActivity extends AppCompatActivity {
             contadorRojo++;
             evaluarContadores();
             Button botonRojo = (Button) view;
-            botonRojo.setEnabled(false); // Deshabilita el botón después de hacer clic
+            //botonRojo.setEnabled(false); // Deshabilita el botón después de hacer clic
         } else {
             mostrarMensaje("Ya has alcanzado el límite de clics");
         }
