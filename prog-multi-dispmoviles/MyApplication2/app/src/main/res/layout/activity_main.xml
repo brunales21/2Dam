@@ -18,18 +18,18 @@
         android:layout_columnSpan="3"
         android:layout_columnWeight="1"
         android:onClick="onClickReiniciarContadores"
-        android:backgroundTint="#0A8ADF"
-        android:text="Reiniciar" />
+        android:backgroundTint="@color/color_azul"
+        android:text="@string/reiniciar" />
 
     <Button
         android:id="@+id/botonNegro"
+        style="@style/BotonEstilo"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_columnWeight="1"
         android:layout_rowWeight="1"
-        android:backgroundTint="#000000"
-        android:onClick="onClickBotonNegro"
-        android:radius="0dp"/>
+        android:backgroundTint="@color/color_negro"
+        android:onClick="onClickBotonNegro" />
 
     <Button
         android:id="@+id/botonRojo"
@@ -37,9 +37,8 @@
         android:layout_height="0dp"
         android:layout_columnWeight="1"
         android:layout_rowWeight="1"
-        android:backgroundTint="#A80A0A"
+        android:backgroundTint="@color/color_rojo"
         android:onClick="onClickBotonRojo"
-        android:radius="0dp"
         />
 
     <Button
@@ -48,33 +47,8 @@
         android:layout_height="0dp"
         android:layout_columnWeight="1"
         android:layout_rowWeight="1"
-        android:backgroundTint="#000000"
+        android:backgroundTint="@color/color_negro"
         android:onClick="onClickBotonNegro"
-        android:radius="0dp"
-
-        />
-
-    <Button
-        android:id="@+id/botonRojo"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_columnWeight="1"
-        android:layout_rowWeight="1"
-        android:backgroundTint="#A80A0A"
-        android:onClick="onClickBotonRojo"
-        android:radius="0dp"
-
-        />
-
-    <Button
-        android:id="@+id/botonNegro"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_columnWeight="1"
-        android:layout_rowWeight="1"
-        android:backgroundTint="#000000"
-        android:onClick="onClickBotonNegro"
-        android:radius="0dp"
 
         />
 
@@ -84,9 +58,8 @@
         android:layout_height="0dp"
         android:layout_columnWeight="1"
         android:layout_rowWeight="1"
-        android:backgroundTint="#A80A0A"
+        android:backgroundTint="@color/color_rojo"
         android:onClick="onClickBotonRojo"
-        android:radius="0dp"
 
         />
 
@@ -96,9 +69,8 @@
         android:layout_height="0dp"
         android:layout_columnWeight="1"
         android:layout_rowWeight="1"
-        android:backgroundTint="#000000"
+        android:backgroundTint="@color/color_negro"
         android:onClick="onClickBotonNegro"
-        android:radius="0dp"
 
         />
 
@@ -108,9 +80,8 @@
         android:layout_height="0dp"
         android:layout_columnWeight="1"
         android:layout_rowWeight="1"
-        android:backgroundTint="#A80A0A"
+        android:backgroundTint="@color/color_rojo"
         android:onClick="onClickBotonRojo"
-        android:radius="0dp"
 
         />
 
@@ -120,12 +91,33 @@
         android:layout_height="0dp"
         android:layout_columnWeight="1"
         android:layout_rowWeight="1"
-        android:backgroundTint="#000000"
+        android:backgroundTint="@color/color_negro"
         android:onClick="onClickBotonNegro"
-        android:radius="0dp"
 
         />
 
-    <!-- Repite el bloque de Button para el botón Rojo -->
+    <Button
+        android:id="@+id/botonRojo"
+                style="@style/BotonEstilo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:backgroundTint="@color/color_rojo"
+        android:onClick="onClickBotonRojo"
+
+        />
+
+    <Button
+        android:id="@+id/botonNegro"
+        style="@style/BotonEstilo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:backgroundTint="@color/color_negro"
+        android:onClick="onClickBotonNegro"
+
+        />
 
 </GridLayout>

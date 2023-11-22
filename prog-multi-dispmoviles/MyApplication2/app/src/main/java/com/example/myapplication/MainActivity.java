@@ -22,11 +22,21 @@ public class MainActivity extends AppCompatActivity {
 
         // Puedes repetir este bloque para el botón Rojo
         Button botonNegro = findViewById(R.id.botonNegro);
+        Button botonRojo = findViewById(R.id.botonRojo);
+
         Button botonReiniciar = findViewById(R.id.botonReiniciar);
         botonNegro.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 contadorNegro++;
+                evaluarContadores();
+            }
+        });
+
+        botonRojo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                contadorRojo++;
                 evaluarContadores();
             }
         });
