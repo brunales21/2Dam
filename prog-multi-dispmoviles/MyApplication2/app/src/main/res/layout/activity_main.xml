@@ -1,0 +1,131 @@
+<!-- activity_main.xml -->
+<GridLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/gridLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:columnCount="3"
+    android:rowCount="3"
+    android:layout_margin="88dp"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/botonReiniciar"
+        android:layout_width="135dp"
+        android:layout_height="1dp"
+        android:layout_rowWeight="1"
+        android:layout_columnSpan="3"
+        android:layout_columnWeight="1"
+        android:onClick="onClickReiniciarContadores"
+        android:backgroundTint="#0A8ADF"
+        android:text="Reiniciar" />
+
+    <Button
+        android:id="@+id/botonNegro"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:backgroundTint="#000000"
+        android:onClick="onClickBotonNegro"
+        android:radius="0dp"/>
+
+    <Button
+        android:id="@+id/botonRojo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:backgroundTint="#A80A0A"
+        android:onClick="onClickBotonRojo"
+        android:radius="0dp"
+        />
+
+    <Button
+        android:id="@+id/botonNegro"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:backgroundTint="#000000"
+        android:onClick="onClickBotonNegro"
+        android:radius="0dp"
+
+        />
+
+    <Button
+        android:id="@+id/botonRojo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:backgroundTint="#A80A0A"
+        android:onClick="onClickBotonRojo"
+        android:radius="0dp"
+
+        />
+
+    <Button
+        android:id="@+id/botonNegro"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:backgroundTint="#000000"
+        android:onClick="onClickBotonNegro"
+        android:radius="0dp"
+
+        />
+
+    <Button
+        android:id="@+id/botonRojo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:backgroundTint="#A80A0A"
+        android:onClick="onClickBotonRojo"
+        android:radius="0dp"
+
+        />
+
+    <Button
+        android:id="@+id/botonNegro"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:backgroundTint="#000000"
+        android:onClick="onClickBotonNegro"
+        android:radius="0dp"
+
+        />
+
+    <Button
+        android:id="@+id/botonRojo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:backgroundTint="#A80A0A"
+        android:onClick="onClickBotonRojo"
+        android:radius="0dp"
+
+        />
+
+    <Button
+        android:id="@+id/botonNegro"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:backgroundTint="#000000"
+        android:onClick="onClickBotonNegro"
+        android:radius="0dp"
+
+        />
+
+    <!-- Repite el bloque de Button para el botón Rojo -->
+
+</GridLayout>
