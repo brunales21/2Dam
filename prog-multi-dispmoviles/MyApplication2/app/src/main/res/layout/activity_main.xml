@@ -24,29 +24,19 @@
     <Button
         android:id="@+id/botonNegro"
         style="@style/BotonEstilo"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_columnWeight="1"
-        android:layout_rowWeight="1"
         android:backgroundTint="@color/color_negro"
         android:onClick="onClickBotonNegro" />
 
     <Button
         android:id="@+id/botonRojo"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_columnWeight="1"
-        android:layout_rowWeight="1"
+        style="@style/BotonEstilo"
         android:backgroundTint="@color/color_rojo"
         android:onClick="onClickBotonRojo"
         />
 
     <Button
         android:id="@+id/botonNegro"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_columnWeight="1"
-        android:layout_rowWeight="1"
+        style="@style/BotonEstilo"
         android:backgroundTint="@color/color_negro"
         android:onClick="onClickBotonNegro"
 
@@ -54,55 +44,7 @@
 
     <Button
         android:id="@+id/botonRojo"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_columnWeight="1"
-        android:layout_rowWeight="1"
-        android:backgroundTint="@color/color_rojo"
-        android:onClick="onClickBotonRojo"
-
-        />
-
-    <Button
-        android:id="@+id/botonNegro"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_columnWeight="1"
-        android:layout_rowWeight="1"
-        android:backgroundTint="@color/color_negro"
-        android:onClick="onClickBotonNegro"
-
-        />
-
-    <Button
-        android:id="@+id/botonRojo"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_columnWeight="1"
-        android:layout_rowWeight="1"
-        android:backgroundTint="@color/color_rojo"
-        android:onClick="onClickBotonRojo"
-
-        />
-
-    <Button
-        android:id="@+id/botonNegro"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_columnWeight="1"
-        android:layout_rowWeight="1"
-        android:backgroundTint="@color/color_negro"
-        android:onClick="onClickBotonNegro"
-
-        />
-
-    <Button
-        android:id="@+id/botonRojo"
-                style="@style/BotonEstilo"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_columnWeight="1"
-        android:layout_rowWeight="1"
+        style="@style/BotonEstilo"
         android:backgroundTint="@color/color_rojo"
         android:onClick="onClickBotonRojo"
 
@@ -111,10 +53,37 @@
     <Button
         android:id="@+id/botonNegro"
         style="@style/BotonEstilo"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_columnWeight="1"
-        android:layout_rowWeight="1"
+        android:backgroundTint="@color/color_negro"
+        android:onClick="onClickBotonNegro"
+
+        />
+
+    <Button
+        android:id="@+id/botonRojo"
+        style="@style/BotonEstilo"
+        android:backgroundTint="@color/color_rojo"
+        android:onClick="onClickBotonRojo"
+
+        />
+
+    <Button
+        android:id="@+id/botonNegro"
+        style="@style/BotonEstilo"
+        android:backgroundTint="@color/color_negro"
+        android:onClick="onClickBotonNegro"
+        />
+
+    <Button
+        android:id="@+id/botonRojo"
+        style="@style/BotonEstilo"
+        android:backgroundTint="@color/color_rojo"
+        android:onClick="onClickBotonRojo"
+
+        />
+
+    <Button
+        android:id="@+id/botonNegro"
+        style="@style/BotonEstilo"
         android:backgroundTint="@color/color_negro"
         android:onClick="onClickBotonNegro"
 
