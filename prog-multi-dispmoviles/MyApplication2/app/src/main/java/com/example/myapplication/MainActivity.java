@@ -3,7 +3,8 @@ package com.example.myapplication;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.GridLayout;
+import android.widget.ImageButton;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -12,39 +13,55 @@ public class MainActivity extends AppCompatActivity {
 
     private int contadorNegro = 0;
     private int contadorRojo = 0;
+    private TextView mensajeTextView;
+
+    private ImageButton botonNegro;
+    private ImageButton botonRojo;
+    private Button botonReiniciar;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        GridLayout gridLayout = findViewById(R.id.gridLayout);
+        botonNegro = findViewById(R.id.botonNegro);
+        botonRojo = findViewById(R.id.botonRojo);
+        botonReiniciar = findViewById(R.id.botonReiniciar);
 
-        // Puedes repetir este bloque para el botón Rojo
-        Button botonNegro = findViewById(R.id.botonNegro);
-        Button botonRojo = findViewById(R.id.botonRojo);
+        mensajeTextView = findViewById(R.id.mensajeTextView);
 
-        Button botonReiniciar = findViewById(R.id.botonReiniciar);
         botonNegro.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                contadorNegro++;
-                evaluarContadores();
+                if (contadorNegro + contadorRojo < 3) {
+                    contadorNegro++;
+                    evaluarContadores();
+                    botonNegro.setEnabled(true);
+                } else {
+                    mostrarMensaje("Ya has alcanzado el límite de clics");
+                }
             }
         });
 
         botonRojo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                contadorRojo++;
-                evaluarContadores();
+                if (contadorNegro + contadorRojo < 3) {
+                    contadorRojo++;
+                    evaluarContadores();
+                    botonRojo.setEnabled(true);
+                } else {
+                    mostrarMensaje("Ya has alcanzado el límite de clics");
+                }
             }
         });
 
         botonReiniciar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                onClickReiniciarContadores();
+                reiniciarContadores();
             }
         });
     }
@@ -55,51 +72,23 @@ public class MainActivity extends AppCompatActivity {
                 mostrarMensaje("Estás pesimista");
             } else if (contadorRojo > contadorNegro) {
                 mostrarMensaje("Estás optimista");
-            } else {
-                mostrarMensaje("No hay una tendencia clara");
             }
         }
     }
 
-    private void mostrarMensaje(String mensaje) {
-        Toast.makeText(this, mensaje, Toast.LENGTH_SHORT).show();
-    }
-
-    private void onClickReiniciarContadores() {
+    private void reiniciarContadores() {
         contadorNegro = 0;
         contadorRojo = 0;
 
-        // Habilita todos los botones nuevamente
-        Button botonNegro = findViewById(R.id.botonNegro);
+        ImageButton botonNegro = findViewById(R.id.botonNegro);
         botonNegro.setEnabled(true);
 
-        // Agrega el bloque correspondiente para el botón Rojo
-
-        Button botonRojo = findViewById(R.id.botonRojo);
+        ImageButton botonRojo = findViewById(R.id.botonRojo);
         botonRojo.setEnabled(true);
 
         mostrarMensaje("Contadores reiniciados");
     }
-
-    public void onClickBotonNegro(View view) {
-        if (contadorNegro + contadorRojo < 3) {
-            contadorNegro++;
-            evaluarContadores();
-            Button botonNegro = (Button) view;
-            //botonNegro.setEnabled(false); // Deshabilita el botón después de hacer clic
-        } else {
-            mostrarMensaje("Ya has alcanzado el límite de clics");
-        }
-    }
-
-    public void onClickBotonRojo(View view) {
-        if (contadorNegro + contadorRojo < 3) {
-            contadorRojo++;
-            evaluarContadores();
-            Button botonRojo = (Button) view;
-            //botonRojo.setEnabled(false); // Deshabilita el botón después de hacer clic
-        } else {
-            mostrarMensaje("Ya has alcanzado el límite de clics");
-        }
+    private void mostrarMensaje(String mensaje) {
+        mensajeTextView.setText(mensaje);
     }
 }
