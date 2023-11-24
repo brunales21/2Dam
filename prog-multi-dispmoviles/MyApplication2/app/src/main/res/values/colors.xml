@@ -3,4 +3,6 @@
     <color name="color_negro">#000000</color>
     <color name="color_rojo">#A80A0A</color>
     <color name="color_azul">#0A8ADF</color>
+    <color name="color_verde">#00C604</color>
+
 </resources>

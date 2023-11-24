@@ -5,7 +5,33 @@ xmlns:tools="http://schemas.android.com/tools"
 xmlns:app="http://schemas.android.com/apk/res-auto"
 android:layout_width="match_parent"
 android:layout_height="match_parent"
-android:orientation="vertical">
+android:orientation="vertical"
+    android:background="@mipmap/img_11"
+>
+
+    <!-- TextView fuera del GridLayout -->
+    <TextView
+        android:id="@+id/mensajeTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="Bienvenido"
+        android:textColor="@color/color_verde"
+
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+<!-- Botón Reiniciar -->
+<Button
+    android:id="@+id/botonReiniciar"
+    android:layout_width="120dp"
+    android:layout_height="50dp"
+    android:layout_gravity="center"
+    android:backgroundTint="@color/color_azul"
+    android:layout_marginTop="15dp"
+
+    android:text="@string/reiniciar" />
 
 <GridLayout
     android:id="@+id/gridLayout"
@@ -14,33 +40,32 @@ android:orientation="vertical">
     android:layout_weight="1"
     android:columnCount="3"
     android:rowCount="3"
-    android:layout_margin="99dp"
+    android:layout_margin="44dp"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/botonReiniciar"
-        android:layout_width="135dp"
-        android:layout_height="1dp"
-        android:layout_rowWeight="1"
-        android:layout_columnSpan="3"
-        android:layout_columnWeight="1"
-        android:backgroundTint="@color/color_azul"
-        android:text="@string/reiniciar" />
 
 
     <ImageButton
 
-        android:id="@+id/botonNegro"
+        android:id="@+id/botonNegro1"
         style="@style/BotonEstilo"
-        android:background="@mipmap/p"
+        android:background="@mipmap/img_3"
         app:cornerRadius="0dp" />
 
 
     <ImageButton
 
-        android:id="@+id/botonRojo"
+        android:id="@+id/botonRojo1"
         style="@style/BotonEstilo"
-        android:background="@mipmap/p"
+        android:background="@mipmap/positive"
+        app:cornerRadius="0dp"
+        />
+
+    <ImageButton
+
+        android:id="@+id/botonNegro2"
+        style="@style/BotonEstilo"
+        android:background="@mipmap/img_7"
         app:cornerRadius="0dp"
 
 
@@ -48,9 +73,9 @@ android:orientation="vertical">
 
     <ImageButton
 
-        android:id="@+id/botonNegro"
+        android:id="@+id/botonRojo2"
         style="@style/BotonEstilo"
-        android:background="@mipmap/p"
+        android:background="@mipmap/img_12"
         app:cornerRadius="0dp"
 
 
@@ -58,9 +83,9 @@ android:orientation="vertical">
 
     <ImageButton
 
-        android:id="@+id/botonRojo"
+        android:id="@+id/botonNegro3"
         style="@style/BotonEstilo"
-        android:background="@mipmap/p"
+        android:background="@mipmap/img_5"
         app:cornerRadius="0dp"
 
 
@@ -68,61 +93,41 @@ android:orientation="vertical">
 
     <ImageButton
 
-        android:id="@+id/botonNegro"
+        android:id="@+id/botonRojo3"
         style="@style/BotonEstilo"
-        android:background="@mipmap/p"
+        android:background="@mipmap/img"
         app:cornerRadius="0dp"
 
 
         />
 
     <ImageButton
-
-        android:id="@+id/botonRojo"
+        android:id="@+id/botonNegro4"
         style="@style/BotonEstilo"
-        android:background="@mipmap/p"
-        app:cornerRadius="0dp"
-
-
-        />
-
-    <ImageButton
-        android:id="@+id/botonNegro"
-        style="@style/BotonEstilo"
-        android:background="@mipmap/p"
+        android:background="@mipmap/img_9"
         app:cornerRadius="0dp"
 
         />
 
     <ImageButton
 
-        android:id="@+id/botonRojo"
+        android:id="@+id/botonRojo4"
         style="@style/BotonEstilo"
-        android:background="@mipmap/p"
+        android:background="@mipmap/img_2"
         app:cornerRadius="0dp"
         />
 
     <ImageButton
 
-        android:id="@+id/botonNegro"
+        android:id="@+id/botonNegro5"
         style="@style/BotonEstilo"
-        android:background="@mipmap/p"
+        android:background="@mipmap/img_8"
         app:cornerRadius="0dp"
 
 
         />
 </GridLayout>
 
-<!-- TextView fuera del GridLayout -->
-    <TextView
-        android:id="@+id/mensajeTextView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:gravity="center"
-        android:text="Mensaje"
-        android:textColor="@android:color/black"
-        android:textSize="18sp"
-        android:textStyle="bold" />
+
 
 </LinearLayout>
