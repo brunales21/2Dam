@@ -1,4 +1,4 @@
-package XmlLearning;
+package xmlLearning;
 
 public class Libro {
     private String id;

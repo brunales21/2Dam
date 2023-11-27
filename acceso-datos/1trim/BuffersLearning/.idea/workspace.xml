@@ -4,34 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dca9e80f-2443-42e8-943d-75d707d363cb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../ExamPractice/almacenes/almacenBinario" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ExamPractice/src/AlmacenBinario/Direccion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ExamPractice/src/AlmacenBinario/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ExamPractice/src/AlmacenBinario/Persona.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ExamPractice/src/AlmacenBinario/PersonaSerializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ExamPractice/src/javaionio/JavaIo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ExamPractice/src/javaionio/JavaNIO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ExamPractice/src/javaionio/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Pokemon/Pokemon/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/StarWars/Character.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/csvDao/Character.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/StarWars/CharacterDAOFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/csvDao/CharacterDAOFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/StarWars/CharacterMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/csvDao/CharacterMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/StarWars/CharacterNoExisteException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/csvDao/CharacterNoExisteException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/StarWars/CharactersDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/csvDao/CharactersDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/StarWars/RepeatedCharacterException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/csvDao/RepeatedCharacterException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/daoLearning/NoMasPokemonsException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ObjectDao/NoMasPokemonsException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/daoLearning/Pokemon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ObjectDao/Pokemon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/daoLearning/PokemonDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ObjectDao/PokemonDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/daoLearning/PokemonDAOFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ObjectDao/PokemonDAOFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/daoLearning/PokemonDuplicadoException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ObjectDao/PokemonDuplicadoException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/daoLearning/PokemonMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ObjectDao/PokemonMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ExamPractice/out/production/ExamPractice/Libro.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ExamPractice/out/production/ExamPractice/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ExamPractice/out/production/ExamPractice/XMLRepaso.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ManejoFicheros/ManejoFicherosLearning/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ManejoFicheros/ManejoFicherosLearning/.idea/misc.xml" afterDir="false" />
-    </list>
+    <list default="true" id="dca9e80f-2443-42e8-943d-75d707d363cb" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

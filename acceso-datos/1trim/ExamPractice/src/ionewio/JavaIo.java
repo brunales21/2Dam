@@ -1,9 +1,7 @@
-package javaionio;
+package ionewio;
 
 import java.io.File;
-import java.io.FileOutputStream;
 import java.io.IOException;
-import java.nio.file.DirectoryStream;
 import java.util.ArrayList;
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package AlmacenBinario;
+package almacenBinario;
 
 import java.nio.file.Paths;
 import java.util.ArrayList;

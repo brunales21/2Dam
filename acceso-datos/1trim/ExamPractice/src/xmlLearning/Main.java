@@ -1,4 +1,4 @@
-package XmlLearning;
+package xmlLearning;
 
 public class Main {
     public static void main(String[] args) {

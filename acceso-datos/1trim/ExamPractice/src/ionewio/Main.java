@@ -1,6 +1,4 @@
-package javaionio;
-
-import java.io.File;
+package ionewio;
 
 public class Main {
     public static void main(String[] args) {
