@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?><libreria>
+  <libro id="1">
+    <titulo>Las leyes de la naturaleza humana</titulo>
+    <autor>Lamesa</autor>
+    <anio>2034</anio>
+  </libro>
+  <libro id="2">
+    <titulo>48 Leyes del poder</titulo>
+    <autor>Bruno</autor>
+    <anio>2024</anio>
+  </libro>
+  <libro id="3">
+    <titulo>Las leyes de la naturaleza alienígena</titulo>
+    <autor>Pepe</autor>
+    <anio>2134</anio>
+  </libro>
+  <libro id="1">
+    <titulo>Las leyes de la naturaleza humana</titulo>
+    <autor>Lamesa</autor>
+    <anio>2034</anio>
+  </libro>
+  <libro id="2">
+    <titulo>48 Leyes del poder</titulo>
+    <autor>Bruno</autor>
+    <anio>2024</anio>
+  </libro>
+  <libro id="3">
+    <titulo>Las leyes de la naturaleza alienígena</titulo>
+    <autor>Pepe</autor>
+    <anio>2134</anio>
+  </libro>
+  <libro id="1">
+    <titulo>Las leyes de la naturaleza humana</titulo>
+    <autor>Lamesa</autor>
+    <anio>2034</anio>
+  </libro>
+  <libro id="2">
+    <titulo>48 Leyes del poder</titulo>
+    <autor>Bruno</autor>
+    <anio>2024</anio>
+  </libro>
+  <libro id="3">
+    <titulo>Las leyes de la naturaleza alienígena</titulo>
+    <autor>Pepe</autor>
+    <anio>2134</anio>
+  </libro>
+</libreria>
