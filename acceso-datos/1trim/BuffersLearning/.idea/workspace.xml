@@ -5,7 +5,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dca9e80f-2443-42e8-943d-75d707d363cb" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../../../prog-multi-dispmoviles/Tarea2/app/src/main/java/com/example/tarea2/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../prog-multi-dispmoviles/Tarea2/app/src/main/java/com/example/tarea2/MainActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ExamPractice/almacenes/almacenBinario" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ExamPractice/src/AlmacenBinario/Direccion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ExamPractice/src/AlmacenBinario/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ExamPractice/src/AlmacenBinario/Persona.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ExamPractice/src/AlmacenBinario/PersonaSerializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ExamPractice/src/javaionio/JavaIo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ExamPractice/src/javaionio/JavaNIO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ExamPractice/src/javaionio/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Pokemon/Pokemon/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StarWars/Character.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/csvDao/Character.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StarWars/CharacterDAOFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/csvDao/CharacterDAOFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StarWars/CharacterMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/csvDao/CharacterMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StarWars/CharacterNoExisteException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/csvDao/CharacterNoExisteException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StarWars/CharactersDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/csvDao/CharactersDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StarWars/RepeatedCharacterException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/csvDao/RepeatedCharacterException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/daoLearning/NoMasPokemonsException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ObjectDao/NoMasPokemonsException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/daoLearning/Pokemon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ObjectDao/Pokemon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/daoLearning/PokemonDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ObjectDao/PokemonDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/daoLearning/PokemonDAOFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ObjectDao/PokemonDAOFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/daoLearning/PokemonDuplicadoException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ObjectDao/PokemonDuplicadoException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/daoLearning/PokemonMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ObjectDao/PokemonMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ExamPractice/out/production/ExamPractice/Libro.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ExamPractice/out/production/ExamPractice/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ExamPractice/out/production/ExamPractice/XMLRepaso.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ManejoFicheros/ManejoFicherosLearning/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ManejoFicheros/ManejoFicherosLearning/.idea/misc.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,19 +63,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/2DAM/workspace/2Dam/acceso-datos/1trim/dbConection/Jdbc-learning",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/bemim/Workspace/DAM/2Dam/acceso-datos/1trim/BuffersLearning&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="Application.CharacterMain">
+}</component>
+  <component name="RunManager" selected="Application.ArchivoTXT">
     <configuration name="ArchivoTXT" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ArchivoTXT" />
       <module name="BuffersLearning" />
@@ -59,11 +84,11 @@
       </method>
     </configuration>
     <configuration name="CharacterMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="StarWars.CharacterMain" />
+      <option name="MAIN_CLASS_NAME" value="csvDao.CharacterMain" />
       <module name="BuffersLearning" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="StarWars.*" />
+          <option name="PATTERN" value="csvDao.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -86,11 +111,11 @@
       </method>
     </configuration>
     <configuration name="PokemonMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="daoLearning.PokemonMain" />
+      <option name="MAIN_CLASS_NAME" value="ObjectDao.PokemonMain" />
       <module name="BuffersLearning" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="daoLearning.*" />
+          <option name="PATTERN" value="ObjectDao.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -100,8 +125,6 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.CharacterMain" />
-        <item itemvalue="Application.PokemonMain" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.JugadorFutbol" />
         <item itemvalue="Application.ArchivoTXT" />

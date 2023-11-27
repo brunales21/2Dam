@@ -1,7 +1,6 @@
-package StarWars;
+package csvDao;
 
 import csvUtils.ObjectToCSVConverter;
-import daoLearning.Pokemon;
 
 import java.io.*;
 import java.nio.file.Path;

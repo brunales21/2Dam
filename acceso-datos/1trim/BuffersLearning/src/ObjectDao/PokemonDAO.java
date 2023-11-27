@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package daoLearning;
+package ObjectDao;
 
 import java.nio.file.NoSuchFileException;
 import java.util.List;
@@ -28,9 +28,9 @@ public interface PokemonDAO {
      * Añade un nuevo elemento al almacén si hay sitio y no está ya.
      *
      * @param pokemon a añadir al almacén.
-     * @throws daoLearning.NoMasPokemonsException si el pokemon no se pudo
+     * @throws ObjectDao.NoMasPokemonsException si el pokemon no se pudo
      *      escribir.
-     * @throws daoLearning.PokemonDuplicadoException si el pokemon ya existía
+     * @throws ObjectDao.PokemonDuplicadoException si el pokemon ya existía
      *      en el almacén.
      */
     public void aniadir(Pokemon pokemon) throws NoMasPokemonsException,

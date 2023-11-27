@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="60b0177f-fb16-41b1-82ad-b822375cc338" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../ExamPractice/almacenes/almacenBinario" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ExamPractice/src/AlmacenBinario/Direccion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ExamPractice/src/AlmacenBinario/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ExamPractice/src/AlmacenBinario/Persona.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ExamPractice/src/AlmacenBinario/PersonaSerializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ExamPractice/src/javaionio/JavaIo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ExamPractice/src/javaionio/JavaNIO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ExamPractice/src/javaionio/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BuffersLearning/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../BuffersLearning/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BuffersLearning/src/StarWars/Character.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../BuffersLearning/src/csvDao/Character.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BuffersLearning/src/StarWars/CharacterDAOFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../BuffersLearning/src/csvDao/CharacterDAOFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BuffersLearning/src/StarWars/CharacterMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../BuffersLearning/src/csvDao/CharacterMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BuffersLearning/src/StarWars/CharacterNoExisteException.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../BuffersLearning/src/csvDao/CharacterNoExisteException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BuffersLearning/src/StarWars/CharactersDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../BuffersLearning/src/csvDao/CharactersDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BuffersLearning/src/StarWars/RepeatedCharacterException.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../BuffersLearning/src/csvDao/RepeatedCharacterException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BuffersLearning/src/daoLearning/NoMasPokemonsException.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../BuffersLearning/src/ObjectDao/NoMasPokemonsException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BuffersLearning/src/daoLearning/Pokemon.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../BuffersLearning/src/ObjectDao/Pokemon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BuffersLearning/src/daoLearning/PokemonDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../BuffersLearning/src/ObjectDao/PokemonDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BuffersLearning/src/daoLearning/PokemonDAOFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../BuffersLearning/src/ObjectDao/PokemonDAOFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BuffersLearning/src/daoLearning/PokemonDuplicadoException.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../BuffersLearning/src/ObjectDao/PokemonDuplicadoException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BuffersLearning/src/daoLearning/PokemonMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../BuffersLearning/src/ObjectDao/PokemonMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamPractice/out/production/ExamPractice/Libro.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamPractice/out/production/ExamPractice/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamPractice/out/production/ExamPractice/XMLRepaso.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ManejoFicheros/ManejoFicherosLearning/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../ManejoFicheros/ManejoFicherosLearning/.idea/misc.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2Ylpo7Zi3iM8c7qdVpbDTX7F67T" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/bemim/Workspace/DAM/2Dam/acceso-datos/1trim/BuffersLearning"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="60b0177f-fb16-41b1-82ad-b822375cc338" name="Changes" comment="" />
+      <created>1701110200595</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1701110200595</updated>
+    </task>
+    <servers />
+  </component>
+</project>

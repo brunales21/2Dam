@@ -1,10 +1,5 @@
-package StarWars;
+package csvDao;
 
-import java.io.Externalizable;
-import java.io.IOException;
-import java.io.ObjectInput;
-import java.io.ObjectOutput;
-import java.lang.reflect.Field;
 import java.util.Objects;
 
 public class Character {
