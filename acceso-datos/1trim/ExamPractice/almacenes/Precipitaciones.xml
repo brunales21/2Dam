@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?><precipitaciones>
+  <lugar>
+    <poblacion>El Escorial</poblacion>
+    <provincia>Madrid</provincia>
+    <cantidades>
+      <cantidad>5</cantidad>
+      <cantidad>1</cantidad>
+      <cantidad>9</cantidad>
+      <cantidad>9</cantidad>
+    </cantidades>
+  </lugar>
+  <lugar>
+    <poblacion>Béjar</poblacion>
+    <provincia>Salamanca</provincia>
+    <cantidades>
+      <cantidad>0</cantidad>
+      <!-- Incorrect value to demonstrate handling of incorrect data -->
+    </cantidades>
+  </lugar>
+  <lugar>
+    <poblacion>Segovia</poblacion>
+    <provincia>Castilla y León</provincia>
+    <cantidades>
+      <cantidad>3</cantidad>
+      <cantidad>8</cantidad>
+      <cantidad>2</cantidad>
+      <cantidad>10</cantidad>
+      <cantidad>11</cantidad>
+      <cantidad>1</cantidad>
+    </cantidades>
+  </lugar>
+  <lugar>
+    <poblacion>Colmenarejo</poblacion>
+    <provincia>Madrid</provincia>
+    <cantidades>
+      <cantidad>1</cantidad>
+      <cantidad>2</cantidad>
+      <cantidad>3</cantidad>
+    </cantidades>
+  </lugar>
+  <!-- Add more <lugar> elements for other locations -->
+</precipitaciones>

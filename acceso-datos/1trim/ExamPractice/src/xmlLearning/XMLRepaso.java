@@ -22,7 +22,6 @@ public class XMLRepaso {
     private final Document document;
 
 
-
     public XMLRepaso(String fileName) {
         this.document = getDocument(fileName);
         this.document.normalize();

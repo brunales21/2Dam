@@ -36,4 +36,23 @@ public class JavaNIO {
             throw new RuntimeException(e);
         }
     }
+
+    public void rmr(Path path) {
+        if (Files.isDirectory(path)) {
+            try {
+                for (Path path1: Files.newDirectoryStream(path)) {
+                    rmr(path1);
+                }
+                Files.delete(path);
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }
+        } else {
+            try {
+                Files.delete(path);
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }
+        }
+    }
 }
