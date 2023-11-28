@@ -7,10 +7,6 @@ import org.xml.sax.SAXException;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
-import javax.xml.transform.*;
-import javax.xml.transform.dom.DOMSource;
-import javax.xml.transform.stream.StreamResult;
-import javax.xml.transform.stream.StreamSource;
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -24,6 +20,31 @@ public class PrecipitacionesDom {
         this.document = getDocument(fileName);
         this.fileName = fileName;
 
+    }
+
+    public void borrarLugarByPoblacion(String poblacion) {
+        Element elementTarget = getElementLugarByPoblacion(poblacion);
+        document.getDocumentElement().removeChild(elementTarget);
+        XmlUtils.guardarDocumento(document, fileName);
+        XmlUtils.transformarXml(document, fileName);
+
+    }
+
+
+    public List<Element> getElementsLugarByProvincia(String provincia) {
+        List<Element> listaElementosLugar = new ArrayList<>();
+        NodeList elementosLugar = document.getDocumentElement().getChildNodes();
+        for (int i = 0; i < elementosLugar.getLength(); i++) {
+            Node lugarNode = elementosLugar.item(i);
+            if (lugarNode.getNodeType() == Node.ELEMENT_NODE) {
+                Element lugarElement = (Element) lugarNode;
+                Element provinciaElement = (Element) lugarElement.getElementsByTagName("provincia").item(0);
+                if (provinciaElement.getTextContent().equals(provincia)) {
+                    listaElementosLugar.add(lugarElement);
+                }
+            }
+        }
+        return listaElementosLugar;
     }
 
     public Document getDocument(String fileName) {

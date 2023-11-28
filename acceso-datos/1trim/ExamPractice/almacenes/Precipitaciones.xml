@@ -1,15 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><precipitaciones>
   <lugar>
-    <poblacion>El Escorial</poblacion>
-    <provincia>Madrid</provincia>
-    <cantidades>
-      <cantidad>5</cantidad>
-      <cantidad>1</cantidad>
-      <cantidad>9</cantidad>
-      <cantidad>9</cantidad>
-    </cantidades>
-  </lugar>
-  <lugar>
     <poblacion>Béjar</poblacion>
     <provincia>Salamanca</provincia>
     <cantidades>
