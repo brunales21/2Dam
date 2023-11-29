@@ -10,6 +10,7 @@ import javax.xml.parsers.ParserConfigurationException;
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class PrecipitacionesDom {
@@ -26,8 +27,44 @@ public class PrecipitacionesDom {
         Element elementTarget = getElementLugarByPoblacion(poblacion);
         document.getDocumentElement().removeChild(elementTarget);
         XmlUtils.guardarDocumento(document, fileName);
-        XmlUtils.transformarXml(document, fileName);
+    }
 
+    public void borrarLowestCantidad(String poblacion) {
+        Element lugarElement = getElementLugarByPoblacion(poblacion);
+        Element cantidadesElement = (Element) lugarElement.getElementsByTagName("cantidades").item(0);
+        Element cantidadElement = getLowestCantidad(poblacion);
+
+        cantidadesElement.removeChild(cantidadElement);
+        XmlUtils.guardarDocumento(document, fileName);
+    }
+
+
+    public Element getLowestCantidad(String poblacion) {
+        List<Element> cantidades = new ArrayList<>();
+        Element lugarElement = getElementLugarByPoblacion(poblacion);
+        Element cantidadesElement = (Element) lugarElement.getElementsByTagName("cantidades").item(0);
+        NodeList cantidadElements = cantidadesElement.getChildNodes();
+        for (int i = 0; i < cantidadElements.getLength(); i++) {
+            Node cantidadNode = cantidadElements.item(i);
+            if (cantidadNode.getNodeType() == Node.ELEMENT_NODE) {
+                Element cantidadElement = (Element) cantidadNode;
+                cantidades.add(cantidadElement);
+            }
+        }
+        return getLowestElementCantidad(cantidades);
+    }
+
+    public Element getLowestElementCantidad(List<Element> cantidades) {
+        int min = Integer.MAX_VALUE;
+        int index = 0;
+        for (int i = 0; i < cantidades.size(); i++) {
+            int valor = Integer.parseInt(cantidades.get(i).getTextContent());
+            if (valor < min) {
+                min = valor;
+                index = i;
+            }
+        }
+        return cantidades.get(index);
     }
 
 

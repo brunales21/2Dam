@@ -20,6 +20,7 @@ public class XmlUtils {
         } catch (Exception e) {
             e.printStackTrace();
         }
+        transformarXml(document, rutaXml);
     }
 
     public static void transformarXml(Document document, String rutaXml) {

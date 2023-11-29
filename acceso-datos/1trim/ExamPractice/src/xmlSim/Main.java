@@ -12,6 +12,9 @@ public class Main {
 
         //pdom.leerLugares(null).forEach(System.out::println);
         ///pdom.getElementsLugarByProvincia("Madrid").stream().forEach(p -> System.out.println(p.getTextContent()));
-        pdom.borrarLugarByPoblacion("El Escorial");
+        //pdom.borrarLugarByPoblacion("El Escorial");
+
+
+        pdom.borrarLowestCantidad("Segovia");
     }
 }
