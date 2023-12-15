@@ -42,6 +42,7 @@ public class PrecipitacionesDom {
     public Element getLowestCantidad(String poblacion) {
         List<Element> cantidades = new ArrayList<>();
         Element lugarElement = getElementLugarByPoblacion(poblacion);
+        NodeList elementsLugar = lugarElement.getChildNodes();
         Element cantidadesElement = (Element) lugarElement.getElementsByTagName("cantidades").item(0);
         NodeList cantidadElements = cantidadesElement.getChildNodes();
         for (int i = 0; i < cantidadElements.getLength(); i++) {
