@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
                 }
                 break;
 
-            case "CE":
+            case "DEL":
                 // Borra todo el contenido
                 editText.setText("");
                 break;
