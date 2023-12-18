@@ -1,0 +1,42 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Calculadora" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.Calculadora" />
+
+    <style name="CalculatorButton" parent="Widget.AppCompat.Button">
+        <item name="android:layout_width">95dp</item>
+        <item name="android:layout_height">95dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/calculator_button_text</item>
+    </style>
+
+    <style name="CalculatorButtonGreen" parent="CalculatorButton">
+        <item name="android:backgroundTint">@color/button_background_blue</item>
+
+    </style>
+
+    <style name="CalculatorButtonBlue" parent="CalculatorButton">
+        <item name="android:backgroundTint">@color/button_background_green</item>
+
+    </style>
+
+    <!-- Nuevos estilos para botones numéricos -->
+    <style name="CalculatorButtonNumeric" parent="CalculatorButtonBlue">
+        <!-- Puedes personalizar los estilos adicionales específicos de los botones numéricos aquí -->
+    </style>
+
+    <style name="calculator_edittext">
+        <item name="android:backgroundTint">@color/button_edit_text</item>
+    </style>
+
+    <!-- Nuevos estilos para botones no numéricos -->
+    <style name="CalculatorButtonNonNumeric" parent="CalculatorButtonGreen">
+        <!-- Puedes personalizar los estilos adicionales específicos de los botones no numéricos aquí -->
+
+    </style>
+</resources>

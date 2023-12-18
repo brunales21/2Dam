@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Color del texto de los botones de la calculadora -->
+    <color name="calculator_button_text">#FFFFFF</color>
+
+    <!-- Color de fondo para los botones numéricos (azules) -->
+    <color name="button_background_blue">#2196F3</color>
+
+    <!-- Color de fondo para los botones no numéricos (verdes) -->
+    <color name="button_background_green">#4CAF50</color>
+    <color name="button_edit_text">#CCC5C5</color>
+
+</resources>
