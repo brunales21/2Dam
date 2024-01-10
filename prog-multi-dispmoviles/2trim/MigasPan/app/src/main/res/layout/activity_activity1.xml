@@ -1,0 +1,43 @@
+<!-- res/layout/activity_activity1.xml -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".Activity1">
+
+    <TextView
+        android:id="@+id/textViewWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¡Bienvenido, Usuario!"
+        android:textSize="18sp"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:id="@+id/textViewBreadcrumb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewWelcome"
+        android:layout_marginTop="16dp"
+        android:text=""
+        android:textColor="#000000"/>
+
+    <Button
+        android:id="@+id/buttonBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewBreadcrumb"
+        android:layout_marginTop="16dp"
+        android:text="VOLVER"/>
+
+    <Button
+        android:id="@+id/buttonGoToActivity2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonBack"
+        android:layout_marginTop="16dp"
+        android:text="Ir a Actividad 2"/>
+
+</RelativeLayout>
