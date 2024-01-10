@@ -28,8 +28,16 @@ public class Activity1 extends AppCompatActivity {
         buttonBack = findViewById(R.id.buttonBack);
         buttonGoToActivity2 = findViewById(R.id.buttonGoToActivity2); // Agregado
 
-        String username = getIntent().getStringExtra("USERNAME");
+        String username1 = getIntent().getStringExtra("username1");
+        String username2 = getIntent().getStringExtra("username2");
+        String username;
 
+
+        if (username1 == null) {
+            username = username2;
+        } else {
+            username = username1;
+        }
         // Mostrar el nombre de usuario en la pantalla de bienvenida
         textViewWelcome.setText("¡Bienvenido, " + username + "!");
 
@@ -62,6 +70,8 @@ public class Activity1 extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(Activity1.this, Activity2.class);
                 intent.putExtra("path2", path);
+                intent.putExtra("username1", username);
+
                 startActivity(intent);
             }
         });

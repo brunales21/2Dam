@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
                 if (username.equals("FEDERICO") && password.equals("alumno@")) {
                     // Iniciar la actividad 1 y pasar el nombre de usuario como parámetro
                     Intent intent = new Intent(MainActivity.this, Activity1.class);
-                    intent.putExtra("USERNAME", username);
+                    intent.putExtra("username1", username);
                     intent.putExtra("path1", path);
 
                     startActivity(intent);

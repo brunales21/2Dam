@@ -15,6 +15,7 @@ public class Activity2 extends AppCompatActivity {
     private TextView textViewBreadcrumb;
     private Button buttonBack;
     private String path;
+    private String username;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +30,8 @@ public class Activity2 extends AppCompatActivity {
         // Establecer las migas de pan para Activity2
         textViewBreadcrumb.setText(path);
 
+        username = getIntent().getStringExtra("username1");
+
 
         // Mostrar "VOLVER" y configurar el clic para volver a Activity1
         buttonBack.setVisibility(View.VISIBLE);
@@ -37,7 +40,7 @@ public class Activity2 extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(Activity2.this, Activity1.class);
                 intent.putExtra("pathback", path);
-                System.out.println(path);
+                intent.putExtra("username2", username);
                 startActivity(intent);
             }
         });
