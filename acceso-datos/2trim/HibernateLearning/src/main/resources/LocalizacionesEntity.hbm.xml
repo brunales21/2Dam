@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="entities.LocalizacionesEntity" table="localizaciones" schema="empleados">
+        <id name="idLocalizacion">
+            <column name="id_localizacion" sql-type="int"/>
+        </id>
+        <property name="direccion">
+            <column name="direccion" sql-type="varchar(40)" length="40" not-null="true"/>
+        </property>
+        <property name="codigoPostal">
+            <column name="codigo_postal" sql-type="varchar(12)" length="12" not-null="true"/>
+        </property>
+        <property name="ciudad">
+            <column name="ciudad" sql-type="varchar(30)" length="30"/>
+        </property>
+        <property name="provincia">
+            <column name="provincia" sql-type="varchar(25)" length="25" not-null="true"/>
+        </property>
+        <property name="idPais">
+            <column name="id_pais" sql-type="char(2)" length="2" not-null="true"/>
+        </property>
+    </class>
+</hibernate-mapping>

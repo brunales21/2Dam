@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="2ce02dbc-baa3-4c39-bbd5-4760ecc93a47" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/entities/CategoriasProfEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/entities/DepartamentosEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/entities/EmpleadosEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/entities/HistorialTrabEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/entities/HistorialTrabEntityPK.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/entities/LocalizacionesEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/entities/PaisesEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/entities/RegionesEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/entities/TrabajosEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/CategoriasProfEntity.hbm.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/DepartamentosEntity.hbm.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/EmpleadosEntity.hbm.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/HistorialTrabEntity.hbm.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/LocalizacionesEntity.hbm.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/PaisesEntity.hbm.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/RegionesEntity.hbm.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/TrabajosEntity.hbm.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ORM_JPA_Hibernate/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ORM_JPA_Hibernate/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ORM_JPA_Hibernate/.idea/dbnavigator.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ORM_JPA_Hibernate/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ORM_JPA_Hibernate/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ORM_JPA_Hibernate/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ORM_JPA_Hibernate/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ORM_JPA_Hibernate/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ORM_JPA_Hibernate/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ORM_JPA_Hibernate/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ORM_JPA_Hibernate/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../prog-serv-procesos/2trim/TresEnRayaOnline-main/TresEnRayaOnline1.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../prog-multi-dispmoviles/2trim/PoliticasPriv/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../prog-multi-dispmoviles/2trim/PoliticasPriv/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../prog-multi-dispmoviles/2trim/PoliticasPriv/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../prog-multi-dispmoviles/2trim/PoliticasPriv/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../prog-multi-dispmoviles/2trim/PoliticasPriv/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../prog-multi-dispmoviles/2trim/PoliticasPriv/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../prog-multi-dispmoviles/2trim/PoliticasPriv/app/src/main/res/values/themes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../prog-multi-dispmoviles/2trim/PoliticasPriv/app/src/main/res/values/themes.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": 5
+}]]></component>
+  <component name="ProjectId" id="2b2GcnZG1NWEShKkY4l3hdjv5nL" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "JPA.DatabaseSchemaImportDialog": "69fa1571-4d2d-4e27-8513-1a3e8842d52b",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "last_directory_selection": "C:/Users/2DAM/workspace/2Dam/acceso-datos/2trim/HibernateLearning/src/main/java",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="ImportMappingsDialog.RecentPackages">
+      <recent name="entities" />
+      <recent name="entidades" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2ce02dbc-baa3-4c39-bbd5-4760ecc93a47" name="Changes" comment="" />
+      <created>1705405843965</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1705405843965</updated>
+      <workItem from="1705405844762" duration="3433000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

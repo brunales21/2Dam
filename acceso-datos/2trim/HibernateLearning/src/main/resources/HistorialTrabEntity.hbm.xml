@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="entities.HistorialTrabEntity" table="historial_trab" schema="empleados">
+        <composite-id mapped="true" class="entities.HistorialTrabEntityPK">
+            <key-property name="idEmpleado">
+                <column name="id_empleado" sql-type="int"/>
+            </key-property>
+            <key-property name="fechaInicio">
+                <column name="fecha_inicio" sql-type="date"/>
+            </key-property>
+        </composite-id>
+        <property name="fechaFin">
+            <column name="fecha_fin" sql-type="date"/>
+        </property>
+        <property name="idTrabajo">
+            <column name="id_trabajo" sql-type="varchar(10)" length="10"/>
+        </property>
+        <property name="idDepartamento">
+            <column name="id_departamento" sql-type="int" not-null="true"/>
+        </property>
+    </class>
+</hibernate-mapping>

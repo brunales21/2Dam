@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="entities.TrabajosEntity" table="trabajos" schema="empleados">
+        <id name="idTrabajo">
+            <column name="id_trabajo" sql-type="varchar(10)" length="10"/>
+        </id>
+        <property name="nombreTrabajo">
+            <column name="nombre_trabajo" sql-type="varchar(35)" length="35"/>
+        </property>
+        <property name="minSalario">
+            <column name="min_salario" sql-type="int" not-null="true"/>
+        </property>
+        <property name="maxSalario">
+            <column name="max_salario" sql-type="int" not-null="true"/>
+        </property>
+    </class>
+</hibernate-mapping>
