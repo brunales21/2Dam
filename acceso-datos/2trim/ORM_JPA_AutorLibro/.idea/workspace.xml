@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="1632c773-14c8-4c52-89af-9064f52049da" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/9faa8109-c1b5-4547-a9cd-f28bee822a8a.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/9faa8109-c1b5-4547-a9cd-f28bee822a8a/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/9faa8109-c1b5-4547-a9cd-f28bee822a8a/storage_v2/_src_/schema/mysql.osA4Bg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/9faa8109-c1b5-4547-a9cd-f28bee822a8a/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/test/scv/entidades/Autor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/test/scv/entidades/Categoria.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/test/scv/entidades/Libro.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/test/scv/entidades/Pieza.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/test/scv/entidades/Proveedor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/test/scv/hibernateUtil/HibernateUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/test/scv/orm_autorlibro/AutorLibro.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/test/scv/orm_autorlibro/AutorLibro2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/test/scv/orm_autorlibro/AutorLibroUpdate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/test/scv/orm_autorlibro/ConsultasCriteria.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/test/scv/orm_autorlibro/ConversorTitulo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/test/scv/orm_autorlibro/JPQL_Avanzado.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/test/scv/orm_autorlibro/LibroConConversor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/test/scv/orm_autorlibro/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/test/scv/orm_autorlibro/Main2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/test/scv/orm_autorlibro/ProveedorNoEncontradoException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 2
+}]]></component>
+  <component name="ProjectId" id="2b685kaBGP78dsctRG28rvs9EIN" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.AutorLibro.executor": "Run",
+    "JPA.DatabaseSchemaImportDialog": "9faa8109-c1b5-4547-a9cd-f28bee822a8a",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/bemim/IdeaProjects/AD_hibernate",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="ImportMappingsDialog.RecentPackages">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="AutorLibro" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="test.scv.orm_autorlibro.AutorLibro" />
+      <module name="ORM_JPA_AutorLibro" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.scv.orm_autorlibro.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.AutorLibro" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-21.0.1-openjdk-21.0.1-f644763e9732-f98dd351" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1632c773-14c8-4c52-89af-9064f52049da" name="Changes" comment="" />
+      <created>1705523986724</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1705523986724</updated>
+      <workItem from="1705523987829" duration="5147000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
