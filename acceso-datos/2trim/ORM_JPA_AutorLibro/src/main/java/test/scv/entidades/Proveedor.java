@@ -10,16 +10,16 @@ public class Proveedor {
     @SequenceGenerator(name = "proveedor_sequence", sequenceName = "PROVEEDOR_SEQ", allocationSize = 1)
     private int codigo;
 
-    @Column(name = "NOMBRE_PERSONA")
+    @Column(name = "name")
     private String nombre;
 
-    @Column(name = "CIUDAD")
+    @Column(name = "city")
     private String ciudad;
 
-    @Column(name = "PROVINCIA")
+    @Column(name = "province")
     private String provincia;
 
-    @Column(name = "TELEFONO")
+    @Column(name = "phone_number")
     private String telefono;
 
 

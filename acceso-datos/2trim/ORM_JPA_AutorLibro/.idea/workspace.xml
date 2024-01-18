@@ -5,37 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1632c773-14c8-4c52-89af-9064f52049da" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/9faa8109-c1b5-4547-a9cd-f28bee822a8a.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/9faa8109-c1b5-4547-a9cd-f28bee822a8a/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/9faa8109-c1b5-4547-a9cd-f28bee822a8a/storage_v2/_src_/schema/mysql.osA4Bg.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/9faa8109-c1b5-4547-a9cd-f28bee822a8a/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/test/scv/entidades/Autor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/test/scv/entidades/Categoria.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/test/scv/entidades/Libro.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/test/scv/entidades/Pieza.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/test/scv/entidades/Proveedor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/test/scv/hibernateUtil/HibernateUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/test/scv/orm_autorlibro/AutorLibro.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/test/scv/orm_autorlibro/AutorLibro2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/test/scv/orm_autorlibro/AutorLibroUpdate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/test/scv/orm_autorlibro/ConsultasCriteria.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/test/scv/orm_autorlibro/ConversorTitulo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/test/scv/orm_autorlibro/JPQL_Avanzado.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/test/scv/orm_autorlibro/LibroConConversor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/test/scv/orm_autorlibro/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/test/scv/orm_autorlibro/Main2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/test/scv/orm_autorlibro/ProveedorNoEncontradoException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/9faa8109-c1b5-4547-a9cd-f28bee822a8a.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/test/scv/entidades/Proveedor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/scv/entidades/Proveedor.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,11 +25,11 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 2
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="2b685kaBGP78dsctRG28rvs9EIN" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -66,9 +41,10 @@
     "JPA.DatabaseSchemaImportDialog": "9faa8109-c1b5-4547-a9cd-f28bee822a8a",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/bemim/IdeaProjects/AD_hibernate",
+    "last_opened_file_path": "C:/Users/2DAM/IdeaProjects/Snake",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -126,6 +102,7 @@
       <option name="presentableId" value="Default" />
       <updated>1705523986724</updated>
       <workItem from="1705523987829" duration="5147000" />
+      <workItem from="1705563853146" duration="2145000" />
     </task>
     <servers />
   </component>
