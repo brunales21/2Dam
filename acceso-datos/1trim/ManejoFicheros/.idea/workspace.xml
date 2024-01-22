@@ -27,8 +27,10 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/2DAM/workspace/2Dam/acceso-datos/1trim/ManejoFicheros/ManejoFicherosLearning"
+    "last_opened_file_path": "C:/Users/2DAM/workspace/2Dam/acceso-datos/1trim/BuffersLearning",
+    "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RunManager">
@@ -54,7 +56,11 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1701078701258</updated>
+      <workItem from="1705913602884" duration="43000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
 </project>
