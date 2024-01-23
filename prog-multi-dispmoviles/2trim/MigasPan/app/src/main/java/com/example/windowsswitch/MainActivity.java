@@ -13,6 +13,7 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
+    private static final int REQUEST_CODE_REGISTRO = 2;
 
     private EditText editTextUsername;
     private EditText editTextPassword;
@@ -58,5 +59,10 @@ public class MainActivity extends AppCompatActivity {
 
         // Ocultar "VOLVER" en la pantalla de inicio
         buttonBack.setVisibility(View.GONE);
+    }
+
+    public void mostrarRegistro(View view) {
+        Intent intent = new Intent(this, RegistroActivity.class);
+        startActivityForResult(intent, REQUEST_CODE_REGISTRO);
     }
 }

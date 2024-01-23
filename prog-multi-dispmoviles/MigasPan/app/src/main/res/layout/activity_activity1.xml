@@ -1,0 +1,46 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#000000"
+    tools:context=".Activity1">
+
+    <TextView
+        android:id="@+id/textViewWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¡Bienvenido, Usuario!"
+        android:textSize="18sp"
+        android:textColor="#FFEB3B"/>
+
+    <TextView
+        android:id="@+id/textViewBreadcrumb"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewWelcome"
+        android:layout_marginTop="16dp"
+        android:textColor="#19B6FF"/>
+
+    <Button
+
+        style="@style/RedButtonWithBorder"
+
+        android:id="@+id/buttonBack"
+        android:layout_width="374dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewBreadcrumb"
+        android:layout_marginTop="16dp"
+        android:text="VOLVER" />
+
+    <Button
+        style="@style/GreenButtonWithBorder"
+
+        android:id="@+id/buttonGoToActivity2"
+        android:layout_below="@id/buttonBack"
+        android:layout_marginTop="16dp"
+        android:text="Ir a Actividad 2"/>
+
+</RelativeLayout>
