@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">UnEditTextConMenuCont</string>
+    <string name="escribeAlgo">Escribe aquí</string>
+    <string name="borrar">Borrar</string>
+    <string name="ponerA0">Poner a 0</string>
+    
+    <string name="mapaVillalba">MAPA VILLALBA</string>
+    <string name="pagWeb">PÁGINA WEB</string>
+    <string name="segPantalla">2ª PANTALLA</string>
+    <string name="segPantallaConPar">2ª PANTALLA con parámetros</string>
+
+    <string name="secActivity">2ª ACTIVIDAD</string>
+    <string name="actividadSinCon">actividad %s parámetros</string>
+
+</resources>
