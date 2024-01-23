@@ -1,13 +1,18 @@
 package ej1;
 
-import java.io.BufferedInputStream;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.InputStream;
+import java.io.*;
 import java.net.URL;
 import java.net.URLConnection;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.StandardCopyOption;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 
 public class FileDownloader implements Runnable {
+
     private String urlName;
     private String target;
 
@@ -18,25 +23,48 @@ public class FileDownloader implements Runnable {
 
     @Override
     public void run() {
-        URL url;
-        URLConnection connection;
+        URLConnection urlConnection = null;
         try {
-            url = new URL(urlName);
-            connection = url.openConnection();
+            urlConnection = new URL(urlName).openConnection();
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
+        try (InputStream in = urlConnection.getInputStream()) {
+            Path destino = Path.of(target);
+            Files.copy(in, destino, StandardCopyOption.REPLACE_EXISTING);
+        } catch (Exception e) {
+            System.err.println(e.getMessage());
+        }
+    }
 
-        try (InputStream in = new BufferedInputStream(connection.getInputStream())) {
-            try (FileOutputStream out = new FileOutputStream(target)) {
-                byte[] buffer = new byte[1024];
-                int bytesRead;
-                while ((bytesRead = in.read(buffer)) != -1) {
-                    out.write(buffer, 0, bytesRead);
-                }
+    public static void download(Path sourcePath, Path targetPath, int maxThreads) {
+        List<String> urls = getUrls(sourcePath.toString());
+        ExecutorService executor = Executors.newFixedThreadPool(maxThreads);
+        for (String urlName: urls) {
+            executor.submit(new FileDownloader(urlName, targetPath + getNewName(urlName)));
+        }
+        executor.shutdown();
+    }
+
+    private static List<String> getUrls(String source) {
+        List<String> urls = new ArrayList<>();
+        try (BufferedReader in = new BufferedReader(new FileReader(source))) {
+            String url;
+            while ((url = in.readLine()) != null) {
+                urls.add(url);
             }
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
+        return urls;
+    }
+
+    private static String getNewName(String urlName) {
+        String [] urlParts = urlName.split("/");
+        return "/"+urlParts[urlParts.length-1];
+    }
+
+    public static void main(String[] args) {
+        download(Path.of("carpeta1/urls.txt"), Path.of("carpeta-descargas/"), 4);
     }
 }
