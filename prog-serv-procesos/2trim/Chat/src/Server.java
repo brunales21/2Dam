@@ -1,4 +1,5 @@
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.*;
@@ -6,14 +7,18 @@ import java.util.*;
 public class Server {
     private ServerSocket serverSocket;
     private int port;
-    private List<ChatRoom> chatRooms;
-    private Map<User, Socket> usersMap;
+    private List<Channel> channels;
+    private List<PrivateChat> privateChats;
+    private Map<Socket, User> socketUserMap;
+    private Map<User, Socket> userSocketMap;
+
 
 
     public Server(int port) {
         this.port = port;
-        this.chatRooms = new ArrayList<>();
-        this.usersMap = new HashMap<>();
+        this.privateChats = new ArrayList<>();
+        this.channels = new ArrayList<>();
+        this.socketUserMap = new HashMap<>();
     }
 
     public void start() throws IOException {
@@ -21,73 +26,78 @@ public class Server {
         do {
             Socket socket = serverSocket.accept();
             User user = new User();
-            usersMap.put(user, socket);
+            socketUserMap.put(socket, user);
+            userSocketMap.put(user, socket);
 
+            Thread clientThread = new Thread(user);
+            clientThread.start();
+
+            Thread serverThread = new Thread(this::receiveCommand);
+            serverThread.start();
         } while (true);
     }
 
-    public void addChatRoomToUser(ChatRoom chatRoom, User user) {
-        chatRooms.add(chatRoom);
-        if (!user.getChatRooms().contains(chatRoom)) {
-            user.addChatRoom(chatRoom);
-        }
-    }
-
-    public void addUserToChatRoom(User user, ChatRoom chatRoom) {
-        if (!chatRoom.getUsers().contains(user)) {
-            chatRoom.addUser(user);
-        }
-    }
-
-    private void sendMessage(User sender, ChatRoom chatRoom, String text) {
-        chatRoom.addMessage(new Message(text, sender, chatRoom));
-    }
 
     public void receiveCommand() {
-        for (Socket socket: usersMap.values()) {
-            try (Scanner in = new Scanner(socket.getInputStream())) {
-                String commandLine = in.nextLine();
-                if (commandLine != null) {
-                    solveCommand(commandLine);
+        do {
+            for (Socket socket: socketUserMap.keySet()) {
+                try (Scanner in = new Scanner(socket.getInputStream())) {
+                    String commandLine = in.nextLine();
+                    if (commandLine != null) {
+                        processCommand(socket, commandLine);
+                    }
+                } catch (IOException e) {
+                    throw new RuntimeException(e);
                 }
-            } catch (IOException e) {
-                throw new RuntimeException(e);
             }
-        }
+        } while (true);
 
     }
 
-    private void solveCommand(String commandLine) {
+    private void create(String autor, String chatRoomName) {
+        channels.add(new Channel(chatRoomName, getUserByNickName(autor)));
+    }
+
+    private void send(String senderNickName, String receptorNickName, String text) {
+        User sender = getUserByNickName(senderNickName);
+        Message message = new Message(sender, receptorNickName, text);
+        try (PrintWriter out = new PrintWriter(userSocketMap.get(sender).getOutputStream())) {
+            out.print(message);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+
+    private void join() {
+
+    }
+
+
+    private void processCommand(Socket socket, String commandLine) {
         String [] parts = commandLine.split(";");
         switch (parts[0]) {
             case "CREATE":
-
-                addChatRoomToUser(new ChatRoom(parts[2], getUserByNickName(parts[1]), Integer.parseInt(parts[3])), getUserByNickName(parts[1]));
-            case "JOIN": addUserToChatRoom(getUserByNickName(parts[1]), getChatRoomById(parts[2]));
-            case "SEND": sendMessage(getUserByNickName(parts[1]), getChatRoomById(parts[2]), parts[3]);
+                create(socketUserMap.get(socket).getNickname(), parts[1]);
+            case "SEND":
+                send(socketUserMap.get(socket).getNickname(), parts[1], parts[2]);
+            case "JOIN":
+                join();
         }
     }
 
     private User getUserByNickName(String nickName) {
-        return usersMap.keySet().stream()
+        return socketUserMap.values().stream()
                 .filter(u -> Objects.equals(u.getNickname(), nickName))
                 .toList()
                 .getFirst();
     }
 
     private ChatRoom getChatRoomById(String id) {
-        return chatRooms.stream()
+        return channels.stream()
                 .filter(cr -> Objects.equals(cr.getId(), id))
                 .toList()
                 .getFirst();
     }
 
-    private Message buildMessage(String commandLine) {
-        String [] parts = commandLine.split(";");
-        String senderId = parts[1];
-        String chatRoomId = parts[2];
-        String text = parts[3];
-
-        return new Message(text, getUserByNickName(senderId), getChatRoomById(chatRoomId));
-    }
 }

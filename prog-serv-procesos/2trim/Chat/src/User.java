@@ -14,21 +14,29 @@ public class User extends Client {
         this.chatRooms = new ArrayList<>();
     }
 
+    @Override
+    public void run() {
+        do {
+
+        } while (true);
+    }
+
     public User() {
         super();
     }
 
-
-    private void buildCommand() {
-
-    }
-
-    private void sendCommand() {
-        try (PrintStream out = new PrintStream(socket.getOutputStream())) {
-            out.println(command);
+    private void sendMessage(String message) {
+        try (PrintStream out = new PrintStream(getSocket().getOutputStream())) {
+            out.println(message);
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
+    }
+    public void createChannel(String receptorName) {
+        sendMessage("CREATE;" + receptorName);
+    }
+    public void sendTextMessage(String receptorName, String textMessage) {
+        sendMessage("SEND;" + receptorName + ";"+textMessage);
     }
 
 
@@ -58,4 +66,10 @@ public class User extends Client {
     public void setCommand(String command) {
         this.command = command;
     }
+
+    public void setChatRooms(List<ChatRoom> chatRooms) {
+        this.chatRooms = chatRooms;
+    }
+
+
 }

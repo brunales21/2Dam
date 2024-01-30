@@ -1,19 +1,11 @@
 public class Message {
-    private String text;
     private User sender;
-    private ChatRoom chatRoom;
+    private String receptorName;
+    private String text;
 
-    public Message(String text, User sender, ChatRoom chat) {
-        this.text = text;
+    public Message(User sender, String receptorName, String text) {
         this.sender = sender;
-        this.chatRoom = chat;
-    }
-
-    public String getText() {
-        return text;
-    }
-
-    public void setText(String text) {
+        this.receptorName = receptorName;
         this.text = text;
     }
 
@@ -25,11 +17,19 @@ public class Message {
         this.sender = sender;
     }
 
-    public ChatRoom getChatRoom() {
-        return chatRoom;
+    public String getReceptorName() {
+        return receptorName;
     }
 
-    public void setChatRoom(ChatRoom chatRoom) {
-        this.chatRoom = chatRoom;
+    public void setReceptorName(String receptorName) {
+        this.receptorName = receptorName;
+    }
+
+    public String getText() {
+        return text;
+    }
+
+    public void setText(String text) {
+        this.text = text;
     }
 }

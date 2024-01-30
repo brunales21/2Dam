@@ -1,10 +1,10 @@
 import java.io.IOException;
 import java.net.Socket;
 
-public class Client {
+public class Client implements Runnable {
     private String hostname;
     private int port;
-    protected Socket socket;
+    private Socket socket;
 
     public Client(String hostname, int port) {
         this.hostname = hostname;
@@ -21,5 +21,24 @@ public class Client {
             throw new RuntimeException(e);
         }
 
+    }
+
+    public String getHostname() {
+        return hostname;
+    }
+
+    public int getPort() {
+        return port;
+    }
+
+    public Socket getSocket() {
+        return socket;
+    }
+
+
+
+    public static void main(String[] args) {
+        Client c = new Client();
+        c.connect();
     }
 }
