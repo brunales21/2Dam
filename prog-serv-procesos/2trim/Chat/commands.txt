@@ -1,0 +1,13 @@
+comandos de creacion
+
+/CREATE;idCreador;#nombreChatRoom;4 -> crear canal con otro/s users
+
+comandos de mensaje de texto
+
+/SEND;idEmisor;#chatroom;hola que tal
+
+comando para conectarse a chatroom
+
+/JOIN;idUser;chatroom
+
+
