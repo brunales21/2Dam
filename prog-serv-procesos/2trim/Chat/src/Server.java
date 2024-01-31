@@ -32,13 +32,14 @@ public class Server {
                 Scanner in = new Scanner(socket.getInputStream());
                 String nickname = in.nextLine();
                 User user = new User(nickname);
+                System.out.println(nickname);
                 socketUserMap.put(socket, user);
                 userSocketMap.put(user, socket);
 
                 Thread clientThread = new Thread(user);
                 clientThread.start();
 
-                receiveCommand();
+                receiveCommand(socket);
 
             } while (true);
         } catch (IOException e) {
@@ -47,18 +48,16 @@ public class Server {
 
     }
 
-    public void receiveCommand() {
+    public void receiveCommand(Socket socket) {
         do {
-            for (Socket socket: socketUserMap.keySet()) {
-                try (Scanner in = new Scanner(socket.getInputStream())) {
-                    String commandLine = in.nextLine();
-                    if (commandLine != null) {
-                        System.out.println(commandLine);
-                        processCommand(socket, commandLine);
-                    }
-                } catch (IOException e) {
-                    throw new RuntimeException(e);
+            try (Scanner in = new Scanner(socket.getInputStream())) {
+                String commandLine = in.nextLine();
+                if (commandLine != null) {
+                    System.out.println(commandLine);
+                    processCommand(socket, commandLine);
                 }
+            } catch (IOException e) {
+                throw new RuntimeException(e);
             }
         } while (true);
     }
@@ -108,7 +107,7 @@ public class Server {
     }
 
     private User getUserByNickName(String nickName) {
-        return socketUserMap.values().stream()
+        return userSocketMap.keySet().stream()
                 .filter(u -> Objects.equals(u.getNickname(), nickName))
                 .toList()
                 .getFirst();
