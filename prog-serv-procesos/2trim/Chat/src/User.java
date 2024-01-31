@@ -4,31 +4,36 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class User extends Client implements Runnable {
+public class User extends Client {
     private String nickname;
     private String command;
     private List<ChatRoom> chatRooms;
+    private List<User> users;
+    private List<Channel> channels;
 
-    public User(String name, String hostname, int port) {
+
+
+    public User(String nickname, String hostname, int port) {
         super(hostname, port);
-        this.nickname = name;
+        this.nickname = nickname;
+        this.channels = new ArrayList<>();
         this.chatRooms = new ArrayList<>();
+        this.users = new ArrayList<>();
+
     }
 
     public User(String nickname) {
         this.nickname = nickname;
+        this.channels = new ArrayList<>();
+        this.chatRooms = new ArrayList<>();
+        this.users = new ArrayList<>();
     }
 
     public User() {
         super();
     }
 
-    @Override
-    public void run() {
-        do {
 
-        } while (true);
-    }
 
     private void sendMessage(String message) {
         try (PrintStream out = new PrintStream(getSocket().getOutputStream())) {
@@ -57,6 +62,14 @@ public class User extends Client implements Runnable {
         return chatRooms;
     }
 
+    public List<Channel> getChannels() {
+        return channels;
+    }
+
+    public void setChannels(List<Channel> channels) {
+        this.channels = channels;
+    }
+
     public void addChatRoom(ChatRoom chatRoom) {
         chatRooms.add(chatRoom);
     }
@@ -80,6 +93,11 @@ public class User extends Client implements Runnable {
         this.chatRooms = chatRooms;
     }
 
+    public List<User> getUsers() {
+        return users;
+    }
 
-
+    public void setUsers(List<User> users) {
+        this.users = users;
+    }
 }

@@ -1,6 +1,5 @@
 import java.io.IOException;
 import java.io.PrintStream;
-import java.io.PrintWriter;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.*;
@@ -12,7 +11,6 @@ public class Server {
     private List<PrivateChat> privateChats;
     private Map<Socket, User> socketUserMap;
     private Map<User, Socket> userSocketMap;
-
 
 
     public Server(int port) {
@@ -27,51 +25,102 @@ public class Server {
     public void start() {
         try {
             serverSocket = new ServerSocket(port);
-            do {
+            while (true) {
                 Socket socket = serverSocket.accept();
-                Scanner in = new Scanner(socket.getInputStream());
-                String nickname = in.nextLine();
-                User user = new User(nickname);
-                System.out.println(nickname);
-                socketUserMap.put(socket, user);
-                userSocketMap.put(user, socket);
-
-                Thread clientThread = new Thread(user);
+                Thread clientThread = new Thread(() -> handleClient(socket));
                 clientThread.start();
-
-                receiveCommand(socket);
-
-            } while (true);
+            }
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
-
     }
 
-    public void receiveCommand(Socket socket) {
-        do {
-            try (Scanner in = new Scanner(socket.getInputStream())) {
-                String commandLine = in.nextLine();
-                if (commandLine != null) {
-                    System.out.println(commandLine);
-                    processCommand(socket, commandLine);
+
+    private void handleClient(Socket socket) {
+        try {
+            Scanner in = new Scanner(socket.getInputStream());
+            PrintStream out = new PrintStream(socket.getOutputStream());
+            out.println("Estas conectado al servidor.");
+            String nickname = in.nextLine();
+            User user = new User(nickname);
+            System.out.println(user.getNickname());
+            socketUserMap.put(socket, user);
+            userSocketMap.put(user, socket);
+            startCommunication(socket);
+        } catch (IOException e) {
+
+        }
+    }
+
+    private void startCommunication(Socket socket) {
+        try {
+            Scanner in = new Scanner(socket.getInputStream());
+            PrintStream out = new PrintStream(socket.getOutputStream());
+            out.println("Puedes comunicarte..");
+            while (!socket.isClosed()) {
+                String commandLine;
+                if (in.hasNextLine()) {
+                    commandLine = in.nextLine();
+                    Thread thread = new Thread(() -> processCommand(socket, commandLine));
+                    thread.start();
                 }
-            } catch (IOException e) {
-                throw new RuntimeException(e);
             }
-        } while (true);
+        } catch (IOException e) {
+        }
     }
 
     private void create(String autor, String chatRoomName) {
-        channels.add(new Channel(chatRoomName, getUserByNickName(autor)));
+        try {
+            channels.add(new Channel(chatRoomName, getUserByNickName(autor)));
+        } catch (UserNotFoundException e) {
+            throw new RuntimeException(e);
+        }
     }
 
     private void send(String senderNickName, String receptorNickName, String text) {
-        User sender = getUserByNickName(senderNickName);
-        try (PrintStream out = new PrintStream(userSocketMap.get(getUserByNickName(receptorNickName)).getOutputStream())) {
-            out.println(sender+" "+text);
+        PrintStream senderOut = null;
+        try {
+            senderOut = new PrintStream(userSocketMap.get(getUserByNickName(senderNickName)).getOutputStream());
+            User receptor = getUserByNickName(receptorNickName);
+            User sender = getUserByNickName(senderNickName);
+
+            if (!sender.getUsers().contains(receptor)) {
+                sender.getUsers().add(receptor);
+            }
+
+            PrintStream receptorOut = new PrintStream(userSocketMap.get(getUserByNickName(receptorNickName)).getOutputStream());
+            receptorOut.println(sender.getNickname() + ": " + text);
+        } catch (IOException | UserNotFoundException e) {
+            senderOut.println(e.getMessage());
+        }
+
+
+    }
+
+    private void login(String nickname, Socket socket) {
+        User user = new User(nickname);
+        userSocketMap.put(user, socket);
+    }
+
+    private void listUsers(Socket socket) {
+        try {
+            PrintStream out = new PrintStream(socket.getOutputStream());
+            List<User> users = socketUserMap.get(socket).getUsers();
+            if (users.isEmpty()) {
+                out.println("No users yet.");
+            }
+            users.forEach(u -> out.println(u.getNickname()));
         } catch (IOException e) {
-            throw new RuntimeException(e);
+
+        }
+    }
+
+    private void listChannels(Socket socket) {
+        try {
+            PrintStream out = new PrintStream(socket.getOutputStream());
+            socketUserMap.get(socket).getChannels().forEach(c -> out.println(c.getNickname()));
+        } catch (IOException e) {
+
         }
     }
 
@@ -82,6 +131,10 @@ public class Server {
 
 
     public static String[] splitParts(String header) {
+        String[] split = header.split(" ");
+        if (split.length == 1) {
+            return split;
+        }
         int colonIndex = header.indexOf(":");
         String text = header.substring(colonIndex + 1); // +1 para excluir el ':'
         String prefix = header.substring(0, colonIndex);
@@ -92,30 +145,44 @@ public class Server {
         return partsList.toArray(new String[0]);
     }
 
+
     private void processCommand(Socket socket, String commandLine) {
-        String [] parts = splitParts(commandLine);
+        String[] parts = splitParts(commandLine);
         switch (parts[0]) {
             case "CONNECT":
-
+                login(parts[2], socket);
+                break;
             case "CREATE":
                 create(socketUserMap.get(socket).getNickname(), parts[1]);
-            case "SEND":
+                break;
+            case "PRIVMSG":
                 send(socketUserMap.get(socket).getNickname(), parts[1], parts[2]);
+                break;
             case "JOIN":
                 join();
+                break;
+            case "LU":
+                listUsers(socket);
+            case "LC":
+                listChannels(socket);
         }
     }
 
-    private User getUserByNickName(String nickName) {
-        return userSocketMap.keySet().stream()
-                .filter(u -> Objects.equals(u.getNickname(), nickName))
-                .toList()
-                .getFirst();
+    private User getUserByNickName(String nickname) throws UserNotFoundException {
+        try {
+            return userSocketMap.keySet().stream()
+                    .filter(u -> Objects.equals(u.getNickname(), nickname))
+                    .toList()
+                    .getFirst();
+        } catch (NoSuchElementException e) {
+            throw new UserNotFoundException(nickname);
+        }
+
     }
 
     private ChatRoom getChatRoomById(String id) {
         return channels.stream()
-                .filter(cr -> Objects.equals(cr.getId(), id))
+                .filter(cr -> Objects.equals(cr.getNickname(), id))
                 .toList()
                 .getFirst();
     }

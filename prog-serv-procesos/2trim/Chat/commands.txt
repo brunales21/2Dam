@@ -4,7 +4,15 @@
 
     **comandos de mensaje de texto
         SEND #chatroom :hola que tal
-        SEND idUser :hola pepe
+        PRIVMSG idUser :hola pepe
 
     **comando para conectarse a chatroom
         JOIN #chatroom
+
+    **comando para hacer login
+        CONNECT nickname
+
+    **comando para listar contactos
+        LIST USERS
+    **comando para listar canales
+        LIST CHANNELS
