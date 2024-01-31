@@ -1,4 +1,5 @@
 import java.io.IOException;
+import java.io.PrintStream;
 import java.io.PrintWriter;
 import java.net.ServerSocket;
 import java.net.Socket;
@@ -19,24 +20,32 @@ public class Server {
         this.privateChats = new ArrayList<>();
         this.channels = new ArrayList<>();
         this.socketUserMap = new HashMap<>();
+        this.userSocketMap = new HashMap<>();
+
     }
 
-    public void start() throws IOException {
-        serverSocket = new ServerSocket(port);
-        do {
-            Socket socket = serverSocket.accept();
-            User user = new User();
-            socketUserMap.put(socket, user);
-            userSocketMap.put(user, socket);
+    public void start() {
+        try {
+            serverSocket = new ServerSocket(port);
+            do {
+                Socket socket = serverSocket.accept();
+                Scanner in = new Scanner(socket.getInputStream());
+                String nickname = in.nextLine();
+                User user = new User(nickname);
+                socketUserMap.put(socket, user);
+                userSocketMap.put(user, socket);
 
-            Thread clientThread = new Thread(user);
-            clientThread.start();
+                Thread clientThread = new Thread(user);
+                clientThread.start();
 
-            Thread serverThread = new Thread(this::receiveCommand);
-            serverThread.start();
-        } while (true);
+                receiveCommand();
+
+            } while (true);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+
     }
-
 
     public void receiveCommand() {
         do {
@@ -44,6 +53,7 @@ public class Server {
                 try (Scanner in = new Scanner(socket.getInputStream())) {
                     String commandLine = in.nextLine();
                     if (commandLine != null) {
+                        System.out.println(commandLine);
                         processCommand(socket, commandLine);
                     }
                 } catch (IOException e) {
@@ -51,7 +61,6 @@ public class Server {
                 }
             }
         } while (true);
-
     }
 
     private void create(String autor, String chatRoomName) {
@@ -60,9 +69,8 @@ public class Server {
 
     private void send(String senderNickName, String receptorNickName, String text) {
         User sender = getUserByNickName(senderNickName);
-        Message message = new Message(sender, receptorNickName, text);
-        try (PrintWriter out = new PrintWriter(userSocketMap.get(sender).getOutputStream())) {
-            out.print(message);
+        try (PrintStream out = new PrintStream(userSocketMap.get(getUserByNickName(receptorNickName)).getOutputStream())) {
+            out.println(sender+" "+text);
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
@@ -74,9 +82,22 @@ public class Server {
     }
 
 
+    public static String[] splitParts(String header) {
+        int colonIndex = header.indexOf(":");
+        String text = header.substring(colonIndex + 1); // +1 para excluir el ':'
+        String prefix = header.substring(0, colonIndex);
+
+        List<String> partsList = new ArrayList<>(Arrays.asList(prefix.split(" ")));
+        partsList.add(text);
+
+        return partsList.toArray(new String[0]);
+    }
+
     private void processCommand(Socket socket, String commandLine) {
-        String [] parts = commandLine.split(";");
+        String [] parts = splitParts(commandLine);
         switch (parts[0]) {
+            case "CONNECT":
+
             case "CREATE":
                 create(socketUserMap.get(socket).getNickname(), parts[1]);
             case "SEND":
@@ -98,6 +119,11 @@ public class Server {
                 .filter(cr -> Objects.equals(cr.getId(), id))
                 .toList()
                 .getFirst();
+    }
+
+    public static void main(String[] args) {
+        Server server = new Server(80);
+        server.start();
     }
 
 }

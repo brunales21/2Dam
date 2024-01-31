@@ -2,8 +2,9 @@ import java.io.IOException;
 import java.io.PrintStream;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
-public class User extends Client {
+public class User extends Client implements Runnable {
     private String nickname;
     private String command;
     private List<ChatRoom> chatRooms;
@@ -14,15 +15,19 @@ public class User extends Client {
         this.chatRooms = new ArrayList<>();
     }
 
+    public User(String nickname) {
+        this.nickname = nickname;
+    }
+
+    public User() {
+        super();
+    }
+
     @Override
     public void run() {
         do {
 
         } while (true);
-    }
-
-    public User() {
-        super();
     }
 
     private void sendMessage(String message) {
@@ -33,15 +38,19 @@ public class User extends Client {
         }
     }
     public void createChannel(String receptorName) {
-        sendMessage("CREATE;" + receptorName);
+        sendMessage("CREATE " + receptorName);
     }
     public void sendTextMessage(String receptorName, String textMessage) {
-        sendMessage("SEND;" + receptorName + ";"+textMessage);
+        sendMessage("SEND " + receptorName + " :"+textMessage);
     }
 
 
     public void receive() {
+        try (Scanner in = new Scanner(getSocket().getInputStream())) {
 
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
     }
 
     public List<ChatRoom> getChatRooms() {
@@ -70,6 +79,7 @@ public class User extends Client {
     public void setChatRooms(List<ChatRoom> chatRooms) {
         this.chatRooms = chatRooms;
     }
+
 
 
 }

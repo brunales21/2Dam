@@ -1,10 +1,10 @@
     **comandos de creacion
-        CREATE;#nombreChatRoom -> crear canal con otro/s users
-        CREATE;idUser -> contactar con user (si existe en el servidor)
+        CREATE #nombreChatRoom -> crear canal con otro/s users
+        CREATE idUser -> contactar con user (si existe en el servidor)
 
     **comandos de mensaje de texto
-        SEND:#chatroom;hola que tal
-        SEND;idUser;hola pepe
+        SEND #chatroom :hola que tal
+        SEND idUser :hola pepe
 
     **comando para conectarse a chatroom
-        JOIN;chatroom
+        JOIN #chatroom

@@ -5,7 +5,7 @@ import java.io.PrintWriter;
 import java.net.Socket;
 import java.util.Scanner;
 
-public class Client implements Runnable {
+public class Client {
     private String hostname;
     private int port;
     private Socket socket;
@@ -38,10 +38,6 @@ public class Client implements Runnable {
         }
     }
 
-    @Override
-    public void run() {
-        process();
-    }
 
     public static void main(String[] args) {
         Client c = new Client("localhost", 80);

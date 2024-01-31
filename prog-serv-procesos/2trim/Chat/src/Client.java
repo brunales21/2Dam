@@ -1,7 +1,7 @@
 import java.io.IOException;
 import java.net.Socket;
 
-public class Client implements Runnable {
+public class Client {
     private String hostname;
     private int port;
     private Socket socket;
@@ -34,8 +34,6 @@ public class Client implements Runnable {
     public Socket getSocket() {
         return socket;
     }
-
-
 
     public static void main(String[] args) {
         Client c = new Client();
