@@ -62,8 +62,8 @@ public class Server {
                 String commandLine;
                 if (in.hasNextLine()) {
                     commandLine = in.nextLine();
-                    Thread thread = new Thread(() -> processCommand(socket, commandLine));
-                    thread.start();
+                    processCommand(socket, commandLine);
+
                 }
             }
         } catch (IOException ignored) {
@@ -85,7 +85,7 @@ public class Server {
                 sender.getUsers().add(receptor);
             }
 
-            PrintStream receptorOut = new PrintStream(userSocketMap.get(getUserByNickName(receptorNickName)).getOutputStream());
+            PrintStream receptorOut = new PrintStream(userSocketMap.get(receptor).getOutputStream());
             receptorOut.println(sender.getNickname() + ": " + text);
         } catch (IOException | UserNotFoundException e) {
             senderOut.println(e.getMessage());
