@@ -1,6 +1,5 @@
     **comandos de creacion
         CREATE #nombreChatRoom -> crear canal con otro/s users
-        CREATE idUser -> contactar con user (si existe en el servidor)
 
     **comandos de mensaje de texto
         SEND #chatroom :hola que tal
