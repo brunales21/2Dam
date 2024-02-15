@@ -1,0 +1,4 @@
+- siempre poner los ids foraneos, si no existen saldrá un error por la terminal, un msj q viene directo de mysql
+- respetar constraints de columnas de la bdd, si un campo no admite nulos por ejemplo. Crear setters controlando eso
+- no olvidarse de comenzar la transaccion: "session.getTransaction().begin()". Luego commit o rollback
+- no olvidarse el session.persist

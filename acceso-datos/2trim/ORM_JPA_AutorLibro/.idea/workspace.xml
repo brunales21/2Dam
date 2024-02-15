@@ -5,15 +5,42 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1632c773-14c8-4c52-89af-9064f52049da" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../ORM_JPA_learning/src/main/java/ej1/ConversorDireccion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ORM_JPA_learning/src/main/java/ej1/Direccion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ORM_JPA_learning/src/main/java/ej1/DireccionEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ORM_JPA_learning/src/main/java/ej2/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ORM_JPA_learning/src/main/java/entidades/LocalizacionesEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ORM_JPA_learning/src/main/java/entidades/PaisesEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ORM_JPA_learning/src/main/java/entidades/RegionesEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../repaso-examen/JPA-Learning/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../repaso-examen/JPA-Learning/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../repaso-examen/JPA-Learning/.idea/dbnavigator.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../repaso-examen/JPA-Learning/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../repaso-examen/JPA-Learning/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../repaso-examen/repaso-examen/ORM-Learning/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../repaso-examen/repaso-examen/ORM-Learning/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../repaso-examen/repaso-examen/ORM-Learning/.idea/dataSources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../repaso-examen/repaso-examen/ORM-Learning/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../repaso-examen/repaso-examen/ORM-Learning/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../repaso-examen/repaso-examen/ORM-Learning/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../repaso-examen/repaso-examen/ORM-Learning/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../repaso-examen/repaso-examen/ORM-Learning/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../repaso-examen/repaso-examen/ORM-Learning/notas.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../repaso-examen/repaso-examen/ORM-Learning/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../repaso-examen/repaso-examen/ORM-Learning/src/main/java/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../repaso-examen/repaso-examen/ORM-Learning/src/main/java/SessionFactoryUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../repaso-examen/repaso-examen/ORM-Learning/src/main/java/entidades/CategoriasProfEntidad.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../repaso-examen/repaso-examen/ORM-Learning/src/main/java/entidades/DepartamentosEntidad.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../repaso-examen/repaso-examen/ORM-Learning/src/main/java/entidades/EmpleadosEntidad.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../repaso-examen/repaso-examen/ORM-Learning/src/main/java/entidades/HistorialTrabEntidad.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../repaso-examen/repaso-examen/ORM-Learning/src/main/java/entidades/HistorialTrabEntidadPK.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../repaso-examen/repaso-examen/ORM-Learning/src/main/java/entidades/LocalizacionesEntidad.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../repaso-examen/repaso-examen/ORM-Learning/src/main/java/entidades/PaisesEntidad.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../repaso-examen/repaso-examen/ORM-Learning/src/main/java/entidades/RegionesEntidad.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../repaso-examen/repaso-examen/ORM-Learning/src/main/java/entidades/TrabajosEntidad.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../repaso-examen/repaso-examen/ORM-Learning/src/main/resources/CategoriasProfEntidad.hbm.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../repaso-examen/repaso-examen/ORM-Learning/src/main/resources/DepartamentosEntidad.hbm.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../repaso-examen/repaso-examen/ORM-Learning/src/main/resources/EmpleadosEntidad.hbm.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../repaso-examen/repaso-examen/ORM-Learning/src/main/resources/HistorialTrabEntidad.hbm.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../repaso-examen/repaso-examen/ORM-Learning/src/main/resources/LocalizacionesEntidad.hbm.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../repaso-examen/repaso-examen/ORM-Learning/src/main/resources/META-INF/persistence.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../repaso-examen/repaso-examen/ORM-Learning/src/main/resources/PaisesEntidad.hbm.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../repaso-examen/repaso-examen/ORM-Learning/src/main/resources/RegionesEntidad.hbm.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../repaso-examen/repaso-examen/ORM-Learning/src/main/resources/TrabajosEntidad.hbm.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../repaso-examen/repaso-examen/ORM-Learning/src/main/resources/hibernate.cfg.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,32 +65,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.AutorLibro.executor&quot;: &quot;Run&quot;,
-    &quot;JPA.DatabaseSchemaImportDialog&quot;: &quot;9faa8109-c1b5-4547-a9cd-f28bee822a8a&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/bemim/Workspace/DAM/2Dam/acceso-datos/2trim/ORM_JPA_AutorLibro&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.AutorLibro.executor": "Run",
+    "JPA.DatabaseSchemaImportDialog": "9faa8109-c1b5-4547-a9cd-f28bee822a8a",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/2DAM/workspace/2Dam/acceso-datos/2trim/ORM_JPA_AutorLibro",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="ImportMappingsDialog.RecentPackages">
       <recent name="" />
@@ -108,6 +135,7 @@
       <workItem from="1705563853146" duration="2145000" />
       <workItem from="1705944065593" duration="510000" />
       <workItem from="1705945850527" duration="954000" />
+      <workItem from="1707985418290" duration="43000" />
     </task>
     <servers />
   </component>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">FormularioRestaurante</string>
+    <string-array name="opciones_situacion">
+        <item>No especificado</item>
+        <item>Amigos</item>
+        <item>Familia</item>
+        <item>Pareja</item>
+        <item>Solitario</item>
+
+    </string-array>
+    <string name="selecciona_situacion">Selecciona una situación</string>
+
+</resources>
