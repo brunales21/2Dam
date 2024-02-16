@@ -4,6 +4,30 @@
              xsi:schemaLocation="https://jakarta.ee/xml/ns/persistence https://jakarta.ee/xml/ns/persistence/persistence_3_0.xsd"
              version="3.0">
   <persistence-unit name="default">
-
+    <class>ejs6_1.Categoria</class>
+    <class>ejs6_1.Pieza</class>
+    <class>ejs6_1.Proveedor</class>
+    <properties>
+        <property name="hibernate.connection.url" value="jdbc:mysql://192.168.56.101:3306/TiendaRepuestos"/>
+        <property name="hibernate.connection.driver_class" value="com.mysql.cj.jdbc.Driver"/>
+        <property name="hibernate.connection.username" value="admin00"/>
+        <property name="hibernate.connection.password" value="alumno"/>
+        <property name="hibernate.hbm2ddl.auto" value="update"/>
+        <property name="hibernate.show_sql" value="true"/>
+    </properties>
   </persistence-unit>
+    <persistence-unit name="default2">
+        <class></class>
+        <class></class>
+        <class></class>
+        <properties>
+            <property name="hibernate.connection.url" value="jdbc:mysql://192.168.56.101:3306/nueva_empresa"/>
+            <property name="hibernate.connection.driver_class" value="com.mysql.cj.jdbc.Driver"/>
+            <property name="hibernate.connection.username" value="admin00"/>
+            <property name="hibernate.connection.password" value="alumno"/>
+            <property name="hibernate.hbm2ddl.auto" value="update"/>
+            <property name="hibernate.show_sql" value="true"/>
+        </properties>
+    </persistence-unit>
+
 </persistence>

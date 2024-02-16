@@ -1,8 +1,9 @@
-import jakarta.persistence.Column;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+package ejs6_1;
 
+import jakarta.persistence.*;
+
+@Entity
+@Table(name="ejs6_1.Pieza")
 public class Pieza {
     private String nombre;
     private String color;
@@ -10,16 +11,22 @@ public class Pieza {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     @Column(name="id")
-    private String codigo;
+    private int codigo;
 
     @Override
     public String toString() {
-        return "Pieza{" +
+        return "ejs6_1.Pieza{" +
                 "nombre='" + nombre + '\'' +
                 ", color='" + color + '\'' +
                 ", precio=" + precio +
                 ", codigo='" + codigo + '\'' +
                 '}';
+    }
+
+    public Pieza(String nombre, String color, int precio) {
+        setNombre(nombre);
+        setColor(color);
+        setPrecio(precio);
     }
 
     public void setNombre(String nombre) {
@@ -43,15 +50,8 @@ public class Pieza {
         if (precio >= 0) {
             this.precio = precio;
         } else {
-            throw new IllegalArgumentException("El precio de la pieza no puede ser negativo.");
+            this.precio = 1;
         }
     }
 
-    public void setCodigo(String codigo) {
-        if (codigo != null && !codigo.isEmpty() && codigo.matches("[A-Za-z0-9]+")) {
-            this.codigo = codigo;
-        } else {
-            throw new IllegalArgumentException("El código de la pieza no puede ser nulo, vacío o contener caracteres especiales.");
-        }
-    }
 }

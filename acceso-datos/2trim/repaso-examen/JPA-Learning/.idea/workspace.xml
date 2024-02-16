@@ -5,48 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5d618831-74c9-4cbe-ab94-3dc7cde26402" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Categoria.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Pieza.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Proveedor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ORM_JPA_AutorLibro/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../ORM_JPA_AutorLibro/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ORM_JPA_AutorLibro/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../ORM_JPA_AutorLibro/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../repaso-examen/ORM-Learning/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../repaso-examen/ORM-Learning/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../repaso-examen/ORM-Learning/.idea/dataSources.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../repaso-examen/ORM-Learning/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../repaso-examen/ORM-Learning/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../repaso-examen/ORM-Learning/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../repaso-examen/ORM-Learning/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../repaso-examen/ORM-Learning/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../repaso-examen/ORM-Learning/notas.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../repaso-examen/ORM-Learning/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../repaso-examen/ORM-Learning/src/main/java/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../repaso-examen/ORM-Learning/src/main/java/SessionFactoryUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../repaso-examen/ORM-Learning/src/main/java/entidades/CategoriasProfEntidad.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../repaso-examen/ORM-Learning/src/main/java/entidades/DepartamentosEntidad.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../repaso-examen/ORM-Learning/src/main/java/entidades/EmpleadosEntidad.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../repaso-examen/ORM-Learning/src/main/java/entidades/HistorialTrabEntidad.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../repaso-examen/ORM-Learning/src/main/java/entidades/HistorialTrabEntidadPK.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../repaso-examen/ORM-Learning/src/main/java/entidades/LocalizacionesEntidad.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../repaso-examen/ORM-Learning/src/main/java/entidades/PaisesEntidad.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../repaso-examen/ORM-Learning/src/main/java/entidades/RegionesEntidad.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../repaso-examen/ORM-Learning/src/main/java/entidades/TrabajosEntidad.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../repaso-examen/ORM-Learning/src/main/resources/CategoriasProfEntidad.hbm.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../repaso-examen/ORM-Learning/src/main/resources/DepartamentosEntidad.hbm.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../repaso-examen/ORM-Learning/src/main/resources/EmpleadosEntidad.hbm.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../repaso-examen/ORM-Learning/src/main/resources/HistorialTrabEntidad.hbm.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../repaso-examen/ORM-Learning/src/main/resources/LocalizacionesEntidad.hbm.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../repaso-examen/ORM-Learning/src/main/resources/META-INF/persistence.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../repaso-examen/ORM-Learning/src/main/resources/PaisesEntidad.hbm.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../repaso-examen/ORM-Learning/src/main/resources/RegionesEntidad.hbm.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../repaso-examen/ORM-Learning/src/main/resources/TrabajosEntidad.hbm.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../repaso-examen/ORM-Learning/src/main/resources/hibernate.cfg.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/37409b1f-f7c9-430f-a91a-1f44b8fcb565.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/37409b1f-f7c9-430f-a91a-1f44b8fcb565.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Categoria.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Categoria.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Pieza.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pieza.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Proveedor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Proveedor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +54,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/2DAM/IdeaProjects/Chat/Chat/ChatBMClient",
+    "last_opened_file_path": "C:/Users/2DAM/workspace/2Dam/acceso-datos/2trim/Ejercicio61DefMD/Ejercicio61Def",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -102,6 +70,11 @@
     ]
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
@@ -126,6 +99,7 @@
       <updated>1707985789213</updated>
       <workItem from="1707985790093" duration="422000" />
       <workItem from="1707986223484" duration="5336000" />
+      <workItem from="1708075923770" duration="4994000" />
     </task>
     <servers />
   </component>

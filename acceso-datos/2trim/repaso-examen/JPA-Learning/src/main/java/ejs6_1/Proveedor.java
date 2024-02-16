@@ -1,8 +1,9 @@
-import jakarta.persistence.Column;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+package ejs6_1;
 
+import jakarta.persistence.*;
+
+@Entity
+@Table(name="ejs6_1.Proveedor")
 public class Proveedor {
     @Column(name="name")
     private String nombre;
@@ -15,17 +16,27 @@ public class Proveedor {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     @Column(name="id")
-    private String codigo;
+    private int codigo;
 
     @Override
     public String toString() {
-        return "Proveedor{" +
+        return "ejs6_1.Proveedor{" +
                 "nombre='" + nombre + '\'' +
                 ", telefono='" + telefono + '\'' +
                 ", provincia='" + provincia + '\'' +
                 ", ciudad='" + ciudad + '\'' +
                 ", codigo='" + codigo + '\'' +
                 '}';
+    }
+
+    public Proveedor() {
+    }
+
+    public Proveedor(String nombre, String telefono, String provincia, String ciudad) {
+        setNombre(nombre);
+        setTelefono(telefono);
+        setProvincia(provincia);
+        setCiudad(ciudad);
     }
 
     public void setNombre(String nombre) {
@@ -41,7 +52,7 @@ public class Proveedor {
         if (telefono != null && telefono.matches("[0-9]+")) {
             this.telefono = telefono;
         } else {
-            throw new IllegalArgumentException("El número de teléfono debe contener solo dígitos.");
+            this.telefono = "0";
         }
     }
 
@@ -63,11 +74,4 @@ public class Proveedor {
         }
     }
 
-    public void setCodigo(String codigo) {
-        if (codigo != null && !codigo.isEmpty() && codigo.matches("[A-Za-z0-9]+")) {
-            this.codigo = codigo;
-        } else {
-            throw new IllegalArgumentException("El código del proveedor no puede ser nulo, vacío o contener caracteres especiales.");
-        }
-    }
 }
