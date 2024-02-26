@@ -1,1 +1,4 @@
-mongorestore --db sample_training --drop "C:\Users\2DAM\workspace\2Dam\acceso-datos\2trim\dumps\sample_training"
+
+en la ruta del bin de tools, tirar el comando:
+
+mongorestore --db sample_supplies --drop "C:\Users\2DAM\workspace\2Dam\acceso-datos\2trim\dumps\sample_supplies"
