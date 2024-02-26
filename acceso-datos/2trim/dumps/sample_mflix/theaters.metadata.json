@@ -1,0 +1,1 @@
+{"indexes":[{"v":{"$numberInt":"2"},"key":{"_id":{"$numberInt":"1"}},"name":"_id_"}],"uuid":"b7f5ba159d7e4bf593927544142ffff8","collectionName":"theaters","type":"collection"}

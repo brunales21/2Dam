@@ -1,0 +1,1 @@
+{"indexes":[{"v":{"$numberInt":"2"},"key":{"_id":{"$numberInt":"1"}},"name":"_id_"}],"uuid":"7689e301e08445b5a2b91d31e217d5a6","collectionName":"companies","type":"collection"}
