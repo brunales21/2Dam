@@ -70,29 +70,38 @@ public class MongoApp {
             Update: recibiria el id del documento y un documento con los campos a actualizar o el POJO
             Delete: recibiria el id del documento a borrar
 
-            Sí, podría evitar que me pasaran un documento que no fuera una ruta aérea.
-            Crearia un método boolean que reciba un id o un document y devolvería true si todos los campos
+            Sí, podría evitar que se pasara un documento que no fuera una ruta aérea.
+
+            Al principio pensé en el método "isRoute(id)" o "isRoute(document)", el cuál
+            devolvería true si los campos de la clase coincidiesen con los del document.
+
+            Después, entró un poco de corriente a mi habitación y se me ocurrió la siguiente idea.
+            Se trata de parametrizar y generalizar la funcion a través de reflexión.
+
+            Crearía un método boolean que reciba un objeto y un id o un document. Devolvería true si todos los campos
             del objeto coincidiesen con las claves del documento. Todos los elementos del document.keyset()
             deberian coincidir con los campos del POJO.
             Este método lo llamaría dentro de los métodos CRUD.
 
-            crud(id) {
+
+            crudMethod(id) {
                 if (matchesClass(Routes.class, id)) {
-                    //logica
+                    //lógica
                 {
             }
 
-            crud(document) {
+            crudMethod(document) {
                 if (matchesClass(Routes.class, document)) {
-                    //logica
+                    //lógica
                 {
             }
 
-            Método sobrecargado.
-            El método estático "matchesClass()" estaría en una clase Utils
+            Método reflexivo.
+            El método estático "matchesClass(arg1, arg2)" estaría en una clase Utils.
+            El metodo estaría sobrecargado.
 
             static boolean matchesClass(Object obj, Document doc) {
-                // cada elemento de obj.getClass().getFields() tiene que
+                // cada elemento de obj.getClass().getDeclaredFields() tiene que
                 // coincidir con los elementos de doc.keySet()
             }
 
