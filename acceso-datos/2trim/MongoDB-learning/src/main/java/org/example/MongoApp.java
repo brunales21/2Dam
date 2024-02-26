@@ -20,7 +20,7 @@ public class MongoApp {
             ObjectId objectId = new org.bson.types.ObjectId("10a9a39b732b6122f877fc31");
 
             // 1a
-            Document document2Stops = new Document("_id", objectId)
+            Document twoStopsRouteDoc = new Document("_id", objectId)
                     .append("airline", new Document("id", 410)
                             .append("name", "bruno-air-line")
                             .append("alias", "2B")
@@ -31,7 +31,7 @@ public class MongoApp {
                     .append("stops", 2)
                     .append("airplane", "CR2");
 
-            createDocument(sampleTrainingDB, "routes", document2Stops);
+            createDocument(sampleTrainingDB, "routes", twoStopsRouteDoc);
 
             // 1b
             MongoCollection<Document> collection = sampleTrainingDB.getCollection("routes");
